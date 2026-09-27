@@ -1,3 +1,4 @@
+# `python -m http.server 8000` načte stránky i JSON; přihlášení do /admin funguje pouze na nasazení ve Vercelu.
 backend:
   name: github
   repo: radovik/team1
@@ -12,23 +13,159 @@ logo_url: https://team1-beige.vercel.app/assets/silny-tym-mark.png
 media_folder: img/uploads
 public_folder: /img/uploads
 
-locale: cs
-
 collections:
   - name: pages
     label: Stránky
-    label_singular: Stránka
-    folder: content/pages
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - label: Název
-        name: title
-        widget: string
-      - label: Popis
-        name: description
-        widget: text
-        required: false
-      - label: Obsah
-        name: body
-        widget: markdown
+    files:
+      - label: Úvod
+        name: home
+        file: content/pages/home.json
+        format: json
+        preview_path: "/"
+        fields: &page_fields
+          - label: Metadata
+            name: meta
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titulek prohlížeče, name: title, widget: string }
+              - { label: Popis stránky, name: description, widget: text, required: false }
+          - label: Sekce stránky
+            name: sections
+            widget: list
+            allow_add: false
+            collapsed: true
+            summary: "{{fields.label}}"
+            fields:
+              - { label: Název sekce, name: label, widget: string }
+              - label: Texty a popisky
+                name: items
+                widget: list
+                allow_add: false
+                collapsed: true
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: Název pole, name: label, widget: string }
+                  - { label: Technický selektor, name: selector, widget: hidden }
+                  - { label: Režim zobrazení, name: mode, widget: hidden }
+                  - { label: Atribut, name: attribute, widget: hidden, required: false }
+                  - { label: Číslo nebo předpona, name: prefix, widget: string, required: false }
+                  - { label: Text, name: value, widget: text }
+          - label: Obrázky
+            name: images
+            widget: list
+            required: false
+            allow_add: false
+            collapsed: true
+            summary: "{{fields.label}}"
+            fields:
+              - { label: Název obrázku, name: label, widget: string }
+              - { label: Technický selektor, name: selector, widget: hidden }
+              - { label: Soubor, name: src, widget: image, required: false }
+              - { label: Alternativní text, name: alt, widget: string, required: false }
+              - { label: Vložit do obrazového rámu, name: container, widget: boolean, default: false }
+          - label: Časté otázky
+            name: faq
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - { label: Technický selektor, name: selector, widget: hidden }
+              - label: Otázky
+                name: items
+                widget: list
+                summary: "{{fields.question}}"
+                fields:
+                  - { label: Otázka, name: question, widget: string }
+                  - { label: Odpověď, name: answer, widget: text }
+                  - { label: Otevřít při načtení, name: open, widget: boolean, default: false }
+          - label: Tabulky
+            name: tables
+            widget: list
+            required: false
+            allow_add: false
+            collapsed: true
+            summary: "{{fields.label}}"
+            fields:
+              - { label: Název tabulky, name: label, widget: string }
+              - { label: Technický selektor, name: selector, widget: hidden }
+              - label: Záhlaví
+                name: headers
+                widget: list
+                field: { label: Buňka, name: header, widget: string }
+              - label: Řádky
+                name: rows
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: Název řádku, name: label, widget: string }
+                  - label: Buňky
+                    name: cells
+                    widget: list
+                    field: { label: Buňka, name: cell, widget: string }
+      - label: Pro koho
+        name: pro-koho
+        file: content/pages/pro-koho.json
+        format: json
+        preview_path: "/pro-koho/"
+        fields: *page_fields
+      - label: Jak pracujeme
+        name: jak-pracujeme
+        file: content/pages/jak-pracujeme.json
+        format: json
+        preview_path: "/jak-pracujeme/"
+        fields: *page_fields
+      - label: Programy
+        name: programy
+        file: content/pages/programy.json
+        format: json
+        preview_path: "/programy/"
+        fields: *page_fields
+      - label: Výsledky
+        name: vysledky
+        file: content/pages/vysledky.json
+        format: json
+        preview_path: "/vysledky/"
+        fields: *page_fields
+      - label: Pro HR
+        name: pro-hr
+        file: content/pages/pro-hr.json
+        format: json
+        preview_path: "/pro-hr/"
+        fields: *page_fields
+      - label: O nás
+        name: o-nas
+        file: content/pages/o-nas.json
+        format: json
+        preview_path: "/o-nas/"
+        fields: *page_fields
+      - label: FAQ
+        name: faq
+        file: content/pages/faq.json
+        format: json
+        preview_path: "/faq/"
+        fields: *page_fields
+      - label: Kontakt
+        name: kontakt
+        file: content/pages/kontakt.json
+        format: json
+        preview_path: "/kontakt/"
+        fields: *page_fields
+      - label: Team Health Scorecard
+        name: team-health-scorecard
+        file: content/pages/team-health-scorecard.json
+        format: json
+        preview_path: "/team-health-scorecard/"
+        fields: *page_fields
+      - label: Ochrana soukromí
+        name: soukromi
+        file: content/pages/soukromi.json
+        format: json
+        preview_path: "/soukromi/"
+        fields: *page_fields
+      - label: Cookies
+        name: cookies
+        file: content/pages/cookies.json
+        format: json
+        preview_path: "/cookies/"
+        fields: *page_fields

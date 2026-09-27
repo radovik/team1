@@ -102,3 +102,188 @@ if (scorecardForm) {
     if (scoreStatus) scoreStatus.textContent = '';
   });
 }
+
+function appendInlineContent(element, value) {
+  const tokens = String(value ?? '').split(/(\*\*[^*]+\*\*|\*[^*]+\*|\n)/g);
+  element.replaceChildren();
+
+  tokens.forEach((token) => {
+    if (!token) return;
+    if (token === '\n') {
+      element.append(document.createElement('br'));
+      return;
+    }
+    if (token.startsWith('**') && token.endsWith('**')) {
+      const strong = document.createElement('strong');
+      strong.textContent = token.slice(2, -2);
+      element.append(strong);
+      return;
+    }
+    if (token.startsWith('*') && token.endsWith('*')) {
+      const emphasis = document.createElement('em');
+      emphasis.textContent = token.slice(1, -1);
+      element.append(emphasis);
+      return;
+    }
+    element.append(document.createTextNode(token));
+  });
+}
+
+function applyContentItem(root, item) {
+  if (!item?.selector || typeof item.value !== 'string') return;
+
+  const elements = root.querySelectorAll(item.selector);
+  if (!elements.length) {
+    console.warn(`CMS selektor nenalezen: ${item.selector}`);
+    return;
+  }
+
+  elements.forEach((element) => {
+    if (item.mode === 'attribute' && item.attribute) {
+      element.setAttribute(item.attribute, item.value);
+      return;
+    }
+    if (item.mode === 'inline') {
+      appendInlineContent(element, item.value);
+      return;
+    }
+    if (item.mode === 'statement') {
+      const [lead, ...rest] = item.value.split('\n');
+      element.replaceChildren(document.createTextNode(lead));
+      if (rest.length) {
+        const accent = document.createElement('span');
+        accent.textContent = rest.join(' ');
+        element.append(accent);
+      }
+      return;
+    }
+    if (item.mode === 'numbered') {
+      element.replaceChildren();
+      const number = document.createElement('span');
+      number.textContent = item.prefix ?? '';
+      element.append(number);
+      element.append(document.createTextNode(item.value));
+      return;
+    }
+    element.textContent = item.value;
+  });
+}
+
+function applyContentImage(root, image) {
+  if (!image?.selector || !image.src) return;
+  const target = root.querySelector(image.selector);
+  if (!target) {
+    console.warn(`CMS selektor obrázku nenalezen: ${image.selector}`);
+    return;
+  }
+
+  if (target instanceof HTMLImageElement) {
+    target.src = image.src;
+    target.alt = image.alt ?? '';
+    return;
+  }
+
+  const element = document.createElement('img');
+  element.className = 'profile-photo';
+  element.src = image.src;
+  element.alt = image.alt ?? '';
+  element.loading = 'lazy';
+  target.replaceChildren(element);
+  target.classList.add('has-photo');
+}
+
+function renderFaq(root, faq) {
+  if (!faq?.selector || !Array.isArray(faq.items)) return;
+  const container = root.querySelector(faq.selector);
+  if (!container) {
+    console.warn(`CMS selektor FAQ nenalezen: ${faq.selector}`);
+    return;
+  }
+
+  const entries = faq.items.map((item) => {
+    const details = document.createElement('details');
+    details.open = Boolean(item.open);
+    const summary = document.createElement('summary');
+    summary.textContent = item.question ?? '';
+    const answer = document.createElement('div');
+    answer.className = 'faq-answer';
+    const paragraph = document.createElement('p');
+    paragraph.textContent = item.answer ?? '';
+    answer.append(paragraph);
+    details.append(summary, answer);
+    return details;
+  });
+
+  container.replaceChildren(...entries);
+}
+
+function renderTables(root, tables) {
+  if (!Array.isArray(tables)) return;
+
+  tables.forEach((tableData) => {
+    if (!tableData?.selector || !Array.isArray(tableData.headers) || !Array.isArray(tableData.rows)) return;
+    const table = root.querySelector(tableData.selector);
+    if (!(table instanceof HTMLTableElement)) {
+      console.warn(`CMS selektor tabulky nenalezen: ${tableData.selector}`);
+      return;
+    }
+
+    const headerRow = document.createElement('tr');
+    tableData.headers.forEach((value) => {
+      const header = document.createElement('th');
+      header.textContent = value;
+      headerRow.append(header);
+    });
+    const head = document.createElement('thead');
+    head.append(headerRow);
+
+    const body = document.createElement('tbody');
+    tableData.rows.forEach((row) => {
+      const tableRow = document.createElement('tr');
+      const label = document.createElement('th');
+      label.scope = 'row';
+      label.textContent = row.label ?? '';
+      tableRow.append(label);
+      (row.cells ?? []).forEach((value) => {
+        const cell = document.createElement('td');
+        cell.textContent = value;
+        tableRow.append(cell);
+      });
+      body.append(tableRow);
+    });
+
+    table.replaceChildren(head, body);
+  });
+}
+
+async function loadPageContent() {
+  const root = document.querySelector('[data-content-file]');
+  if (!root) return;
+
+  root.setAttribute('aria-busy', 'true');
+  try {
+    const response = await fetch(root.dataset.contentFile, { cache: 'no-cache' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const content = await response.json();
+
+    if (content.meta?.title) document.title = content.meta.title;
+    if (content.meta?.description) {
+      document.querySelector('meta[name="description"]')?.setAttribute('content', content.meta.description);
+    }
+
+    (content.sections ?? []).forEach((section) => {
+      (section.items ?? []).forEach((item) => applyContentItem(root, item));
+    });
+    (content.images ?? []).forEach((image) => applyContentImage(root, image));
+    renderFaq(root, content.faq);
+    renderTables(root, content.tables);
+    root.dataset.contentState = 'loaded';
+  } catch (error) {
+    root.dataset.contentState = 'fallback';
+    console.warn(`Obsah z ${root.dataset.contentFile} se nepodařilo načíst; používám HTML zálohu.`, error);
+  } finally {
+    root.removeAttribute('aria-busy');
+  }
+}
+
+loadPageContent();

@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "title": "Pro jaké týmy je team coaching | Silný tým",
+    "description": "Team coaching pro leadership týmy po růstu, změně nebo v hybridním uspořádání."
+  },
+  "sections": [
+    {
+      "label": "Hero",
+      "items": [
+        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "01 / Pro koho" },
+        { "label": "Nadpis nad titulkem", "selector": ".page-hero .eyebrow", "mode": "text", "value": "Leadership tým · růst · změna" },
+        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Nepracujeme se všemi týmy. Pracujeme s těmi, kde spolupráce nestíhá *růst firmy.*" },
+        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Nejčastěji leadership tým 6–12 lidí ve firmě přibližně 40–250 zaměstnanců. Dost velká na to, aby už nestačila parta, která se zná. Dost živá na to, aby změna chování byla vidět v řádu měsíců." },
+        { "label": "Tlačítko", "selector": ".page-hero .button", "mode": "text", "value": "Začít auditem ↗" }
+      ]
+    },
+    {
+      "label": "Typické situace",
+      "items": [
+        { "label": "Číslo sekce", "selector": ".page-hero + .section .section-index", "mode": "text", "value": "01 / Typické situace" },
+        { "label": "Nadpis nad sekcí", "selector": ".page-hero + .section .section-kicker", "mode": "text", "value": "Kde dává práce smysl" },
+        { "label": "Titulek sekce", "selector": ".page-hero + .section .section-title", "mode": "text", "value": "Tři situace. Jeden problém: tým ještě nemá společný způsob práce." },
+        { "label": "Situace 1 – číslo", "selector": ".cards-3 .card:nth-child(1) .card-number", "mode": "text", "value": "01" },
+        { "label": "Situace 1 – titulek", "selector": ".cards-3 .card:nth-child(1) h2", "mode": "text", "value": "Leadership tým po růstu" },
+        { "label": "Situace 1 – popis", "selector": ".cards-3 .card:nth-child(1) p:nth-of-type(1)", "mode": "text", "value": "Zakladatel nebo ředitel dosadil nové lidi. Na papíře je to tým. V praxi každý řeší svůj úsek a společná rozhodnutí se vlečou." },
+        { "label": "Situace 1 – cíl", "selector": ".cards-3 .card:nth-child(1) p:nth-of-type(2)", "mode": "inline", "value": "**Cíl:** aby leadership přestal být sbírkou expertů a začal rozhodovat jako jeden orgán." },
+        { "label": "Situace 2 – číslo", "selector": ".cards-3 .card:nth-child(2) .card-number", "mode": "text", "value": "02" },
+        { "label": "Situace 2 – titulek", "selector": ".cards-3 .card:nth-child(2) h2", "mode": "text", "value": "Tým po změně" },
+        { "label": "Situace 2 – popis", "selector": ".cards-3 .card:nth-child(2) p:nth-of-type(1)", "mode": "text", "value": "Nový šéf. Reorg. Fúze. Odchod klíčového člověka. Formální struktura je nová, neformální pravidla stará." },
+        { "label": "Situace 2 – cíl", "selector": ".cards-3 .card:nth-child(2) p:nth-of-type(2)", "mode": "inline", "value": "**Cíl:** aby se nová sestava stala týmem dřív, než si každý vybuduje obchvat." },
+        { "label": "Situace 3 – číslo", "selector": ".cards-3 .card:nth-child(3) .card-number", "mode": "text", "value": "03" },
+        { "label": "Situace 3 – titulek", "selector": ".cards-3 .card:nth-child(3) h2", "mode": "text", "value": "Hybridní nebo distribuovaný tým" },
+        { "label": "Situace 3 – popis", "selector": ".cards-3 .card:nth-child(3) p:nth-of-type(1)", "mode": "text", "value": "Část lidí v kanceláři, část na dálku, někdy více zemí a linií." },
+        { "label": "Situace 3 – cíl", "selector": ".cards-3 .card:nth-child(3) p:nth-of-type(2)", "mode": "inline", "value": "**Cíl:** společná pravidla rozhodování, nesouhlasu a ownershipu, která fungují i bez společné kuchyňky." }
+      ]
+    },
+    {
+      "label": "Kdo kupuje a s kým nepracujeme",
+      "items": [
+        { "label": "Kdo kupuje – nadpis", "selector": ".cards-2 .card:nth-child(1) .section-kicker", "mode": "text", "value": "Kdo kupuje" },
+        { "label": "Kdo kupuje – titulek", "selector": ".cards-2 .card:nth-child(1) h2", "mode": "text", "value": "Mandát musí být skutečný." },
+        { "label": "Kupující 1", "selector": ".cards-2 .card:nth-child(1) li:nth-child(1)", "mode": "text", "value": "CEO nebo jednatel growing firmy." },
+        { "label": "Kupující 2", "selector": ".cards-2 .card:nth-child(1) li:nth-child(2)", "mode": "text", "value": "HR director / People partner s mandátem řešit fungování týmu, ne jen školení." },
+        { "label": "Kupující 3", "selector": ".cards-2 .card:nth-child(1) li:nth-child(3)", "mode": "text", "value": "Ředitel úseku, který zdědil tým a vidí, že 1:1 koučink šéfa nestačí." },
+        { "label": "S kým nepracujeme – nadpis", "selector": ".cards-2 .card:nth-child(2) .section-kicker", "mode": "text", "value": "S kým nepracujeme" },
+        { "label": "S kým nepracujeme – titulek", "selector": ".cards-2 .card:nth-child(2) h2", "mode": "text", "value": "Ne každé zadání je týmová zakázka." },
+        { "label": "Nevhodné zadání 1", "selector": ".cards-2 .card:nth-child(2) li:nth-child(1)", "mode": "text", "value": "Tým má „dostat teambuilding, ať se zlepší nálada“." },
+        { "label": "Nevhodné zadání 2", "selector": ".cards-2 .card:nth-child(2) li:nth-child(2)", "mode": "text", "value": "Sponsor chce, abychom týmu vzkázaly jeho názor." },
+        { "label": "Nevhodné zadání 3", "selector": ".cards-2 .card:nth-child(2) li:nth-child(3)", "mode": "text", "value": "Je přítomný šikanózní konflikt, který vyžaduje vyšetřování nebo specializovanou mediaci." },
+        { "label": "Nevhodné zadání 4", "selector": ".cards-2 .card:nth-child(2) li:nth-child(4)", "mode": "text", "value": "Cílem je opravit jednoho člověka před zraky ostatních." },
+        { "label": "Nevhodné zadání 5", "selector": ".cards-2 .card:nth-child(2) li:nth-child(5)", "mode": "text", "value": "Zadání nemá cíl ani mandát." }
+      ]
+    },
+    {
+      "label": "Závěrečná výzva",
+      "items": [
+        { "label": "Titulek", "selector": ".cta-band h2", "mode": "text", "value": "Nejste si jistí, jestli je team coaching správný krok?" },
+        { "label": "Text", "selector": ".cta-band-copy p", "mode": "text", "value": "Od toho je vstupní audit. Za 30 minut si ujasníme situaci a řekneme i to, když potřebujete něco jiného." },
+        { "label": "Tlačítko", "selector": ".cta-band .button", "mode": "text", "value": "Rezervovat audit ↗" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Rezervovat Team Health Audit | Silný tým",
+    "description": "Rezervujte 30minutový Team Health Audit pro leadership tým."
+  },
+  "sections": [
+    {
+      "label": "Hero",
+      "items": [
+        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "08 / Kontakt" },
+        { "label": "Nadpis nad titulkem", "selector": ".page-hero .eyebrow", "mode": "text", "value": "Team Health Audit · 30 minut" },
+        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Nejdřív 30 minut. Pak případně *návrh.*" },
+        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Nepište nám prezentaci o firmě. Stačí jedna konkrétní situace z posledních dvou týdnů: porada, rozhodnutí, které se vrátilo, nebo konflikt, který šel mimo místnost." }
+      ]
+    },
+    {
+      "label": "Formulář",
+      "items": [
+        { "label": "Jméno – popisek", "selector": "label[for='name']", "mode": "text", "value": "Jméno a příjmení" },
+        { "label": "Jméno – příklad", "selector": "#name", "mode": "attribute", "attribute": "placeholder", "value": "Jana Nováková" },
+        { "label": "E-mail – popisek", "selector": "label[for='email']", "mode": "text", "value": "Pracovní e-mail" },
+        { "label": "E-mail – příklad", "selector": "#email", "mode": "attribute", "attribute": "placeholder", "value": "jana@firma.cz" },
+        { "label": "Role – popisek", "selector": "label[for='role']", "mode": "text", "value": "Vaše role" },
+        { "label": "Role – příklad", "selector": "#role", "mode": "attribute", "attribute": "placeholder", "value": "CEO, HR Director, People Partner…" },
+        { "label": "Velikost týmu – popisek", "selector": "label[for='team-size']", "mode": "text", "value": "Velikost týmu-klienta" },
+        { "label": "Velikost týmu – výzva", "selector": "#team-size option:nth-child(1)", "mode": "text", "value": "Vyberte" },
+        { "label": "Velikost týmu – možnost 1", "selector": "#team-size option:nth-child(2)", "mode": "text", "value": "Do 5 lidí" },
+        { "label": "Velikost týmu – možnost 2", "selector": "#team-size option:nth-child(3)", "mode": "text", "value": "6–8 lidí" },
+        { "label": "Velikost týmu – možnost 3", "selector": "#team-size option:nth-child(4)", "mode": "text", "value": "9–12 lidí" },
+        { "label": "Velikost týmu – možnost 4", "selector": "#team-size option:nth-child(5)", "mode": "text", "value": "13 a více lidí" },
+        { "label": "Situace – popisek", "selector": "label[for='situation']", "mode": "text", "value": "Jedna věta: co se v týmu děje?" },
+        { "label": "Situace – příklad", "selector": "#situation", "mode": "attribute", "attribute": "placeholder", "value": "Například: Na poradě se shodneme, ale rozhodnutí se do dvou dnů znovu otevře e-mailem." },
+        { "label": "Situace – nápověda", "selector": ".field-hint", "mode": "text", "value": "Stačí jedna konkrétní situace. Minimálně 20 znaků." },
+        { "label": "Sponsor – otázka", "selector": ".radio-field:nth-of-type(1) legend", "mode": "text", "value": "Jste sponsor, nebo poptáváte za někoho?" },
+        { "label": "Sponsor – možnost 1", "selector": ".radio-field:nth-of-type(1) .radio-pill:nth-child(1) span", "mode": "text", "value": "Jsem sponsor" },
+        { "label": "Sponsor – možnost 2", "selector": ".radio-field:nth-of-type(1) .radio-pill:nth-child(2) span", "mode": "text", "value": "Poptávám za někoho" },
+        { "label": "Sponsor – možnost 3", "selector": ".radio-field:nth-of-type(1) .radio-pill:nth-child(3) span", "mode": "text", "value": "Nejsem si jistý/á" },
+        { "label": "Koučka – otázka", "selector": ".radio-field:nth-of-type(2) legend", "mode": "text", "value": "Preferujete konkrétní koučku? · volitelné" },
+        { "label": "Koučka – Martina", "selector": ".radio-field:nth-of-type(2) .radio-pill:nth-child(1) span", "mode": "text", "value": "Martina" },
+        { "label": "Koučka – Veronika", "selector": ".radio-field:nth-of-type(2) .radio-pill:nth-child(2) span", "mode": "text", "value": "Veronika" },
+        { "label": "Koučka – bez preference", "selector": ".radio-field:nth-of-type(2) .radio-pill:nth-child(3) span", "mode": "text", "value": "Je mi to jedno" },
+        { "label": "Odesílací tlačítko", "selector": ".form-submit button", "mode": "text", "value": "Odeslat poptávku ↗" },
+        { "label": "Technické napojení – štítek", "selector": ".form-card .notice-todo strong", "mode": "text", "value": "Technické napojení" }
+      ]
+    },
+    {
+      "label": "Co následuje",
+      "items": [
+        { "label": "Nadpis nad blokem", "selector": ".sidebar-card .section-kicker", "mode": "text", "value": "Co následuje" },
+        { "label": "Titulek", "selector": ".sidebar-card h2", "mode": "text", "value": "Jeden vstup. Společná značka." },
+        { "label": "Text", "selector": ".sidebar-card > p:last-of-type", "mode": "text", "value": "Nejdřív řešíme potřebu týmu, potom vhodné obsazení. Hlavní CTA nevede na dva oddělené kalendáře." },
+        { "label": "Krok 1", "selector": ".sidebar-card li:nth-child(1)", "mode": "text", "value": "1. Přečteme konkrétní situaci." },
+        { "label": "Krok 2", "selector": ".sidebar-card li:nth-child(2)", "mode": "text", "value": "2. Domluvíme 30 minut se sponsorem." },
+        { "label": "Krok 3", "selector": ".sidebar-card li:nth-child(3)", "mode": "text", "value": "3. Doporučíme další krok — i když to nebude team coaching." },
+        { "label": "Kalendář – štítek", "selector": ".sidebar-card .notice-todo strong", "mode": "text", "value": "Kalendář" }
+      ]
+    },
+    {
+      "label": "Bez nátlaku",
+      "items": [
+        { "label": "Nadpis nad sekcí", "selector": ".section-cyan .section-kicker", "mode": "text", "value": "Bez nátlaku" },
+        { "label": "Titulek", "selector": ".section-cyan .section-title", "mode": "text", "value": "Audit má dát jasné „ano / ne / ne teď“." },
+        { "label": "Text", "selector": ".section-cyan .prose-lede", "mode": "text", "value": "Nepotřebujeme, abyste předem vybrali program ani koučku. Potřebujeme pochopit jednu opakující se situaci a mandát, který za ní stojí." }
+      ]
+    }
+  ]
+}

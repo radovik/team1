@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "Team coaching pro leadership týmy | Silný tým",
+    "description": "Team coaching pro leadership týmy firem, které rostou rychleji než jejich spolupráce. Diagnostika, 90denní program a práce s týmem jako se systémem."
+  },
+  "sections": [
+    {
+      "label": "Hero",
+      "items": [
+        { "label": "Nadpis nad titulkem", "selector": ".hero .eyebrow", "mode": "text", "value": "Team coaching · Leadership týmy · Česko" },
+        { "label": "Hlavní titulek", "selector": ".hero h1", "mode": "inline", "value": "Tým, který se na poradě shodne a mimo ni táhne *každý jinam,* nestojí firmu workshop." },
+        { "label": "Úvodní text", "selector": ".hero-lede", "mode": "text", "value": "Stojí ji pomalá rozhodnutí, tichý konflikt a odchody lidí, které jste nechtěli ztratit. Pracujeme s leadership týmy typicky 6–12 lidí jako s jedním klientem. Ne s jednotlivci vedle sebe." },
+        { "label": "Výsledek 1", "selector": ".outcome-list li:nth-child(1)", "mode": "text", "value": "Rozhodnutí, která se nevracejí e-mailem." },
+        { "label": "Výsledek 2", "selector": ".outcome-list li:nth-child(2)", "mode": "text", "value": "Konflikt, který se řeší ve stejné místnosti, ne v kuloárech." },
+        { "label": "Výsledek 3", "selector": ".outcome-list li:nth-child(3)", "mode": "text", "value": "Tým, který umí fungovat dál i bez kouče." },
+        { "label": "Hlavní tlačítko", "selector": ".hero-actions .button", "mode": "text", "value": "Rezervovat Team Health Audit ↗" },
+        { "label": "Vedlejší odkaz", "selector": ".hero-actions .text-link", "mode": "text", "value": "Jak poznáte, že to není teambuilding ↓" },
+        { "label": "Vizuál – nadpis", "selector": ".signal-card small", "mode": "text", "value": "Tým jako systém" },
+        { "label": "Vizuál – text", "selector": ".signal-card strong", "mode": "text", "value": "Lidé · perspektiva · pokrok" },
+        { "label": "Vizuál – motto", "selector": ".hero-index", "mode": "inline", "value": "Silnější lidé.\nLepší týmy.\nLepší zítřek." }
+      ]
+    },
+    {
+      "label": "Poznáte se?",
+      "items": [
+        { "label": "Číslo sekce", "selector": "section[aria-labelledby='signals-title'] .section-index", "mode": "text", "value": "01 / Poznáte se?" },
+        { "label": "Nadpis nad sekcí", "selector": "section[aria-labelledby='signals-title'] .section-kicker", "mode": "text", "value": "Nejdřív realita týmu" },
+        { "label": "Titulek sekce", "selector": "#signals-title", "mode": "inline", "value": "Než začneme mluvit o metodě, podívejte se, jestli je tohle *váš tým.*" },
+        { "label": "Signál 1", "selector": ".signal-list li:nth-child(1)", "mode": "numbered", "prefix": "01", "value": "Porady trvají dlouho. Rozhodnutí se stejně vrací v e-mailu nebo chatu." },
+        { "label": "Signál 2", "selector": ".signal-list li:nth-child(2)", "mode": "numbered", "prefix": "02", "value": "Lidé jsou slušní a opatrní. Konflikt jde do kuloárů." },
+        { "label": "Signál 3", "selector": ".signal-list li:nth-child(3)", "mode": "numbered", "prefix": "03", "value": "Hybrid rozdělil tým na dva světy." },
+        { "label": "Signál 4", "selector": ".signal-list li:nth-child(4)", "mode": "numbered", "prefix": "04", "value": "Firma vyrostla. Formálně je to jeden leadership tým. Fakticky ostrovy." },
+        { "label": "Signál 5", "selector": ".signal-list li:nth-child(5)", "mode": "numbered", "prefix": "05", "value": "Šéf je bottleneck. Tým čeká, až to řekne on." },
+        { "label": "Signál 6", "selector": ".signal-list li:nth-child(6)", "mode": "numbered", "prefix": "06", "value": "HR vidí fluktuaci a engagement. Vedení to popisuje jako chemii." },
+        { "label": "Práh signálů", "selector": ".rule-callout > strong", "mode": "text", "value": "3+" },
+        { "label": "Vysvětlení prahu", "selector": ".rule-callout > div > p", "mode": "text", "value": "Když sedí tři a více bodů, problém obvykle není v kompetenci lidí. Je ve způsobu, jakým tým pracuje jako celek." },
+        { "label": "Tlačítko", "selector": ".rule-callout .button", "mode": "text", "value": "Ověřit to v auditu ↗" }
+      ]
+    },
+    {
+      "label": "Co to není",
+      "items": [
+        { "label": "Číslo sekce", "selector": "#co-to-neni .section-index", "mode": "text", "value": "02 / Co to není" },
+        { "label": "Nadpis nad sekcí", "selector": "#co-to-neni .section-kicker", "mode": "text", "value": "Pojmy bez mlhy" },
+        { "label": "Titulek sekce", "selector": "#compare-title", "mode": "text", "value": "Team coaching není teambuilding s vážnějším názvem." },
+        { "label": "Poznámka pod tabulkou", "selector": ".comparison-note", "mode": "text", "value": "Neděláme icebreaker a neodcházíme s flipchartem plným hodnot, které za dva týdny nikdo nepoužije." }
+      ]
+    },
+    {
+      "label": "Jak to probíhá",
+      "items": [
+        { "label": "Číslo sekce", "selector": "section[aria-labelledby='process-title'] .section-index", "mode": "text", "value": "03 / Jak to probíhá" },
+        { "label": "Nadpis nad sekcí", "selector": "section[aria-labelledby='process-title'] .section-kicker", "mode": "text", "value": "Od obrazu k novému rytmu" },
+        { "label": "Titulek sekce", "selector": "#process-title", "mode": "inline", "value": "Nejdřív vidět vzorec. Potom změnit práci, která se děje *mezi setkáními.*" },
+        { "label": "Krok 1 – titulek", "selector": "section[aria-labelledby='process-title'] .step:nth-child(1) h3", "mode": "text", "value": "Audit se sponsorem" },
+        { "label": "Krok 1 – text", "selector": "section[aria-labelledby='process-title'] .step:nth-child(1) p", "mode": "text", "value": "30 minut. Řekneme, zda team coaching dává smysl, nebo jestli potřebujete něco jiného." },
+        { "label": "Krok 2 – titulek", "selector": "section[aria-labelledby='process-title'] .step:nth-child(2) h3", "mode": "text", "value": "Diagnostika týmu" },
+        { "label": "Krok 2 – text", "selector": "section[aria-labelledby='process-title'] .step:nth-child(2) p", "mode": "text", "value": "Rozhovory, pozorování porady, pulzní skóre. Společný obraz, ne naše teorie." },
+        { "label": "Krok 3 – titulek", "selector": "section[aria-labelledby='process-title'] .step:nth-child(3) h3", "mode": "text", "value": "Práce s týmem" },
+        { "label": "Krok 3 – text", "selector": "section[aria-labelledby='process-title'] .step:nth-child(3) p", "mode": "text", "value": "Tým mluví k sobě, ne k nám. Pojmenováváme vzorce a vracíme odpovědnost týmu." },
+        { "label": "Krok 4 – titulek", "selector": "section[aria-labelledby='process-title'] .step:nth-child(4) h3", "mode": "text", "value": "Rituály, které zůstanou" },
+        { "label": "Krok 4 – text", "selector": "section[aria-labelledby='process-title'] .step:nth-child(4) p", "mode": "text", "value": "Končíme ve chvíli, kdy tým umí rozhodovat, eskalovat a opravovat spolupráci bez nás." },
+        { "label": "Odkaz na proces", "selector": "section[aria-labelledby='process-title'] .text-link", "mode": "text", "value": "Celý proces na stránce Jak pracujeme →" }
+      ]
+    },
+    {
+      "label": "Dvě koučky",
+      "items": [
+        { "label": "Číslo sekce", "selector": "section[aria-labelledby='coaches-title'] .section-index", "mode": "text", "value": "04 / Dvě koučky" },
+        { "label": "Nadpis nad sekcí", "selector": "section[aria-labelledby='coaches-title'] .section-kicker", "mode": "text", "value": "Jeden tým jako klient" },
+        { "label": "Titulek sekce", "selector": "#coaches-title", "mode": "text", "value": "Dvě perspektivy. Jeden společný rámec práce." },
+        { "label": "Úvod sekce", "selector": "section[aria-labelledby='coaches-title'] .section-heading .lede", "mode": "text", "value": "Martina Jonášová přináší koučovací rámec a týmový koučink. Veronika Vojtová přidává mimo jiné osmnáct let zkušeností v HR, práci s komunikací a rozvojem lidí a výcvik týmového koučování AATC. U každé zakázky nejdřív řešíme, co potřebuje tým." },
+        { "label": "Martina – jméno", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(1) h3", "mode": "text", "value": "Martina Jonášová" },
+        { "label": "Martina – role", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(1) .profile-role", "mode": "text", "value": "Team coach · ACC" },
+        { "label": "Martina – profil", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(1) .profile-copy > p:nth-of-type(2)", "mode": "text", "value": "Pracuje s týmy jako se systémem a opírá se o výcvik týmového koučování certifikovaný ICF jako AATC." },
+        { "label": "Martina – kvalifikace 1", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(1) .credential:nth-child(1)", "mode": "text", "value": "ICF ACC" },
+        { "label": "Martina – kvalifikace 2", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(1) .credential:nth-child(2)", "mode": "text", "value": "AATC" },
+        { "label": "Veronika – jméno", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(2) h3", "mode": "text", "value": "Veronika Vojtová" },
+        { "label": "Veronika – role", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(2) .profile-role", "mode": "text", "value": "Team coach · ACC · HR perspektiva" },
+        { "label": "Veronika – profil", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(2) .profile-copy > p:nth-of-type(2)", "mode": "text", "value": "Přináší osmnáct let zkušeností v HR, zkušenost s firemním prostředím, komunikací a rozvojem lidí." },
+        { "label": "Veronika – kvalifikace 1", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(2) .credential:nth-child(1)", "mode": "text", "value": "ICF ACC" },
+        { "label": "Veronika – kvalifikace 2", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(2) .credential:nth-child(2)", "mode": "text", "value": "AATC" },
+        { "label": "Veronika – kvalifikace 3", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(2) .credential:nth-child(3)", "mode": "text", "value": "18 let v HR" },
+        { "label": "Fotografie – štítek", "selector": "section[aria-labelledby='coaches-title'] .container > .notice-todo:nth-child(3) strong", "mode": "text", "value": "Obsah k doplnění" },
+        { "label": "Model – štítek", "selector": "section[aria-labelledby='coaches-title'] .container > .notice-todo:nth-child(4) strong", "mode": "text", "value": "Model k potvrzení" },
+        { "label": "Tlačítko", "selector": "section[aria-labelledby='coaches-title'] .button", "mode": "text", "value": "Poznat Martinu a Veroniku →" }
+      ]
+    },
+    {
+      "label": "Prohlášení",
+      "items": [
+        { "label": "Velký titulek", "selector": ".statement-title", "mode": "statement", "value": "Méně dojmů.\nJiné chování." },
+        { "label": "Poznámka", "selector": ".statement-note", "mode": "text", "value": "Výsledek není dobrá nálada na konci setkání. Je to jiné chování o čtyři týdny později." }
+      ]
+    },
+    {
+      "label": "Programy",
+      "items": [
+        { "label": "Číslo sekce", "selector": "section[aria-labelledby='programs-title'] .section-index", "mode": "text", "value": "05 / Programy" },
+        { "label": "Nadpis nad sekcí", "selector": "section[aria-labelledby='programs-title'] .section-kicker", "mode": "text", "value": "Neprodáváme hodiny" },
+        { "label": "Titulek sekce", "selector": "#programs-title", "mode": "text", "value": "Čtyři úrovně práce. Od rychlého „ano / ne“ po změnu systému." },
+        { "label": "Program 0 – název", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(1) h3", "mode": "text", "value": "Team Health Audit" },
+        { "label": "Program 0 – text", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(1) p", "mode": "text", "value": "Tři pracovní hypotézy o dynamice týmu a doporučení dalšího kroku. Žádný nátlak na program." },
+        { "label": "Program 0 – odkaz", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(1) .card-link", "mode": "text", "value": "Rezervovat audit →" },
+        { "label": "Program 1 – název", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(2) h3", "mode": "text", "value": "Diagnostický sprint" },
+        { "label": "Program 1 – text", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(2) p", "mode": "text", "value": "Rozhovory, pozorování porady, scorecard a společný obraz fungování týmu." },
+        { "label": "Program 1 – odkaz", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(2) .card-link", "mode": "text", "value": "Zobrazit program →" },
+        { "label": "Program 2 – název", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(3) h3", "mode": "text", "value": "Tým, který se umí dohodnout" },
+        { "label": "Program 2 – text", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(3) p", "mode": "text", "value": "Vlajkový program pro nový rozhodovací rytmus a pravidla konfliktu." },
+        { "label": "Program 2 – odkaz", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(3) .card-link", "mode": "text", "value": "Zobrazit program →" },
+        { "label": "Program 3 – název", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(4) h3", "mode": "text", "value": "Leadership Team System" },
+        { "label": "Program 3 – text", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(4) p", "mode": "text", "value": "Pro složitější změnu, práci napříč vrstvami, zeměmi nebo po fúzi." },
+        { "label": "Program 3 – odkaz", "selector": "section[aria-labelledby='programs-title'] .program-card:nth-child(4) .card-link", "mode": "text", "value": "Zobrazit program →" }
+      ]
+    },
+    {
+      "label": "Důvěra",
+      "items": [
+        { "label": "Číslo sekce", "selector": "section[aria-labelledby='trust-title'] .section-index", "mode": "text", "value": "06 / Důvěra" },
+        { "label": "Nadpis nad sekcí", "selector": "section[aria-labelledby='trust-title'] .section-kicker", "mode": "text", "value": "Rámec spolupráce" },
+        { "label": "Titulek sekce", "selector": "#trust-title", "mode": "text", "value": "Jasný mandát. Důvěrná místnost. Transparentní reporting." },
+        { "label": "Bod 1 – titulek", "selector": ".trust-item:nth-child(1) strong", "mode": "text", "value": "Ověřený koučovací základ" },
+        { "label": "Bod 1 – text", "selector": ".trust-item:nth-child(1) p", "mode": "text", "value": "Obě koučky ICF ACC a výcvik týmového koučování AATC." },
+        { "label": "Bod 2 – titulek", "selector": ".trust-item:nth-child(2) strong", "mode": "text", "value": "Onsite i online" },
+        { "label": "Bod 2 – text", "selector": ".trust-item:nth-child(2) p", "mode": "text", "value": "Praha a dle dohody. Online po celé ČR/SR." },
+        { "label": "Bod 3 – titulek", "selector": ".trust-item:nth-child(3) strong", "mode": "text", "value": "Smlouva a NDA" },
+        { "label": "Bod 3 – text", "selector": ".trust-item:nth-child(3) p", "mode": "text", "value": "Pravidla důvěrnosti určujeme před vstupem k týmu." },
+        { "label": "Bod 4 – titulek", "selector": ".trust-item:nth-child(4) strong", "mode": "text", "value": "Bez tajných reportů" },
+        { "label": "Bod 4 – text", "selector": ".trust-item:nth-child(4) p", "mode": "text", "value": "Sponsor dostává obraz systému, ne přepis toho, kdo co řekl." }
+      ]
+    },
+    {
+      "label": "Časté otázky – nadpis",
+      "items": [
+        { "label": "Nadpis nad sekcí", "selector": "section[aria-labelledby='faq-title'] .section-kicker", "mode": "text", "value": "Časté otázky" },
+        { "label": "Titulek sekce", "selector": "#faq-title", "mode": "text", "value": "Než rezervujete audit." },
+        { "label": "Odkaz na všechny otázky", "selector": "section[aria-labelledby='faq-title'] .text-link", "mode": "text", "value": "Všechny otázky →" }
+      ]
+    },
+    {
+      "label": "Závěrečná výzva",
+      "items": [
+        { "label": "Titulek", "selector": ".cta-band h2", "mode": "text", "value": "Nejdřív 30 minut. Pak případně návrh." },
+        { "label": "Text", "selector": ".cta-band-copy p", "mode": "text", "value": "Stačí jedna konkrétní situace z posledních dvou týdnů: porada, rozhodnutí, které se vrátilo, nebo konflikt, který šel mimo místnost." },
+        { "label": "Tlačítko", "selector": ".cta-band .button", "mode": "text", "value": "Rezervovat Team Health Audit ↗" }
+      ]
+    }
+  ],
+  "images": [
+    { "label": "Hlavní symbol", "selector": ".hero-mark", "src": "/assets/silny-tym-mark.png", "alt": "", "container": false },
+    { "label": "Portrét Martiny", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(1) .profile-visual", "src": "", "alt": "Portrét Martiny Jonášové", "container": true },
+    { "label": "Portrét Veroniky", "selector": "section[aria-labelledby='coaches-title'] .profile-card:nth-child(2) .profile-visual", "src": "", "alt": "Portrét Veroniky Vojtové", "container": true }
+  ],
+  "faq": {
+    "selector": "section[aria-labelledby='faq-title'] .faq-list",
+    "items": [
+      { "question": "Musí u toho být šéf?", "answer": "Ano, pokud je součástí týmu-klienta. Bez jasného sponsora a mandátu týmovou zakázku nezačínáme.", "open": false },
+      { "question": "Hodí se to na hybridní tým?", "answer": "Ano. Kick-off a důležité review doporučujeme onsite. Zbytek může být online, pokud má tým funkční pravidla pro vzdálenou spolupráci.", "open": false },
+      { "question": "Budete u týmu vždy obě?", "answer": "Ne nutně. Obsazení volíme podle cíle, velikosti a dynamiky zakázky. Pokud má práce ve dvojici přidanou hodnotu, navrhneme ji předem.", "open": false },
+      { "question": "Kolik to stojí?", "answer": "Cenové údaje jsou zatím otevřenou obchodní otázkou. Přesný návrh vznikne po auditu; před zveřejněním webu budou zde doplněny schválené ceny nebo rozpětí.", "open": false }
+    ]
+  },
+  "tables": [
+    {
+      "label": "Srovnání formátů",
+      "selector": ".comparison",
+      "headers": ["", "Teambuilding", "Facilitace", "1:1 koučink", "Team coaching"],
+      "rows": [
+        { "label": "Klient", "cells": ["nálada skupiny", "agenda meetingu", "jednotlivec", "tým jako systém"] },
+        { "label": "Změna", "cells": ["zážitek", "výstup ze schůzky", "osobní vhled", "vzorce spolupráce"] },
+        { "label": "Po skončení", "cells": ["vyprchá", "zbude zápis", "záleží na jednom člověku", "tým umí sám"] },
+        { "label": "Kdy dává smysl", "cells": ["odměna, stmelení", "jedno složité rozhodnutí", "růst konkrétního leadera", "opakující se dynamika, která brzdí výkon"] }
+      ]
+    }
+  ]
+}

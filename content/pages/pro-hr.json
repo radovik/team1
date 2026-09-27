@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Team coaching pro HR a nákup | Silný tým",
+    "description": "Informace pro HR a nákup: mandát, důvěrnost, reporting, GDPR a smluvní rámec team coachingu."
+  },
+  "sections": [
+    {
+      "label": "Hero",
+      "items": [
+        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "05 / Pro HR" },
+        { "label": "Nadpis nad titulkem", "selector": ".page-hero .eyebrow", "mode": "text", "value": "Mandát · důvěrnost · nákup" },
+        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Stránka pro lidi, kteří to musí *obhájit interně.*" },
+        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Jasná zakázka, transparentní reporting a žádné skryté zadání „opravte X“. Team coaching začíná tím, že je zřejmé, kdo je klient a kdo drží mandát." },
+        { "label": "Tlačítko", "selector": ".page-hero .button", "mode": "text", "value": "Probrat zadání ↗" }
+      ]
+    },
+    {
+      "label": "Podmínky spolupráce",
+      "items": [
+        { "label": "Číslo sekce", "selector": ".section:not(.section-white) .section-index", "mode": "text", "value": "01 / Co potřebujeme" },
+        { "label": "Nadpis nad sekcí", "selector": ".section:not(.section-white) .section-kicker", "mode": "text", "value": "Než vstoupíme k týmu" },
+        { "label": "Titulek sekce", "selector": ".section:not(.section-white) .section-title", "mode": "text", "value": "Čtyři podmínky, které chrání tým i sponsora." },
+        { "label": "Karta 1 – titulek", "selector": ".cards-4 .card:nth-child(1) h3", "mode": "text", "value": "Sponsor s mandátem" },
+        { "label": "Karta 1 – text", "selector": ".cards-4 .card:nth-child(1) p", "mode": "text", "value": "Někdo musí držet cíl, rozpočet a ochotu pracovat s výsledkem." },
+        { "label": "Karta 2 – titulek", "selector": ".cards-4 .card:nth-child(2) h3", "mode": "text", "value": "Celý tým-klient" },
+        { "label": "Karta 2 – text", "selector": ".cards-4 .card:nth-child(2) p", "mode": "text", "value": "Pracujeme se systémem, ne s vybranými lidmi označenými za problém." },
+        { "label": "Karta 3 – titulek", "selector": ".cards-4 .card:nth-child(3) h3", "mode": "text", "value": "Jedna jasná zakázka" },
+        { "label": "Karta 3 – text", "selector": ".cards-4 .card:nth-child(3) p", "mode": "text", "value": "Bez skrytého zadání „opravte X“ a bez paralelních očekávání." },
+        { "label": "Karta 4 – titulek", "selector": ".cards-4 .card:nth-child(4) h3", "mode": "text", "value": "Jasné vedení práce" },
+        { "label": "Karta 4 – text", "selector": ".cards-4 .card:nth-child(4) p", "mode": "text", "value": "Předem je zřejmé, zda zakázku vede Martina, Veronika, nebo obě." }
+      ]
+    },
+    {
+      "label": "Důvěrnost, GDPR a reporting",
+      "items": [
+        { "label": "Důvěrnost – titulek", "selector": ".prose h2:nth-of-type(1)", "mode": "text", "value": "Důvěrnost" },
+        { "label": "Důvěrnost – text", "selector": ".prose > p:nth-of-type(1)", "mode": "text", "value": "Sponsor dostává obraz systému a posun v domluvených metrikách. Nedostává přepis toho, kdo co řekl. Tým o pravidlech reportingu ví od začátku." },
+        { "label": "GDPR – titulek", "selector": ".prose h2:nth-of-type(2)", "mode": "text", "value": "GDPR a smluvní model" },
+        { "label": "GDPR – text", "selector": ".prose > p:nth-of-type(2)", "mode": "text", "value": "Tyto údaje musí být finálně vyjasněny před spuštěním webu a zahájením sběru osobních údajů." },
+        { "label": "Právní model – štítek", "selector": ".prose .notice-todo:nth-of-type(1) strong", "mode": "text", "value": "Právní model" },
+        { "label": "Data – štítek", "selector": ".prose .notice-todo:nth-of-type(2) strong", "mode": "text", "value": "Data a retence" },
+        { "label": "Reporting – titulek", "selector": ".prose h2:nth-of-type(3)", "mode": "text", "value": "Reporting" },
+        { "label": "Reporting – text", "selector": ".prose > p:nth-of-type(3)", "mode": "text", "value": "Dopředu stanovíme, jaké metriky sledujeme, kdo dostává závěrečný obraz a co zůstává důvěrné v týmu. Pokud sponsor potřebuje tajný report o jednotlivcích, team coaching není správný formát." },
+        { "label": "Postranní nadpis", "selector": ".sidebar-card .section-kicker", "mode": "text", "value": "Interní brief" },
+        { "label": "Postranní titulek", "selector": ".sidebar-card h2", "mode": "text", "value": "Co potřebujete obhájit?" },
+        { "label": "Postranní text", "selector": ".sidebar-card > p:last-of-type", "mode": "text", "value": "V auditu oddělíme cíl týmu, očekávání sponsora a vhodný formát práce." },
+        { "label": "Postranní tlačítko", "selector": ".sidebar-card .button", "mode": "text", "value": "Rezervovat audit ↗" }
+      ]
+    },
+    {
+      "label": "Závěrečná výzva",
+      "items": [
+        { "label": "Titulek", "selector": ".cta-band h2", "mode": "text", "value": "Potřebujete nejdřív sladit interní zadání?" },
+        { "label": "Text", "selector": ".cta-band-copy p", "mode": "text", "value": "Začněte jednou konkrétní situací a tím, kdo má mandát něco změnit." },
+        { "label": "Tlačítko", "selector": ".cta-band .button", "mode": "text", "value": "Probrat zadání ↗" }
+      ]
+    }
+  ]
+}

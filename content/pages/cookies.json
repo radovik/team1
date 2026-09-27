@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Cookies | Silný tým",
+    "description": "Informace o cookies používaných webem Silný tým."
+  },
+  "sections": [
+    {
+      "label": "Hero",
+      "items": [
+        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "Právní informace" },
+        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Informace o *cookies.*" },
+        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Současná statická verze webu nepoužívá analytické, marketingové ani personalizační cookies." }
+      ]
+    },
+    {
+      "label": "Obsah stránky",
+      "items": [
+        { "label": "Technické fungování – titulek", "selector": ".prose h2:nth-of-type(1)", "mode": "text", "value": "Technické fungování" },
+        { "label": "Technické fungování – text", "selector": ".prose > p:nth-of-type(1)", "mode": "text", "value": "Web je vytvořený jako statické HTML, CSS a JavaScript bez přihlášení, uživatelských účtů a analytických nástrojů. Samotná prezentace neukládá cookies." },
+        { "label": "Budoucí rozšíření – titulek", "selector": ".prose h2:nth-of-type(2)", "mode": "text", "value": "Před budoucím rozšířením" },
+        { "label": "Budoucí rozšíření – text", "selector": ".prose > p:nth-of-type(2)", "mode": "text", "value": "Pokud bude doplněn rezervační kalendář, analytika, vložené video nebo jiná služba třetí strany, musí se tato stránka aktualizovat a podle použité technologie případně doplnit souhlasový mechanismus." },
+        { "label": "Otevřený úkol", "selector": ".notice-todo", "mode": "inline", "value": "**Před spuštěním integrací**\nOvěřit cookies a přenos dat u zvoleného rezervačního kalendáře a formulářové služby." }
+      ]
+    }
+  ]
+}

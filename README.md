@@ -1,6 +1,6 @@
 # Silný tým
 
-Český více-stránkový web pro společnou B2B praxi Martiny Jonášové a Veroniky Vojtové. Web používá pouze HTML, CSS a vanilla JavaScript. Nemá build krok, backend ani externí závislosti.
+Český více-stránkový web pro společnou B2B praxi Martiny Jonášové a Veroniky Vojtové. Veřejná část používá pouze HTML, CSS, JSON a vanilla JavaScript bez build kroku. Dvě funkce v `api/` zajišťují GitHub OAuth pro Decap CMS.
 
 ## Struktura webu
 
@@ -16,11 +16,15 @@
 - `/team-health-scorecard/` — interaktivní scorecard
 - `/soukromi/` a `/cookies/` — právní stránky k doplnění
 
-Sdílený design je v `styles.css`, interakce v `script.js` a všechny otevřené obsahové nebo obchodní otázky jsou centralizované v `content-todos.js`. Logo je uložené jako `assets/silny-tym-mark.png`.
+Sdílený design je v `styles.css`, interakce a načítání obsahu v `script.js` a všechny otevřené obsahové nebo obchodní otázky jsou centralizované v `content-todos.js`. Logo je uložené jako `assets/silny-tym-mark.png`.
 
 ## Editace obsahu
 
-Každá stránka má vlastní `index.html` ve své složce. Před veřejným spuštěním projděte viditelné žluté TODO bloky a odpovídající položky v `content-todos.js`. Zejména je nutné doplnit:
+Každá stránka má vlastní `index.html` ve své složce a odpovídající JSON v `content/pages/`. HTML obsahuje bezpečnou výchozí kopii, která zůstane viditelná, když se JSON nepodaří načíst. Po načtení stránky `script.js` nahradí editovatelné texty daty z JSON.
+
+Obsah se spravuje na `https://team1-beige.vercel.app/admin/`. Decap CMS používá GitHub backend a ukládá změny přímo jako commity do větve `main`; redakční workflow není zapnuté. Nahrané obrázky ukládá do `img/uploads/` a ve veřejném obsahu používá cesty `/img/uploads/...`.
+
+Před veřejným spuštěním projděte viditelné žluté TODO bloky a odpovídající položky v `content-todos.js`. Zejména je nutné doplnit:
 
 - ceny;
 - smluvní a GDPR model;
@@ -44,18 +48,15 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Deploy to Cloudflare Pages
+Lokální server načte stránky i jejich JSON. Přihlášení do `/admin` funguje pouze na nasazení ve Vercelu, protože OAuth callback a povolený origin používají produkční adresu.
 
-1. Push this repository to GitHub or GitLab.
-2. In Cloudflare, open **Workers & Pages**, choose **Create**, then **Pages** and connect the repository.
-3. Select the repository and use these build settings:
-   - Framework preset: **None**
-   - Build command: leave empty
-   - Build output directory: `/`
-4. Save and deploy.
+## Nasazení na Vercel
 
-Cloudflare Pages zveřejní kořenové `index.html` a adresářové stránky bez build kroku. Další push do produkční větve web automaticky aktualizuje.
+1. Pushněte větev `main` do GitHub repozitáře `radovik/team1`.
+2. Vercel projekt musí zůstat propojený s tímto repozitářem a publikovat kořen repozitáře bez build příkazu.
+3. V nastavení Vercelu musí být pro produkční prostředí nastavené `GITHUB_CLIENT_ID` a `GITHUB_CLIENT_SECRET`. Jejich hodnoty nikdy neukládejte do repozitáře.
+4. Callback GitHub OAuth aplikace musí zůstat `https://team1-beige.vercel.app/api/callback`.
 
-Nejsou potřeba proměnné prostředí, secrets, API klíče, npm balíčky ani serverová konfigurace.
+Vercel zveřejní statické stránky a serverless funkce z `api/`. Další push do `main` spustí nové nasazení. Nejsou potřeba npm balíčky ani lokální `.env` soubor.
 
 Anglická verze zatím není součástí webu. Podle obsahové specifikace má vzniknout až po potvrzení reálné obchodní potřeby a jazykového rozsahu obou kouček.

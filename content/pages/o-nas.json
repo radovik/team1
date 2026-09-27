@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Martina Jonášová & Veronika Vojtová | Silný tým",
+    "description": "Martina Jonášová a Veronika Vojtová — dvě team koučky, jedna společná praxe Silný tým."
+  },
+  "sections": [
+    {
+      "label": "Hero",
+      "items": [
+        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "06 / O nás" },
+        { "label": "Nadpis nad titulkem", "selector": ".page-hero .eyebrow", "mode": "text", "value": "Společná praxe" },
+        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Dvě koučky. Jedna zakázka: aby tým fungoval *bez nás.*" },
+        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Silný tým není katalog dvou osobních značek. Je to společná praxe pro práci s týmy ve firmách. Spojuje nás stejný základ: klientem je tým jako celek, ne „problémový člověk“ uvnitř něj." }
+      ]
+    },
+    {
+      "label": "Profily kouček",
+      "items": [
+        { "label": "Martina – jméno", "selector": ".profile-card:nth-child(1) h2", "mode": "text", "value": "Martina Jonášová" },
+        { "label": "Martina – role", "selector": ".profile-card:nth-child(1) .profile-role", "mode": "text", "value": "Team coach · ACC" },
+        { "label": "Martina – profil", "selector": ".profile-card:nth-child(1) .profile-copy > p:nth-of-type(2)", "mode": "text", "value": "Martina pracuje s týmy jako se systémem a opírá se o výcvik týmového koučování certifikovaný ICF jako AATC." },
+        { "label": "Martina – kvalifikace 1", "selector": ".profile-card:nth-child(1) .credential:nth-child(1)", "mode": "text", "value": "ICF ACC" },
+        { "label": "Martina – kvalifikace 2", "selector": ".profile-card:nth-child(1) .credential:nth-child(2)", "mode": "text", "value": "AATC" },
+        { "label": "Martina – otevřený profil štítek", "selector": ".profile-card:nth-child(1) .notice-todo:nth-of-type(2) strong", "mode": "text", "value": "Profil k doplnění" },
+        { "label": "Martina – otevřené kvalifikace štítek", "selector": ".profile-card:nth-child(1) .notice-todo:nth-of-type(3) strong", "mode": "text", "value": "Kvalifikace" },
+        { "label": "Veronika – jméno", "selector": ".profile-card:nth-child(2) h2", "mode": "text", "value": "Veronika Vojtová" },
+        { "label": "Veronika – role", "selector": ".profile-card:nth-child(2) .profile-role", "mode": "text", "value": "Team coach · ACC · HR perspektiva" },
+        { "label": "Veronika – profil", "selector": ".profile-card:nth-child(2) .profile-copy > p:nth-of-type(2)", "mode": "text", "value": "Veronika se přibližně osmnáct let pohybuje v řízení lidských zdrojů. Vystudovala mediální a sociální komunikaci a svou praxi rozšířila o koučovací výcviky pro jednotlivce, skupiny a týmy." },
+        { "label": "Veronika – kvalifikace 1", "selector": ".profile-card:nth-child(2) .credential:nth-child(1)", "mode": "text", "value": "ICF ACC" },
+        { "label": "Veronika – kvalifikace 2", "selector": ".profile-card:nth-child(2) .credential:nth-child(2)", "mode": "text", "value": "AATC · Akademie Libchavy" },
+        { "label": "Veronika – kvalifikace 3", "selector": ".profile-card:nth-child(2) .credential:nth-child(3)", "mode": "text", "value": "Skupinový koučink" },
+        { "label": "Veronika – kvalifikace 4", "selector": ".profile-card:nth-child(2) .credential:nth-child(4)", "mode": "text", "value": "Solution Focus" },
+        { "label": "Veronika – kvalifikace 5", "selector": ".profile-card:nth-child(2) .credential:nth-child(5)", "mode": "text", "value": "18 let v HR" },
+        { "label": "Fotografie – štítek", "selector": ".profile-grid + .notice-todo strong", "mode": "text", "value": "Fotografie" }
+      ]
+    },
+    {
+      "label": "Proč dvě koučky",
+      "items": [
+        { "label": "Číslo sekce", "selector": ".section-white .section-index", "mode": "text", "value": "01 / Proč dvě" },
+        { "label": "Nadpis nad sekcí", "selector": ".section-white .section-kicker", "mode": "text", "value": "Doplňující se perspektivy" },
+        { "label": "Titulek sekce", "selector": ".section-white .section-title", "mode": "text", "value": "Klient si nekupuje Martinu versus Veroniku." },
+        { "label": "Úvod sekce", "selector": ".section-white .section-heading .lede", "mode": "text", "value": "Dostává doporučení, jaké obsazení dává smysl pro jeho tým." },
+        { "label": "Karta 1 – titulek", "selector": ".section-white .card:nth-child(1) h3", "mode": "text", "value": "Více než jeden úhel pohledu" },
+        { "label": "Karta 1 – text", "selector": ".section-white .card:nth-child(1) p", "mode": "text", "value": "Dvě profesní perspektivy při zachování jednoho společného rámce práce." },
+        { "label": "Karta 2 – titulek", "selector": ".section-white .card:nth-child(2) h3", "mode": "text", "value": "Možnost práce ve dvojici" },
+        { "label": "Karta 2 – text", "selector": ".section-white .card:nth-child(2) p", "mode": "text", "value": "U náročnějších situací lze sledovat dění v celém systému z více míst." },
+        { "label": "Karta 3 – titulek", "selector": ".section-white .card:nth-child(3) h3", "mode": "text", "value": "Kapacita společné značky" },
+        { "label": "Karta 3 – text", "selector": ".section-white .card:nth-child(3) p", "mode": "text", "value": "Větší kapacita pro souběžné zakázky a zastupitelnost." },
+        { "label": "Otevřený model – štítek", "selector": ".section-white > .container > .notice-todo strong", "mode": "text", "value": "Strategický model k potvrzení" }
+      ]
+    },
+    {
+      "label": "Kdy nejsme vhodná volba",
+      "items": [
+        { "label": "Číslo sekce", "selector": ".section-white + .section .section-index", "mode": "text", "value": "02 / Fit" },
+        { "label": "Nadpis nad sekcí", "selector": ".section-white + .section .section-kicker", "mode": "text", "value": "Jak poznáte, že vám nesedíme" },
+        { "label": "Titulek sekce", "selector": ".section-white + .section .section-title", "mode": "text", "value": "Nejsme správná volba pro každé očekávání." },
+        { "label": "Bod 1", "selector": ".signal-list li:nth-child(1)", "mode": "numbered", "prefix": "01", "value": "Čekáte motivační zásah a silný osobní příběh jako produkt." },
+        { "label": "Bod 2", "selector": ".signal-list li:nth-child(2)", "mode": "numbered", "prefix": "02", "value": "Chcete, abychom týmu řekly, co si o něm myslíte vy." },
+        { "label": "Bod 3", "selector": ".signal-list li:nth-child(3)", "mode": "numbered", "prefix": "03", "value": "Hledáte pouze dlouhodobé 1:1 bez týmové zakázky." }
+      ]
+    },
+    {
+      "label": "Závěrečná výzva",
+      "items": [
+        { "label": "Titulek", "selector": ".cta-band h2", "mode": "text", "value": "Nejdřív potřeba týmu. Potom vhodné obsazení." },
+        { "label": "Text", "selector": ".cta-band-copy p", "mode": "text", "value": "Audit neslouží k výběru osobní značky. Slouží k pochopení dynamiky a dalšího kroku." },
+        { "label": "Tlačítko", "selector": ".cta-band .button", "mode": "text", "value": "Rezervovat audit ↗" }
+      ]
+    }
+  ],
+  "images": [
+    { "label": "Portrét Martiny", "selector": ".profile-card:nth-child(1) .profile-visual", "src": "", "alt": "Portrét Martiny Jonášové", "container": true },
+    { "label": "Portrét Veroniky", "selector": ".profile-card:nth-child(2) .profile-visual", "src": "", "alt": "Portrét Veroniky Vojtové", "container": true }
+  ]
+}

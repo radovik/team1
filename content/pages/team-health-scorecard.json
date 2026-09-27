@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "title": "Team Health Scorecard | Silný tým",
+    "description": "12 otázek pro rychlý obraz toho, jak tým rozhoduje, nese nesouhlas a drží dohody."
+  },
+  "sections": [
+    {
+      "label": "Hero",
+      "items": [
+        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "Team Health Scorecard" },
+        { "label": "Nadpis nad titulkem", "selector": ".page-hero .eyebrow", "mode": "text", "value": "12 otázek · 8 minut" },
+        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Obraz týmu. Ne *osobnosti.*" },
+        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Scorecard neměří, kdo je „dobrý člověk“. Měří, jak tým rozhoduje, nese nesouhlas a drží dohodu po poradě. Odpovídejte podle toho, co se reálně dělo v posledních čtyřech týdnech." }
+      ]
+    },
+    {
+      "label": "Instrukce a škála",
+      "items": [
+        { "label": "Pracovní verze – štítek", "selector": ".section .notice-todo strong", "mode": "text", "value": "Pracovní verze" },
+        { "label": "Levá část škály", "selector": ".score-legend span:nth-child(1)", "mode": "text", "value": "1 · téměř nikdy" },
+        { "label": "Pravá část škály", "selector": ".score-legend span:nth-child(2)", "mode": "text", "value": "5 · téměř vždy" }
+      ]
+    },
+    {
+      "label": "Rozhodování",
+      "items": [
+        { "label": "Titulek skupiny", "selector": ".score-group:nth-child(1) h2", "mode": "text", "value": "Rozhodování" },
+        { "label": "Počet otázek", "selector": ".score-group:nth-child(1) .score-group-header span", "mode": "text", "value": "4 otázky" },
+        { "label": "Otázka 1", "selector": ".score-group:nth-child(1) .score-question:nth-child(2) p", "mode": "text", "value": "Po poradě je všem jasné, co bylo rozhodnuto a co ještě otevřené." },
+        { "label": "Otázka 2", "selector": ".score-group:nth-child(1) .score-question:nth-child(3) p", "mode": "text", "value": "Uzavřená rozhodnutí se neotevírají znovu bez nové informace." },
+        { "label": "Otázka 3", "selector": ".score-group:nth-child(1) .score-question:nth-child(4) p", "mode": "text", "value": "Tým ví, kdo má pro konkrétní typ rozhodnutí poslední slovo." },
+        { "label": "Otázka 4", "selector": ".score-group:nth-child(1) .score-question:nth-child(5) p", "mode": "text", "value": "Porady končí rozhodnutím nebo jasným dalším krokem, ne neurčitým „vrátíme se k tomu“." }
+      ]
+    },
+    {
+      "label": "Nesouhlas a konflikt",
+      "items": [
+        { "label": "Titulek skupiny", "selector": ".score-group:nth-child(2) h2", "mode": "text", "value": "Nesouhlas a konflikt" },
+        { "label": "Počet otázek", "selector": ".score-group:nth-child(2) .score-group-header span", "mode": "text", "value": "4 otázky" },
+        { "label": "Otázka 1", "selector": ".score-group:nth-child(2) .score-question:nth-child(2) p", "mode": "text", "value": "Lidé vysloví nesouhlas dřív, než se rozhodnutí přesune do kuloárů." },
+        { "label": "Otázka 2", "selector": ".score-group:nth-child(2) .score-question:nth-child(3) p", "mode": "text", "value": "Obtížná témata se řeší se správnými lidmi ve stejné místnosti." },
+        { "label": "Otázka 3", "selector": ".score-group:nth-child(2) .score-question:nth-child(4) p", "mode": "text", "value": "Leader unese oponující názor, aniž by tým trestal za otevřenost." },
+        { "label": "Otázka 4", "selector": ".score-group:nth-child(2) .score-question:nth-child(5) p", "mode": "text", "value": "V hybridním týmu mají vzdálení členové reálný prostor ovlivnit debatu." }
+      ]
+    },
+    {
+      "label": "Ownership a dohody",
+      "items": [
+        { "label": "Titulek skupiny", "selector": ".score-group:nth-child(3) h2", "mode": "text", "value": "Ownership a dohody" },
+        { "label": "Počet otázek", "selector": ".score-group:nth-child(3) .score-group-header span", "mode": "text", "value": "4 otázky" },
+        { "label": "Otázka 1", "selector": ".score-group:nth-child(3) .score-question:nth-child(2) p", "mode": "text", "value": "Každý závazek má po poradě jasného vlastníka a termín." },
+        { "label": "Otázka 2", "selector": ".score-group:nth-child(3) .score-question:nth-child(3) p", "mode": "text", "value": "Tým kontroluje plnění dohod bez toho, aby vše musel hlídat šéf." },
+        { "label": "Otázka 3", "selector": ".score-group:nth-child(3) .score-question:nth-child(4) p", "mode": "text", "value": "Problém se eskaluje včas, ne až ve chvíli, kdy už ohrožuje výsledek." },
+        { "label": "Otázka 4", "selector": ".score-group:nth-child(3) .score-question:nth-child(5) p", "mode": "text", "value": "Tým umí sám pojmenovat a opravit způsob spolupráce, který přestal fungovat." },
+        { "label": "Tlačítko výsledku", "selector": ".scorecard > .form-submit button", "mode": "text", "value": "Zobrazit obraz týmu →" }
+      ]
+    },
+    {
+      "label": "Výsledek",
+      "items": [
+        { "label": "Nadpis nad výsledkem", "selector": ".score-result .section-kicker", "mode": "text", "value": "Orientační výsledek" },
+        { "label": "Titulek výsledku", "selector": ".score-result h2", "mode": "text", "value": "Tři oblasti fungování týmu" },
+        { "label": "Oblast 1", "selector": ".result-item:nth-child(1) span", "mode": "text", "value": "Rozhodování" },
+        { "label": "Oblast 2", "selector": ".result-item:nth-child(2) span", "mode": "text", "value": "Nesouhlas" },
+        { "label": "Oblast 3", "selector": ".result-item:nth-child(3) span", "mode": "text", "value": "Ownership" },
+        { "label": "Vysvětlení", "selector": ".score-result > p:last-of-type", "mode": "text", "value": "Výsledek není diagnóza ani hodnocení jednotlivců. Je to podklad pro rozhovor o tom, co se v týmu opakuje. Čím nižší skóre, tím víc prostoru je pro konkrétní změnu společných pravidel." },
+        { "label": "Tlačítko", "selector": ".score-result .button", "mode": "text", "value": "Probrat výsledek v auditu ↗" }
+      ]
+    },
+    {
+      "label": "Závěrečná výzva",
+      "items": [
+        { "label": "Titulek", "selector": ".cta-band h2", "mode": "text", "value": "Číslo samo tým nezmění." },
+        { "label": "Text", "selector": ".cta-band-copy p", "mode": "text", "value": "Pomůže ale zpřesnit rozhovor. V auditu se podíváme na jednu situaci, která se za skóre skrývá." },
+        { "label": "Tlačítko", "selector": ".cta-band .button", "mode": "text", "value": "Rezervovat audit ↗" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "Výsledky team coachingu | Silný tým",
+    "description": "Jak Silný tým měří změnu v rozhodování, konfliktu a spolupráci leadership týmu."
+  },
+  "sections": [
+    {
+      "label": "Hero",
+      "items": [
+        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "04 / Výsledky" },
+        { "label": "Nadpis nad titulkem", "selector": ".page-hero .eyebrow", "mode": "text", "value": "Měříme změnu chování" },
+        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Výsledek není dobrá nálada na konci setkání. Je to jiné chování *o čtyři týdny později.*" },
+        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Ještě před startem vybíráme se sponsorem 2–3 signály, podle kterých poznáme posun. Nehodnotíme „energii v místnosti“." }
+      ]
+    },
+    {
+      "label": "Jak měříme",
+      "items": [
+        { "label": "Číslo sekce", "selector": ".section:not(.section-white) .section-index", "mode": "text", "value": "01 / Jak měříme" },
+        { "label": "Nadpis nad sekcí", "selector": ".section:not(.section-white) .section-kicker", "mode": "text", "value": "Konkrétní proxy" },
+        { "label": "Titulek sekce", "selector": ".section:not(.section-white) .section-title", "mode": "text", "value": "Metrika má sledovat týmovou práci, ne naši přítomnost." },
+        { "label": "Karta 1 – číslo", "selector": ".cards-4 .card:nth-child(1) .card-number", "mode": "text", "value": "01" },
+        { "label": "Karta 1 – titulek", "selector": ".cards-4 .card:nth-child(1) h3", "mode": "text", "value": "Čas rozhodnutí" },
+        { "label": "Karta 1 – text", "selector": ".cards-4 .card:nth-child(1) p", "mode": "text", "value": "Jak dlouho trvá, než tým uzavře téma, které vyžaduje společné rozhodnutí." },
+        { "label": "Karta 2 – číslo", "selector": ".cards-4 .card:nth-child(2) .card-number", "mode": "text", "value": "02" },
+        { "label": "Karta 2 – titulek", "selector": ".cards-4 .card:nth-child(2) h3", "mode": "text", "value": "Znovuotevřená témata" },
+        { "label": "Karta 2 – text", "selector": ".cards-4 .card:nth-child(2) p", "mode": "text", "value": "Kolik rozhodnutí se vrací do e-mailu, chatu nebo další porady bez nové informace." },
+        { "label": "Karta 3 – číslo", "selector": ".cards-4 .card:nth-child(3) .card-number", "mode": "text", "value": "03" },
+        { "label": "Karta 3 – titulek", "selector": ".cards-4 .card:nth-child(3) h3", "mode": "text", "value": "Pulz bezpečí" },
+        { "label": "Karta 3 – text", "selector": ".cards-4 .card:nth-child(3) p", "mode": "text", "value": "Zda lidé vysloví nesouhlas včas a ve stejné místnosti." },
+        { "label": "Karta 4 – číslo", "selector": ".cards-4 .card:nth-child(4) .card-number", "mode": "text", "value": "04" },
+        { "label": "Karta 4 – titulek", "selector": ".cards-4 .card:nth-child(4) h3", "mode": "text", "value": "Kvalita porady" },
+        { "label": "Karta 4 – text", "selector": ".cards-4 .card:nth-child(4) p", "mode": "text", "value": "Jasnost rozhodnutí, ownership a uzavírání dohod." }
+      ]
+    },
+    {
+      "label": "Případové studie",
+      "items": [
+        { "label": "Titulek", "selector": ".empty-case h2", "mode": "text", "value": "Případové studie zatím nezveřejňujeme." },
+        { "label": "Text", "selector": ".empty-case > p", "mode": "text", "value": "Na této stránce budou pouze reálné příběhy se souhlasem klientů a jasným označením, kdo zakázku vedl. Žádné modelové příběhy vydávané za reference." },
+        { "label": "Štítek otevřeného úkolu", "selector": ".empty-case .notice-todo strong", "mode": "text", "value": "Obsah k doplnění" }
+      ]
+    },
+    {
+      "label": "Závěrečná výzva",
+      "items": [
+        { "label": "Titulek", "selector": ".cta-band h2", "mode": "text", "value": "Co by bylo smysluplné měřit u vás?" },
+        { "label": "Text", "selector": ".cta-band-copy p", "mode": "text", "value": "Nejdřív potřebujeme pochopit, která opakující se dynamika stojí váš tým nejvíc času nebo důvěry." },
+        { "label": "Tlačítko", "selector": ".cta-band .button", "mode": "text", "value": "Probrat měření v auditu ↗" }
+      ]
+    }
+  ],
+  "images": [
+    { "label": "Značka u případových studií", "selector": ".empty-case img", "src": "/assets/silny-tym-mark.png", "alt": "", "container": false }
+  ]
+}

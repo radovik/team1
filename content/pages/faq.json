@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "title": "Časté otázky o team coachingu | Silný tým",
+    "description": "Odpovědi na časté otázky o team coachingu, zapojení šéfa, práci dvou kouček a rozsahu programu."
+  },
+  "sections": [
+    {
+      "label": "Hero",
+      "items": [
+        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "07 / FAQ" },
+        { "label": "Nadpis nad titulkem", "selector": ".page-hero .eyebrow", "mode": "text", "value": "Před prvním hovorem" },
+        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Jasné odpovědi bez koučovací *mlhy.*" },
+        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Co team coaching je, kde má hranice a jak vypadá role sponsora, šéfa i dvou kouček." }
+      ]
+    },
+    {
+      "label": "Poznámka k ceníku",
+      "items": [
+        { "label": "Poznámka", "selector": ".section-white .notice-todo", "mode": "inline", "value": "**Ceník k potvrzení**\nCena auditu, diagnostiky a 90denního programu musí být doplněna před spuštěním." }
+      ]
+    },
+    {
+      "label": "Závěrečná výzva",
+      "items": [
+        { "label": "Titulek", "selector": ".cta-band h2", "mode": "text", "value": "Vaše otázka je konkrétnější?" },
+        { "label": "Text", "selector": ".cta-band-copy p", "mode": "text", "value": "Stačí popsat jednu situaci z posledních dvou týdnů. Audit není prodejní prezentace." },
+        { "label": "Tlačítko", "selector": ".cta-band .button", "mode": "text", "value": "Zeptat se v auditu ↗" }
+      ]
+    }
+  ],
+  "faq": {
+    "selector": ".faq-list",
+    "items": [
+      { "question": "Je to teambuilding?", "answer": "Ne. Teambuilding typicky pracuje se zážitkem a stmelením. Team coaching pracuje s opakujícími se vzorci rozhodování, konfliktu a odpovědnosti.", "open": true },
+      { "question": "Budete pracovat s týmem obě?", "answer": "Podle zakázky. Nejdřív určujeme, co tým potřebuje. Potom navrhneme jednu vedoucí koučku, nebo práci ve dvojici, pokud pro ni existuje konkrétní důvod.", "open": false },
+      { "question": "Můžeme si vybrat konkrétní koučku?", "answer": "Ano, preference je relevantní. Zároveň vám řekneme, pokud podle cíle zakázky doporučujeme jiné obsazení nebo práci ve dvojici.", "open": false },
+      { "question": "Je to terapie?", "answer": "Ne. Když se objeví individuální téma, které nepatří do týmové práce, pojmenujeme hranici a doporučíme vhodný další postup.", "open": false },
+      { "question": "Můžeme začít workshopem na jeden den?", "answer": "Jeden den může otevřít téma. Sám o sobě obvykle nezmění rytmus týmu. Pokud chcete pouze workshop, nebudeme ho vydávat za team coaching.", "open": false },
+      { "question": "Děláte i 1:1?", "answer": "V rámci této značky je 1:1 pouze doplněk týmové zakázky, typicky se sponsorem. Individuální služby jednotlivých kouček zůstávají mimo značku Silný tým.", "open": false },
+      { "question": "Musí u toho být šéf?", "answer": "Ano, pokud je součástí týmu-klienta. Bez jasného sponsora a mandátu týmovou zakázku nezačínáme.", "open": false },
+      { "question": "Hodí se team coaching na hybridní tým?", "answer": "Ano. Kick-off a důležité review doporučujeme onsite. Zbytek může být online, pokud má tým funkční pravidla pro vzdálenou spolupráci.", "open": false },
+      { "question": "Kolik to stojí?", "answer": "Ceny a cenová rozpětí ještě čekají na obchodní rozhodnutí. Přesné číslo se vždy odvíjí od velikosti týmu, rozsahu onsite práce a obsazení zakázky.", "open": false }
+    ]
+  }
+}
