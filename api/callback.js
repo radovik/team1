@@ -28,21 +28,35 @@ export default async function handler(req, res) {
     : JSON.stringify(data);
   const status = ok ? "success" : "error";
   const message = `authorization:github:${status}:${payload}`;
+  const serializedMessage = JSON.stringify(message).replace(/</g, "\\u003c");
+  const serializedOrigin = JSON.stringify(origin);
 
   res.setHeader("Content-Type", "text/html; charset=utf-8");
   res.status(200).send(`<!DOCTYPE html>
-<html><body>
+<html lang="cs"><body>
 <script>
 (function () {
-  function receive(e) {
-    if (e.data === "authorizing:github") {
-      e.source.postMessage(${JSON.stringify(message)}, ${JSON.stringify(origin)});
-    }
+  var openerOrigin = ${serializedOrigin};
+
+  if (!window.opener) {
+    document.body.textContent = "Přihlašovací okno ztratilo spojení s administrací.";
+    return;
   }
+
+  function receive(event) {
+    if (event.source !== window.opener || event.origin !== openerOrigin) {
+      return;
+    }
+
+    window.opener.postMessage(${serializedMessage}, event.origin);
+    window.removeEventListener("message", receive, false);
+    window.setTimeout(function () { window.close(); }, 250);
+  }
+
   window.addEventListener("message", receive, false);
-  window.opener.postMessage(${JSON.stringify(message)}, ${JSON.stringify(origin)});
+  window.opener.postMessage("authorizing:github", openerOrigin);
 })();
 </script>
-<p>Přihlášení dokončeno. Toto okno můžete zavřít.</p>
+<p>Dokončuji přihlášení…</p>
 </body></html>`);
 }
