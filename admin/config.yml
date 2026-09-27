@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: radovik/team1
+  branch: main
+  base_url: https://team1-beige.vercel.app
+  auth_endpoint: api/auth
+
+site_url: https://team1-beige.vercel.app
+display_url: https://team1-beige.vercel.app
+logo_url: https://team1-beige.vercel.app/assets/silny-tym-mark.png
+
+media_folder: img/uploads
+public_folder: /img/uploads
+
+locale: cs
+
+collections:
+  - name: pages
+    label: Stránky
+    label_singular: Stránka
+    folder: content/pages
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: Název
+        name: title
+        widget: string
+      - label: Popis
+        name: description
+        widget: text
+        required: false
+      - label: Obsah
+        name: body
+        widget: markdown
