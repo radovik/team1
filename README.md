@@ -18,6 +18,8 @@
 
 Sdílený design je v `styles.css`, interakce a načítání obsahu v `script.js` a všechny otevřené obsahové nebo obchodní otázky jsou centralizované v `content-todos.js`. Logo je uložené jako `assets/silny-tym-mark.png`.
 
+Vzhled vychází z exportu Stitch: teplé světlé plochy, bronzové akcenty a písmo Plus Jakarta Sans načítané standardním odkazem z Google Fonts (s lokálním systémovým fallbackem). Barvy a další sdílené tokeny upravujte v `:root` v `styles.css`. Ikony jsou vložené SVG, bez Tailwind runtime nebo knihovny ikon. Úvodní animace používají CSS, odhalování karet `IntersectionObserver`; nastavení sníženého pohybu animace vypíná.
+
 ## Editace obsahu
 
 Každá stránka má vlastní `index.html` ve své složce a odpovídající JSON v `content/pages/`. HTML obsahuje bezpečnou výchozí kopii, která zůstane viditelná, když se JSON nepodaří načíst. Po načtení stránky `script.js` nahradí editovatelné texty daty z JSON.

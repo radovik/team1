@@ -103,6 +103,59 @@ if (scorecardForm) {
   });
 }
 
+const diagnostic = document.querySelector('[data-diagnostic]');
+const diagnosticCount = document.querySelector('[data-diagnostic-count]');
+if (diagnostic) {
+  diagnostic.addEventListener('click', (event) => {
+    const card = event.target.closest('.symptom-card');
+    if (!card || !diagnostic.contains(card)) return;
+    const selected = card.getAttribute('aria-pressed') === 'true';
+    card.setAttribute('aria-pressed', String(!selected));
+    if (diagnosticCount) {
+      const count = diagnostic.querySelectorAll('[aria-pressed="true"]').length;
+      const total = diagnostic.querySelectorAll('.symptom-card').length;
+      diagnosticCount.textContent = `${count}/${total}`;
+    }
+  });
+}
+
+// Enhance visible HTML only; unsupported observers and reduced motion never hide cards.
+const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+let revealObserver;
+function initScrollReveals() {
+  if (!('IntersectionObserver' in window) || motionPreference.matches) return;
+  if (!revealObserver) {
+    revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.08 });
+  }
+
+  document.querySelectorAll('.card, .step, .profile-card, .trust-item, .symptom-card, .faq-list details').forEach((card) => {
+    if (card.classList.contains('reveal-pending')) return;
+    card.classList.add('reveal-pending');
+    if (card.getBoundingClientRect().top < window.innerHeight) {
+      card.classList.add('is-visible');
+    } else {
+      revealObserver.observe(card);
+    }
+  });
+}
+
+motionPreference.addEventListener('change', () => {
+  if (motionPreference.matches) {
+    revealObserver?.disconnect();
+    document.querySelectorAll('.reveal-pending').forEach((card) => {
+      card.classList.remove('reveal-pending', 'is-visible');
+    });
+  } else {
+    initScrollReveals();
+  }
+});
+
 function appendInlineContent(element, value) {
   const tokens = String(value ?? '').split(/(\*\*[^*]+\*\*|\*[^*]+\*|\n)/g);
   element.replaceChildren();
@@ -158,6 +211,13 @@ function applyContentItem(root, item) {
       return;
     }
     if (item.mode === 'numbered') {
+      const copy = element.querySelector('.symptom-copy');
+      const prefix = element.querySelector('.symptom-number');
+      if (copy && prefix) {
+        copy.textContent = item.value;
+        prefix.textContent = item.prefix ?? '';
+        return;
+      }
       element.replaceChildren();
       const number = document.createElement('span');
       number.textContent = item.prefix ?? '';
@@ -286,4 +346,5 @@ async function loadPageContent() {
   }
 }
 
-loadPageContent();
+initScrollReveals();
+loadPageContent().then(initScrollReveals);
