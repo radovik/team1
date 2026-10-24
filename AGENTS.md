@@ -4,7 +4,7 @@
 
 Place this file in the root of the target Silný tým repository. It applies to the entire tracked project. Work from the repository root. The nested, untracked `team1/` directory is not part of the tracked application; do not edit it or add it to a commit unless explicitly instructed.
 
-**The current deliverable is a working draft that the two coaches can complete in Decap CMS. This is not a production launch.**
+**The current deliverable is a working draft that the two coaches can complete in CMS. Sveltia is the primary interface; Decap remains a fallback. This is not a production launch.**
 
 - Visible editorial notes about missing copy, photographs, prices, credentials, and operational decisions are intentional and explicitly required by the user in this phase.
 - Keep these notes beside the relevant content, distinguish them visually, and let the coaches edit them and explicitly mark them as resolved in CMS.
@@ -29,7 +29,7 @@ Expected baseline from the supplied materials; verify it against the actual repo
 
 - A Czech multipage website using semantic HTML, shared CSS, and vanilla JavaScript.
 - No framework, bundler, build step, package manager, or local dependencies.
-- Decap CMS in `admin/`, loaded from unpkg and configured in YAML.
+- Sveltia CMS at `/admin/`, loaded from unpkg; Decap fallback at `/admin/decap.html`. Both share `admin/config.yml` and the existing GitHub OAuth functions. Review the pinned Sveltia version regularly for fixes.
 - Vercel serverless functions in `api/` for GitHub OAuth.
 - Existing reference URL: `https://team1-beige.vercel.app/`.
 
@@ -53,7 +53,7 @@ Local preview: `http://localhost:8000`. The Python server serves HTML and JSON b
 | `script.js` | Navigation, JSON content, contact form, and reflection questionnaire |
 | `content-todos.js` | Existing unresolved-task registry; verify the actual implementation |
 | `content/pages/` | JSON content for the 12 public routes |
-| `admin/index.html`, `admin/config.yml` | Decap CMS and its content model |
+| `admin/index.html`, `admin/decap.html`, `admin/config.yml` | Sveltia CMS, Decap fallback and their shared content model |
 | `assets/` | Existing brand assets |
 | `img/uploads/` | Uploaded photographs and other CMS media |
 | `api/auth.js`, `api/callback.js` | GitHub OAuth |
@@ -131,7 +131,7 @@ Local preview: `http://localhost:8000`. The Python server serves HTML and JSON b
 
 - Verify all 12 routes, links, consistent headers and footers, and CMS content loading.
 - Exercise missing JSON, keyboard use, the mobile menu, the form without delivery, and different questionnaire states.
-- Locally verify changes to CMS JSON for text, editorial notes, note status, and photographs. If real Decap login/save cannot be safely tested, say so explicitly; YAML inspection is not an end-to-end CMS test.
+- Locally verify changes to CMS JSON for text, editorial notes, note status, and photographs. If real CMS login/save cannot be safely tested, say so explicitly; YAML inspection is not an end-to-end CMS test. See `docs/CMS_MIGRATION.md` for migration-specific limits.
 - Run `node --check script.js`, syntax checks for other changed JavaScript files, and `git diff --check`. Validate changed JSON and YAML with available tools without installing a new test stack.
 - Search for `doplnit`, `k potvrzení`, `pracovní verze`, `před spuštěním`, `TODO`, and `placeholder`. The correct outcome in this phase is controlled placement in editorial notes, not zero occurrences.
 - Check for outdated CTAs, offer names, and percentage scores. Old terms may remain in historical references or explanations of the change, but must not accidentally remain in the active offer.

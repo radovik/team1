@@ -15,7 +15,9 @@ git diff --check
 
 Open `http://localhost:8000`. Use an HTTP server, not a double-click on HTML. Python serves the pages and fetched JSON, but not Vercel OAuth functions. There are no install, build, test-runner or lint commands.
 
-`/admin` loads its configuration locally, but GitHub OAuth login works only on the Vercel deployment. Do not save through the connected CMS merely to test this draft: its GitHub backend writes directly to `main` and may trigger production deployment. A local JSON test, YAML validation and an actual authenticated CMS save are different verification levels.
+`/admin/` runs Sveltia CMS from a CDN, using the existing Decap-compatible configuration and GitHub OAuth functions. `/admin/decap.html` retains Decap as a fallback with the same configuration and content; do not edit the same entry in both interfaces at once. Both load their configuration locally, but GitHub OAuth login works only on the Vercel production origin. Do not save through the connected CMS merely to test this draft: its GitHub backend writes directly to `main` and may trigger production deployment. A local JSON test, YAML validation and an actual authenticated CMS save are different verification levels.
+
+Sveltia is pinned to the reviewed pre-1.0 release `0.250.2` for a controlled migration. Review [release notes](https://github.com/sveltia/sveltia-cms/releases) regularly, including security fixes, before updating the CDN version. No npm package, Svelte application, build step, new OAuth app or new credentials are needed. See [CMS migration verification](docs/CMS_MIGRATION.md) for the checks and limitations of this change.
 
 See [draft verification](docs/DRAFT_VERIFICATION.md) for the checks actually performed, local fixture coverage and explicit limits. An authenticated CMS save has not been tested in this implementation.
 
@@ -23,7 +25,7 @@ See [draft verification](docs/DRAFT_VERIFICATION.md) for the checks actually per
 
 - Public HTML keeps shared header/footer and meaningful Czech fallback content.
 - Each `main[data-content-file]` fetches its own JSON. A missing, invalid or unavailable file leaves usable HTML and navigation.
-- `sections[].items` retains the existing selector-based model, now using stable `data-copy` hooks. Selectors and modes remain hidden in Decap; editors change text, not code.
+- `sections[].items` retains the existing selector-based model, now using stable `data-copy` hooks. Selectors and modes remain hidden in the CMS; editors change text, not code.
 - The homepage restores the approved Stitch composition with the revised copy. Inline emphasis uses the existing limited formatter; shared editorial notes remain visible in a quieter neutral treatment.
 - Optional profile paragraphs appear only when filled. HTTPS professional links are optional and must be verified. This does not verify credentials automatically.
 - `images[]` has editable upload paths and alternative text. Images use fixed frame dimensions; failed media restores the monogram with an accessible description. Use `/img/uploads/...`.
@@ -32,9 +34,9 @@ See [draft verification](docs/DRAFT_VERIFICATION.md) for the checks actually per
 - Missing or invalid shared notes JSON leaves the HTML note fallback. `needs_input` and `ready_for_review` stay visible; only explicit `resolved` hides the note, not content or media.
 - Update HTML fallback and JSON together when changing structure or reviewed baseline copy. Later CMS saves change JSON only; there is no automatic HTML regeneration.
 - `admin/config.yml` keeps the existing GitHub backend and 12 fixed route entries, plus the shared notes entry in a separate collection. Editorial workflow remains off.
-- `api/` and `admin/index.html` are unchanged. Production OAuth origin and callback remain `https://team1-beige.vercel.app` and `https://team1-beige.vercel.app/api/callback`. Environment values stay in Vercel, never in source.
+- `api/` is unchanged. Both CMS entry points explicitly load `/admin/config.yml`. Production OAuth origin and callback remain `https://team1-beige.vercel.app` and `https://team1-beige.vercel.app/api/callback`. The GitHub backend, `base_url`, `auth_endpoint`, repository and branch are unchanged. Environment values stay in Vercel, never in source.
 
-| Public route | Content file | Decap entry |
+| Public route | Content file | CMS entry |
 | --- | --- | --- |
 | / | content/pages/home.json | pages / home |
 | /pro-koho/ | content/pages/pro-koho.json | pages / pro-koho |
@@ -63,7 +65,7 @@ The HR overview is ordinary printable HTML; use the browser print command. Print
 
 ## Návod pro Martinu a Veroniku
 
-1. Správa obsahu je na `https://team1-beige.vercel.app/admin/`. **Uložení v připojeném CMS zapisuje přímo do větve main a může spustit nasazení.** I při zveřejnění na produkční adrese jde stále o pracovní návrh s viditelnými poznámkami. Neprovádějte zkušební ukládání; ukládejte jen zamýšlené úpravy obsahu.
+1. Správa obsahu je na `https://team1-beige.vercel.app/admin/`. Po nasazení migrace zde bude Sveltia CMS: přihlaste se přes **GitHub** stejně jako dosud, bez nových klíčů. Původní Decap zůstává na `https://team1-beige.vercel.app/admin/decap.html`. Neupravujte stejnou stránku současně v obou administracích. Sveltia přebírá jazyk prohlížeče; češtinu lze zvolit také v nabídce účtu v nastavení jazyka. **Uložení v připojeném CMS zapisuje přímo do větve main a může spustit nasazení.** I při zveřejnění na produkční adrese jde stále o pracovní návrh s viditelnými poznámkami. Neprovádějte zkušební ukládání; ukládejte jen zamýšlené úpravy obsahu.
 2. V kolekci **Stránky** vyberte konkrétní stránku, rozbalte její sekci a změňte text. Technické umístění řeší web; nemusíte upravovat HTML ani JavaScript.
    U zvýrazněných nadpisů značí `*text*` kurzivu a `**text**` tučné písmo. Hvězdičky lze upravit nebo odstranit; nevkládejte HTML. Malé popisky sekcí i text úvodní karty mají vlastní pole.
 3. Na stránce **O nás** doplňte odděleně představení, ověřenou profesní praxi, doložené vzdělání a přínos každé koučky. Prázdná profilová pole ani nevyplněný profesní odkaz se nezobrazují. Stejné krátké představení na úvodu má vlastní pole, proto zkontrolujte obě stránky.
@@ -71,7 +73,7 @@ The HR overview is ordinary printable HTML; use the browser print command. Print
 5. Otevřete kolekci **Poznámky k dokončení → Společné poznámky**. U každého úkolu upravte název, co dodat nebo ověřit, a stav. Jedna společná poznámka se může objevit u více souvisejících stránek.
 6. **K doplnění** znamená chybějící vstup. **Ke kontrole** znamená návrh čekající na potvrzení; poznámka zůstane viditelná. Až po výslovném ověření zvolte **Vyřešeno**: skryje se pouze poznámka, text a fotografie zůstávají. Vyplnění pole samo o sobě nic neověřuje.
 7. Poznámky jsou veřejnou součástí návrhu. Nevkládejte citlivé údaje klientů, soukromé doklady, hesla ani přístupové klíče. Schválený text a instrukci k doplnění držte v oddělených polích.
-8. Po povoleném uložení zkontrolujte veřejnou stránku i mobilní zobrazení. Místní úprava JSON ověřuje zobrazení, nikoli přihlášení a skutečné uložení v Decapu. Formulář zatím nic neodesílá a dotazník není diagnostický test.
+8. Po povoleném uložení zkontrolujte veřejnou stránku i mobilní zobrazení. Místní úprava JSON ověřuje zobrazení, nikoli přihlášení a skutečné uložení přes GitHub. V nové administraci nebylo skutečné přihlášení a publikování zatím ověřeno; místní test není totéž. Formulář zatím nic neodesílá a dotazník není diagnostický test.
 
 ## Inputs and later launch review
 
