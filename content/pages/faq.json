@@ -1,45 +1,149 @@
 {
   "meta": {
-    "title": "Časté otázky o team coachingu | Silný tým",
-    "description": "Odpovědi na časté otázky o team coachingu, zapojení šéfa, práci dvou kouček a rozsahu programu."
+    "title": "Časté otázky o spolupráci | Silný tým",
+    "description": "Odpovědi k týmovému koučinku, zapojení týmu, sdílení, času a ceně. Otevřená rozhodnutí jsou označena."
   },
   "sections": [
     {
-      "label": "Hero",
+      "label": "Úvod stránky",
       "items": [
-        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "07 / FAQ" },
-        { "label": "Nadpis nad titulkem", "selector": ".page-hero .eyebrow", "mode": "text", "value": "Před prvním hovorem" },
-        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Jasné odpovědi bez koučovací *mlhy.*" },
-        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Co team coaching je, kde má hranice a jak vypadá role sponsora, šéfa i dvou kouček." }
+        {
+          "label": "Název stránky",
+          "selector": "[data-copy=\"page-code\"]",
+          "mode": "text",
+          "value": "Časté otázky"
+        },
+        {
+          "label": "Hlavní titulek",
+          "selector": "[data-copy=\"page-title\"]",
+          "mode": "text",
+          "value": "Co můžete od spolupráce očekávat."
+        },
+        {
+          "label": "Úvodní text",
+          "selector": "[data-copy=\"page-intro\"]",
+          "mode": "text",
+          "value": "Praktické odpovědi k průběhu a hranicím týmového koučinku. Parametry nabídky, které ještě nebyly potvrzeny, mají vlastní poznámku."
+        }
       ]
     },
     {
-      "label": "Poznámka k ceníku",
-      "items": [
-        { "label": "Poznámka", "selector": ".section-white .notice-todo", "mode": "inline", "value": "**Ceník k potvrzení**\nCena auditu, diagnostiky a 90denního programu musí být doplněna před spuštěním." }
-      ]
+      "label": "Časté otázky",
+      "items": []
     },
     {
       "label": "Závěrečná výzva",
       "items": [
-        { "label": "Titulek", "selector": ".cta-band h2", "mode": "text", "value": "Vaše otázka je konkrétnější?" },
-        { "label": "Text", "selector": ".cta-band-copy p", "mode": "text", "value": "Stačí popsat jednu situaci z posledních dvou týdnů. Audit není prodejní prezentace." },
-        { "label": "Tlačítko", "selector": ".cta-band .button", "mode": "text", "value": "Zeptat se v auditu ↗" }
+        {
+          "label": "Nadpis",
+          "selector": "[data-copy=\"cta-title\"]",
+          "mode": "text",
+          "value": "Začněme úvodním rozhovorem."
+        },
+        {
+          "label": "Text",
+          "selector": "[data-copy=\"cta-copy\"]",
+          "mode": "text",
+          "value": "Nemusíte mít hotové zadání. Můžeme společně probrat, co byste ve spolupráci týmu chtěli posunout."
+        },
+        {
+          "label": "Odkaz",
+          "selector": "[data-copy=\"cta-link\"]",
+          "mode": "text",
+          "value": "Domluvit úvodní rozhovor"
+        }
       ]
     }
   ],
+  "images": [],
+  "links": [],
   "faq": {
     "selector": ".faq-list",
     "items": [
-      { "question": "Je to teambuilding?", "answer": "Ne. Teambuilding typicky pracuje se zážitkem a stmelením. Team coaching pracuje s opakujícími se vzorci rozhodování, konfliktu a odpovědnosti.", "open": true },
-      { "question": "Budete pracovat s týmem obě?", "answer": "Podle zakázky. Nejdřív určujeme, co tým potřebuje. Potom navrhneme jednu vedoucí koučku, nebo práci ve dvojici, pokud pro ni existuje konkrétní důvod.", "open": false },
-      { "question": "Můžeme si vybrat konkrétní koučku?", "answer": "Ano, preference je relevantní. Zároveň vám řekneme, pokud podle cíle zakázky doporučujeme jiné obsazení nebo práci ve dvojici.", "open": false },
-      { "question": "Je to terapie?", "answer": "Ne. Když se objeví individuální téma, které nepatří do týmové práce, pojmenujeme hranici a doporučíme vhodný další postup.", "open": false },
-      { "question": "Můžeme začít workshopem na jeden den?", "answer": "Jeden den může otevřít téma. Sám o sobě obvykle nezmění rytmus týmu. Pokud chcete pouze workshop, nebudeme ho vydávat za team coaching.", "open": false },
-      { "question": "Děláte i 1:1?", "answer": "V rámci této značky je 1:1 pouze doplněk týmové zakázky, typicky se sponsorem. Individuální služby jednotlivých kouček zůstávají mimo značku Silný tým.", "open": false },
-      { "question": "Musí u toho být šéf?", "answer": "Ano, pokud je součástí týmu-klienta. Bez jasného sponsora a mandátu týmovou zakázku nezačínáme.", "open": false },
-      { "question": "Hodí se team coaching na hybridní tým?", "answer": "Ano. Kick-off a důležité review doporučujeme onsite. Zbytek může být online, pokud má tým funkční pravidla pro vzdálenou spolupráci.", "open": false },
-      { "question": "Kolik to stojí?", "answer": "Ceny a cenová rozpětí ještě čekají na obchodní rozhodnutí. Přesné číslo se vždy odvíjí od velikosti týmu, rozsahu onsite práce a obsazení zakázky.", "open": false }
+      {
+        "question": "Jak se liší týmový koučink, facilitace a teambuilding?",
+        "answer": "Týmový koučink pracuje se spoluprací týmu v čase. Facilitace pomáhá vést konkrétní jednání; teambuilding může podpořit vztahy společným zážitkem. Individuální koučink pracuje s cílem jednotlivce. Přístupy se mohou doplňovat.",
+        "open": true,
+        "note_id": ""
+      },
+      {
+        "question": "Budete pracovat s týmem obě?",
+        "answer": "Obsazení se dohodne podle cíle a rozsahu. Dvě perspektivy mohou pomoci zachytit více dění; účast obou není automatická. Konkrétní model čeká na potvrzení.",
+        "open": false,
+        "note_id": "DELIVERY_MODEL"
+      },
+      {
+        "question": "Můžeme si vybrat konkrétní koučku?",
+        "answer": "Svou preferenci můžete říci. Vhodné obsazení a odpovědnosti je třeba společně dohodnout podle potřeb týmu.",
+        "open": false,
+        "note_id": ""
+      },
+      {
+        "question": "Je to terapie?",
+        "answer": "Ne, týmový koučink nenahrazuje terapii. Osobní témata není nutné zveřejňovat před týmem; hranice práce se vyjasňují v dohodě.",
+        "open": false,
+        "note_id": ""
+      },
+      {
+        "question": "Můžeme začít jedním společným dnem?",
+        "answer": "Jeden den může být vhodný pro konkrétní společné téma. Zda odpovídá vašemu cíli a zda má navazovat další práce, je třeba probrat; není automaticky náhradou dlouhodobější spolupráce.",
+        "open": false,
+        "note_id": ""
+      },
+      {
+        "question": "Děláte i individuální koučink?",
+        "answer": "Možnou individuální práci je třeba dohodnout včetně jejího účelu, hranic a sdílení. Její zařazení do této nabídky ještě čeká na potvrzení.",
+        "open": false,
+        "note_id": "FAQ_ONE_TO_ONE"
+      },
+      {
+        "question": "Musí se zapojit vedoucí týmu?",
+        "answer": "Pokud je součástí týmu, jeho role a zapojení patří do společné dohody. Zadavatel mimo tým má jinou roli: odpovídá za zadání a rozpočet.",
+        "open": false,
+        "note_id": ""
+      },
+      {
+        "question": "Lze pracovat s hybridním týmem?",
+        "answer": "Ano, osobní i vzdálenou práci je třeba navrhnout podle podmínek týmu. Osobní úvodní setkání není univerzální podmínkou.",
+        "open": false,
+        "note_id": ""
+      },
+      {
+        "question": "Kolik stojí týmová spolupráce?",
+        "answer": "Cena vychází z dohodnutého rozsahu a obsazení. Schválené ceny nebo pravidla nabídky zatím čekají na doplnění.",
+        "open": false,
+        "note_id": "PROGRAM_PRICE"
+      },
+      {
+        "question": "Co se dozví zadavatel a ostatní členové týmu?",
+        "answer": "Rozsah sdílení se vyjasňuje se zadavatelem i týmem před začátkem. Je třeba určit příjemce, obsah výstupů a hranice důvěrnosti také u individuálních rozhovorů. Konkrétní smluvní pravidla čekají na potvrzení.",
+        "open": false,
+        "note_id": "LEGAL_MODEL"
+      },
+      {
+        "question": "Co když část týmu spolupráci nechce?",
+        "answer": "Nejdřív je potřeba porozumět důvodům a vyjasnit očekávání s týmem. Nelze předpokládat okamžitý souhlas ani nahradit společnou dohodu nátlakem.",
+        "open": false,
+        "note_id": ""
+      },
+      {
+        "question": "Kolik času potřebují členové týmu mezi setkáními?",
+        "answer": "Záleží na dohodnutém rozsahu a experimentech v běžné práci. Reálné časové nároky jednotlivých formátů ještě potřebují potvrdit.",
+        "open": false,
+        "note_id": "FAQ_TIME"
+      },
+      {
+        "question": "Co uděláme, pokud se očekávaný posun nedostaví?",
+        "answer": "Vrátíme se společně k cíli, zkušenosti týmu a podmínkám práce. Dalším krokem může být úprava rozsahu, jiný přístup nebo ukončení; postup musí odpovídat dohodě.",
+        "open": false,
+        "note_id": ""
+      },
+      {
+        "question": "Je úvodní rozhovor placený a co při něm probereme?",
+        "answer": "Cena čeká na potvrzení. Probereme situaci z vašeho pohledu a vhodný další krok; rozhovor není objektivní diagnózou celého týmu.",
+        "open": false,
+        "note_id": "AUDIT_PRICE"
+      }
     ]
   }
 }

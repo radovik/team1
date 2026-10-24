@@ -1,17 +1,173 @@
-/* Centrální seznam otevřených obsahových a obchodních rozhodnutí. */
+// Technical note index only. Editable instructions and status live in content/editorial-notes.json.
 window.SILNY_TYM_TODOS = {
-  AUDIT_PRICE: { publicLabel: 'Cena auditu bude doplněna před spuštěním.', owner: 'business' },
-  DIAGNOSTIC_PRICE: { publicLabel: 'Cena diagnostického sprintu bude doplněna před spuštěním.', owner: 'business' },
-  PROGRAM_PRICE: { publicLabel: 'Cenové rozpětí 90denního programu bude doplněno před spuštěním.', owner: 'business' },
-  DELIVERY_MODEL: { publicLabel: 'Potvrdit model: jedna vedoucí koučka vs. práce ve dvojici.', owner: 'business' },
-  MARTINA_BIO: { publicLabel: 'Doplnit 2–3 ověřené věty o Martině z profesní praxe mimo koučink.', owner: 'content' },
-  MARTINA_QUALIFICATION: { publicLabel: 'Doplnit další relevantní kvalifikace Martiny pouze po ověření.', owner: 'content' },
-  REFERENCES: { publicLabel: 'Doplnit pouze ověřené reference a případové studie se souhlasem klientů.', owner: 'content' },
-  PHOTOS: { publicLabel: 'Doplnit autentickou společnou fotografii a dva sjednocené portréty.', owner: 'content' },
-  LEGAL_MODEL: { publicLabel: 'Doplnit smluvního dodavatele, fakturační subjekt a správce osobních údajů.', owner: 'legal' },
-  DATA_RETENTION: { publicLabel: 'Doplnit místo uložení poznámek, dobu retence a pravidla práce dvou kouček.', owner: 'legal' },
-  FORM_ENDPOINT: { publicLabel: 'Napojit formulář na schválený způsob zpracování poptávek.', owner: 'technical' },
-  CALENDAR: { publicLabel: 'Doplnit jeden společný rezervační kalendář pro vstupní audit.', owner: 'technical' },
-  SCORECARD_COPY: { publicLabel: 'Potvrdit finální znění 12 otázek scorecardu; nyní je zobrazená pracovní verze.', owner: 'content' },
-  ENGLISH: { publicLabel: 'Ověřit, zda obě koučky nabízejí team coaching v angličtině.', owner: 'business' }
+  "AUDIT_PRICE": {
+    "routes": [
+      "/",
+      "/programy/",
+      "/faq/",
+      "/kontakt/"
+    ]
+  },
+  "AUDIT_DURATION": {
+    "routes": [
+      "/",
+      "/programy/",
+      "/kontakt/"
+    ]
+  },
+  "DIAGNOSTIC_PRICE": {
+    "routes": [
+      "/programy/"
+    ]
+  },
+  "PROGRAM_PRICE": {
+    "routes": [
+      "/programy/",
+      "/faq/"
+    ]
+  },
+  "LONG_TERM_PRICE": {
+    "routes": [
+      "/programy/"
+    ]
+  },
+  "MAPPING_SCOPE": {
+    "routes": [
+      "/programy/"
+    ]
+  },
+  "PROGRAM_SCOPE": {
+    "routes": [
+      "/programy/"
+    ]
+  },
+  "LONG_TERM_SCOPE": {
+    "routes": [
+      "/programy/"
+    ]
+  },
+  "DELIVERY_MODEL": {
+    "routes": [
+      "/",
+      "/jak-pracujeme/",
+      "/programy/",
+      "/pro-hr/",
+      "/o-nas/",
+      "/faq/"
+    ]
+  },
+  "MARTINA_BIO": {
+    "routes": [
+      "/o-nas/"
+    ]
+  },
+  "MARTINA_QUALIFICATION": {
+    "routes": [
+      "/o-nas/"
+    ]
+  },
+  "VERONIKA_BIO": {
+    "routes": [
+      "/o-nas/"
+    ]
+  },
+  "VERONIKA_QUALIFICATION": {
+    "routes": [
+      "/o-nas/"
+    ]
+  },
+  "REFERENCES": {
+    "routes": [
+      "/vysledky/"
+    ]
+  },
+  "PHOTOS": {
+    "routes": [
+      "/",
+      "/o-nas/"
+    ]
+  },
+  "LEGAL_MODEL": {
+    "routes": [
+      "/",
+      "/jak-pracujeme/",
+      "/pro-hr/",
+      "/faq/",
+      "/soukromi/",
+      "/cookies/"
+    ]
+  },
+  "DATA_RETENTION": {
+    "routes": [
+      "/pro-hr/",
+      "/soukromi/",
+      "/cookies/"
+    ]
+  },
+  "PRIVACY_PURPOSES": {
+    "routes": [
+      "/soukromi/",
+      "/cookies/"
+    ]
+  },
+  "PRIVACY_SERVICES": {
+    "routes": [
+      "/soukromi/",
+      "/cookies/"
+    ]
+  },
+  "PRIVACY_CONTACT": {
+    "routes": [
+      "/kontakt/",
+      "/soukromi/",
+      "/cookies/"
+    ]
+  },
+  "FORM_ENDPOINT": {
+    "routes": [
+      "/kontakt/",
+      "/soukromi/"
+    ]
+  },
+  "CALENDAR": {
+    "routes": [
+      "/kontakt/",
+      "/cookies/"
+    ]
+  },
+  "SCORECARD_COPY": {
+    "routes": [
+      "/team-health-scorecard/"
+    ]
+  },
+  "ENGLISH": {
+    "routes": [
+      "/pro-koho/"
+    ]
+  },
+  "AUDIENCE_SCOPE": {
+    "routes": [
+      "/pro-koho/"
+    ]
+  },
+  "FOLLOW_UP": {
+    "routes": [
+      "/vysledky/"
+    ]
+  },
+  "FAQ_TIME": {
+    "routes": [
+      "/faq/"
+    ]
+  },
+  "FAQ_ONE_TO_ONE": {
+    "routes": [
+      "/faq/"
+    ]
+  },
+  "DOMAIN": {
+    "routes": [
+      "/cookies/"
+    ]
+  }
 };

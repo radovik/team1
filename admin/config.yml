@@ -1,4 +1,5 @@
-# `python -m http.server 8000` načte stránky i JSON; přihlášení do /admin funguje pouze na nasazení ve Vercelu.
+# Local python http.server serves pages and JSON; /admin OAuth login works only on Vercel.
+# Saving in the connected CMS commits directly to main and may deploy; do not use it for draft tests.
 backend:
   name: github
   repo: radovik/team1
@@ -8,10 +9,11 @@ backend:
 
 site_url: https://team1-beige.vercel.app
 display_url: https://team1-beige.vercel.app
-logo_url: https://team1-beige.vercel.app/assets/silny-tym-mark.png
+logo_url: https://team1-beige.vercel.app/assets/silny-team-logo-01.svg
 
 media_folder: img/uploads
 public_folder: /img/uploads
+locale: cs
 
 collections:
   - name: pages
@@ -50,7 +52,7 @@ collections:
                   - { label: Režim zobrazení, name: mode, widget: hidden }
                   - { label: Atribut, name: attribute, widget: hidden, required: false }
                   - { label: Číslo nebo předpona, name: prefix, widget: string, required: false }
-                  - { label: Text, name: value, widget: text }
+                  - { label: Text, name: value, widget: text, required: false, hint: "Hotový text. Poznámky k dokončení upravujte v samostatné kolekci Poznámky. Prázdná profilová pole se nezobrazují." }
           - label: Obrázky
             name: images
             widget: list
@@ -62,8 +64,22 @@ collections:
               - { label: Název obrázku, name: label, widget: string }
               - { label: Technický selektor, name: selector, widget: hidden }
               - { label: Soubor, name: src, widget: image, required: false }
-              - { label: Alternativní text, name: alt, widget: string, required: false }
-              - { label: Vložit do obrazového rámu, name: container, widget: boolean, default: false }
+              - { label: Alternativní text, name: alt, widget: string, hint: "Stručně popište, kdo je na fotografii. Nahrávejte jen schválené autentické fotografie." }
+              - { label: Obrazový rám, name: container, widget: hidden, required: false }
+              - { label: Šířka rámu, name: width, widget: hidden, required: false }
+              - { label: Výška rámu, name: height, widget: hidden, required: false }
+          - label: Profesní odkazy
+            name: links
+            widget: list
+            required: false
+            allow_add: false
+            collapsed: true
+            summary: "{{fields.label}}"
+            fields:
+              - { label: Popisek pole, name: label, widget: hidden }
+              - { label: Umístění, name: selector, widget: hidden }
+              - { label: Ověřená adresa, name: href, widget: string, required: false, hint: "Vložte jen ověřený profesní profil s https://. Prázdný odkaz se nezobrazuje." }
+              - { label: Text odkazu, name: text, widget: string }
           - label: Časté otázky
             name: faq
             widget: object
@@ -79,6 +95,7 @@ collections:
                   - { label: Otázka, name: question, widget: string }
                   - { label: Odpověď, name: answer, widget: text }
                   - { label: Otevřít při načtení, name: open, widget: boolean, default: false }
+                  - { label: Připojená poznámka, name: note_id, widget: hidden, required: false }
           - label: Tabulky
             name: tables
             widget: list
@@ -115,13 +132,13 @@ collections:
         format: json
         preview_path: "/jak-pracujeme/"
         fields: *page_fields
-      - label: Programy
+      - label: Spolupráce
         name: programy
         file: content/pages/programy.json
         format: json
         preview_path: "/programy/"
         fields: *page_fields
-      - label: Výsledky
+      - label: Jak poznáme posun
         name: vysledky
         file: content/pages/vysledky.json
         format: json
@@ -151,7 +168,7 @@ collections:
         format: json
         preview_path: "/kontakt/"
         fields: *page_fields
-      - label: Team Health Scorecard
+      - label: Reflexe spolupráce v týmu
         name: team-health-scorecard
         file: content/pages/team-health-scorecard.json
         format: json
@@ -169,3 +186,32 @@ collections:
         format: json
         preview_path: "/cookies/"
         fields: *page_fields
+  - name: editorial
+    label: Poznámky k dokončení
+    files:
+      - label: Společné poznámky
+        name: editorial-notes
+        file: content/editorial-notes.json
+        format: json
+        fields:
+          - label: Poznámky
+            name: notes
+            widget: list
+            allow_add: false
+            collapsed: true
+            summary: "{{fields.title}}"
+            hint: "Poznámky jsou veřejně viditelné vedle příslušného obsahu. Nevkládejte hesla, citlivé údaje klientů ani soukromé důkazy. Uložení do připojeného CMS vytvoří commit v main a může spustit nasazení."
+            fields:
+              - { label: Identifikátor, name: id, widget: hidden }
+              - { label: Umístění v sekcích, name: section, widget: hidden }
+              - { label: Název poznámky, name: title, widget: string }
+              - { label: Co doplnit nebo ověřit, name: instruction, widget: text }
+              - label: Stav kontroly
+                name: status
+                widget: select
+                default: needs_input
+                hint: "K doplnění a Ke kontrole zůstávají viditelné. Vyřešeno skryje pouze poznámku, nikoli text nebo fotografii. Vyplnění pole samo o sobě nepotvrzuje ověření."
+                options:
+                  - { label: K doplnění, value: needs_input }
+                  - { label: Ke kontrole, value: ready_for_review }
+                  - { label: Vyřešeno, value: resolved }

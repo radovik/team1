@@ -1,0 +1,207 @@
+{
+  "notes": [
+    {
+      "id": "AUDIT_PRICE",
+      "section": "Rozhovor · úvod, spolupráce, kontakt, FAQ",
+      "title": "Cena úvodního rozhovoru — rozhodnutí",
+      "instruction": "Potvrďte cenu úvodního rozhovoru a zda se hradí samostatně. Bez schválení jej neoznačujte jako bezplatný.",
+      "status": "needs_input"
+    },
+    {
+      "id": "AUDIT_DURATION",
+      "section": "Rozhovor · úvod, spolupráce, kontakt",
+      "title": "Délka rozhovoru — rozhodnutí",
+      "instruction": "Dosavadní návrh je 30 minut. Potvrďte délku, průběh a dostupnou formu; do té doby jde o návrh, ne závazek.",
+      "status": "needs_input"
+    },
+    {
+      "id": "DIAGNOSTIC_PRICE",
+      "section": "Mapování · spolupráce",
+      "title": "Cena mapování — rozhodnutí",
+      "instruction": "Doplňte schválený způsob stanovení ceny mapování fungování týmu a co nabídka zahrnuje. Neuvádějte nepodložené rozpětí.",
+      "status": "needs_input"
+    },
+    {
+      "id": "PROGRAM_PRICE",
+      "section": "Tříměsíční program · spolupráce, FAQ",
+      "title": "Cena programu — rozhodnutí",
+      "instruction": "Potvrďte cenu nebo způsob sestavení individuální nabídky tříměsíčního programu, rozsah a případné další náklady.",
+      "status": "needs_input"
+    },
+    {
+      "id": "LONG_TERM_PRICE",
+      "section": "Dlouhodobá spolupráce · spolupráce",
+      "title": "Cena dlouhodobé spolupráce — rozhodnutí",
+      "instruction": "Doplňte způsob sestavení nabídky, zahrnuté výstupy a pravidla změny rozsahu.",
+      "status": "needs_input"
+    },
+    {
+      "id": "MAPPING_SCOPE",
+      "section": "Mapování · spolupráce",
+      "title": "Rozsah mapování — ke kontrole",
+      "instruction": "Dosavadní návrh trvání je 2–3 týdny. Potvrďte metody, počet a délku setkání, čas týmu i zadavatele, výstupy a pravidla jejich sdílení.",
+      "status": "needs_input"
+    },
+    {
+      "id": "PROGRAM_SCOPE",
+      "section": "Tříměsíční program · spolupráce",
+      "title": "Rozsah programu — ke kontrole",
+      "instruction": "Návrh je přibližně 3 měsíce. Potvrďte počet a délku setkání, práci mezi nimi, čas zadavatele, výstupy a zda je mapování součástí ceny. Původní návrh šesti setkání po 90–120 minutách není ověřený závazek.",
+      "status": "needs_input"
+    },
+    {
+      "id": "LONG_TERM_SCOPE",
+      "section": "Dlouhodobá spolupráce · spolupráce",
+      "title": "Rozsah dlouhodobé práce — ke kontrole",
+      "instruction": "Dosud se navrhovalo 6 měsíců. Potvrďte délku, návaznost na ostatní formáty, setkání, čas členů týmu, práci se zadavatelem a výstupy.",
+      "status": "needs_input"
+    },
+    {
+      "id": "DELIVERY_MODEL",
+      "section": "Obsazení · úvod, postup, spolupráce, profily, HR, FAQ",
+      "title": "Jedna nebo dvě koučky — rozhodnutí",
+      "instruction": "Potvrďte model vedení zakázky, zapojení druhé koučky, odpovědnosti a vliv na cenu. Neslibujte automatickou účast obou ani zastupitelnost bez dohody.",
+      "status": "needs_input"
+    },
+    {
+      "id": "MARTINA_BIO",
+      "section": "Martinin profil · o nás",
+      "title": "Martina: profesní praxe — obsah",
+      "instruction": "Martina: doplňte 2–4 ověřitelné věty o relevantní profesní praxi včetně praxe mimo koučink, je-li pro práci s týmem důležitá. Doplňte krátké představení a konkrétní přínos. Neuvádějte nedoložené počty klientů.",
+      "status": "needs_input"
+    },
+    {
+      "id": "MARTINA_QUALIFICATION",
+      "section": "Martinin profil · o nás",
+      "title": "Martina: vzdělání a kvalifikace — ověření",
+      "instruction": "Doložte aktuální individuální credential ACC a absolvované výcviky. AATC označuje akreditaci výcvikového programu, nikoli osobní certifikaci; ACTC je samostatná certifikace a bez dokladu se neuvádí. Doplňte ověřený profesní odkaz.",
+      "status": "needs_input"
+    },
+    {
+      "id": "VERONIKA_BIO",
+      "section": "Veroničin profil · o nás",
+      "title": "Veronika: profesní praxe — ověření",
+      "instruction": "Ověřte dosud uvedených 18 let v HR vůči doložené praxi; počet let automaticky nezvyšujte. Doplňte 2–4 konkrétní věty, krátké představení a přínos pro tým.",
+      "status": "needs_input"
+    },
+    {
+      "id": "VERONIKA_QUALIFICATION",
+      "section": "Veroničin profil · o nás",
+      "title": "Veronika: vzdělání a kvalifikace — ověření",
+      "instruction": "Ověřte mediální a sociální komunikaci, koučovací výcviky, skupinový koučink, Solution Focus, výcvik v Akademii Libchavy a aktuální ACC. Rozlišujte akreditaci výcviku AATC a individuální ACTC; doplňte jen doložené údaje a profesní odkaz.",
+      "status": "needs_input"
+    },
+    {
+      "id": "REFERENCES",
+      "section": "Jak poznáme posun · příklady",
+      "title": "Reference a případové studie — obsah",
+      "instruction": "Doplňte pouze ověřené reference se souhlasem klientů: kontext, cíl, rozsah, kdo práci vedl, způsob vyhodnocení, výsledky a jejich omezení. Ilustrační příklad není reference.",
+      "status": "needs_input"
+    },
+    {
+      "id": "PHOTOS",
+      "section": "Fotografie · úvod a o nás",
+      "title": "Autentické fotografie kouček — obsah",
+      "instruction": "Nahrajte schválenou společnou fotografii a dva sjednocené portréty. Vyplňte alternativní text a ověřte práva k použití. Nevkládejte ilustrační ani generované portréty jako fotografie kouček.",
+      "status": "needs_input"
+    },
+    {
+      "id": "LEGAL_MODEL",
+      "section": "Pravidla · úvod, postup, HR, FAQ, soukromí, cookies",
+      "title": "Dodavatel a správce údajů — právní vstupy",
+      "instruction": "Doplňte skutečného smluvního dodavatele, fakturační subjekt, správce údajů a kontakt. Potvrďte smluvní rámec, pravidla důvěrnosti, výjimky a sdílení výstupů s týmem i zadavatelem.",
+      "status": "needs_input"
+    },
+    {
+      "id": "DATA_RETENTION",
+      "section": "Pravidla · HR, soukromí, cookies",
+      "title": "Poznámky, přístup a uchování — právní vstupy",
+      "instruction": "Určete kde se ukládají poznámky, kdo má přístup včetně obou kouček, dobu uchování, způsob odstranění a pravidla individuálních rozhovorů i práce se zadavatelem.",
+      "status": "needs_input"
+    },
+    {
+      "id": "PRIVACY_PURPOSES",
+      "section": "Soukromí a cookies",
+      "title": "Účely a způsob zpracování — právní vstupy",
+      "instruction": "Doplňte skutečné účely, způsoby a rozsah zpracování pro schválené služby; posuďte potřebné informace s odpovědnou osobou. Tato osnova není dokončené právní posouzení.",
+      "status": "needs_input"
+    },
+    {
+      "id": "PRIVACY_SERVICES",
+      "section": "Soukromí a cookies",
+      "title": "Používané služby a přenosy — kontrola",
+      "instruction": "Prověřte hosting Vercel, Google Fonts a oddělenou správu obsahu Decap na unpkg s GitHub OAuth. Potvrďte skutečné logování, příjemce a přenosy dat; statický web neznamená absenci požadavků třetím stranám.",
+      "status": "needs_input"
+    },
+    {
+      "id": "PRIVACY_CONTACT",
+      "section": "Soukromí a cookies, kontakt",
+      "title": "Kontaktní postup — obsah",
+      "instruction": "Doplňte ověřený kontaktní údaj a postup pro dotazy k údajům. Nezveřejňujte vymyšlený e-mail ani neověřenou lhůtu odpovědi.",
+      "status": "needs_input"
+    },
+    {
+      "id": "FORM_ENDPOINT",
+      "section": "Kontakt a soukromí",
+      "title": "Doručování poptávek — technický úkol",
+      "instruction": "Majitelky mají nejprve schválit způsob doručování a zpracování poptávek, příjemce a potřebné informace o soukromí. Technické zapojení a ověření doručení je samostatný úkol; nyní formulář nic neodesílá.",
+      "status": "needs_input"
+    },
+    {
+      "id": "CALENDAR",
+      "section": "Kontakt a cookies",
+      "title": "Společný kalendář — technický úkol",
+      "instruction": "Rozhodněte, zda má být schválen jeden společný kalendář pro úvodní rozhovor, nebo ruční domluva. Případné propojení, kontrola přenosů a ověření rezervace patří do pozdější fáze.",
+      "status": "needs_input"
+    },
+    {
+      "id": "SCORECARD_COPY",
+      "section": "Reflexe · otázky",
+      "title": "Otázky reflexe — obsah ke kontrole",
+      "instruction": "Projděte znění všech 12 otázek, tři oblasti a srozumitelnost možností odpovědi. Schválení formulací není psychometrická validace; nástroj zachycuje osobní pohled, nikoli zdraví celého týmu.",
+      "status": "needs_input"
+    },
+    {
+      "id": "ENGLISH",
+      "section": "Pro koho · rozsah nabídky",
+      "title": "Angličtina — rozhodnutí",
+      "instruction": "Ověřte, zda obě koučky nabízejí týmový koučink v angličtině a zda má vzniknout anglická verze webu. Současný web zůstává český.",
+      "status": "needs_input"
+    },
+    {
+      "id": "AUDIENCE_SCOPE",
+      "section": "Pro koho · zaměření",
+      "title": "Velikost a zaměření týmu — rozhodnutí",
+      "instruction": "Potvrďte, zda je 6–12 lidí skutečně typický rozsah. Původní zaměření na firmy se 40–250 zaměstnanci není potvrzené ani automaticky vylučující kritérium.",
+      "status": "needs_input"
+    },
+    {
+      "id": "FOLLOW_UP",
+      "section": "Jak poznáme posun · vyhodnocení",
+      "title": "Následné vyhodnocení — rozhodnutí",
+      "instruction": "Potvrďte, zda je následné vyhodnocení zahrnuto v nabídce, v jakém čase a kdo se zapojí. Neslibujte neověřený termín ani obchodní účinek.",
+      "status": "needs_input"
+    },
+    {
+      "id": "FAQ_TIME",
+      "section": "FAQ · čas mezi setkáními",
+      "title": "Čas týmu mezi setkáními — rozhodnutí",
+      "instruction": "Doplňte reálné časové nároky pro každý formát, příklady práce v praxi a čas zadavatele odděleně od počtu setkání.",
+      "status": "needs_input"
+    },
+    {
+      "id": "FAQ_ONE_TO_ONE",
+      "section": "FAQ · individuální práce",
+      "title": "Individuální práce — rozhodnutí",
+      "instruction": "Potvrďte, zda a kdy je individuální koučink součástí zakázky, jeho hranice a pravidla sdílení vůči týmu a zadavateli.",
+      "status": "needs_input"
+    },
+    {
+      "id": "DOMAIN",
+      "section": "Cookies · technický provoz",
+      "title": "Budoucí vlastní doména — technický úkol",
+      "instruction": "Potvrďte případnou vlastní doménu při samostatné přípravě spuštění; změna musí zahrnout veřejné adresy, OAuth a metadata. V této fázi zůstává současná doména.",
+      "status": "needs_input"
+    }
+  ]
+}

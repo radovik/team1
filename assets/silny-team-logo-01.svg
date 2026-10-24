@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Master Person Unit: Head + Interlocking Body (Oriented at 12 o'clock) -->
+    <g id="unity-figure">
+      <!-- Floating Head -->
+      <circle cx="0" cy="-260" r="44" />
+
+      <!-- Interlocking Torso & Sweeping Arm -->
+      <path d="M 119 -107
+               C 126 -50, 126 50, 107 119
+               C 118 108, 138 90, 158 65
+               C 192 20, 218 -30, 234 -60
+               C 246 -98, 222 -180, 192 -212
+               C 145 -262, 72 -260, 47.5 -227
+               A 58 58 0 0 1 0 -202
+               C 52 -202, 106 -142, 119 -107
+               Z" />
+    </g>
+  </defs>
+
+  <!-- 4-Person Interlocking Emblem centered in an 800x800 canvas -->
+  <g transform="translate(400, 400)">
+    <!-- Top Figure: Warm Mocha / Taupe -->
+    <use href="#unity-figure" fill="#857463" />
+
+    <!-- Right Figure: Soft Sand / Beige -->
+    <use href="#unity-figure" transform="rotate(90)" fill="#CFBEAA" />
+
+    <!-- Bottom Figure: Espresso / Dark Charcoal -->
+    <use href="#unity-figure" transform="rotate(180)" fill="#3D3733" />
+
+    <!-- Left Figure: Muted Ocean Teal -->
+    <use href="#unity-figure" transform="rotate(270)" fill="#5B9FA6" />
+  </g>
+</svg>

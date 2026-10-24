@@ -3,145 +3,633 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Team coaching pro leadership týmy firem, které rostou rychleji než jejich spolupráce. Diagnostika, 90denní program a práce s týmem jako se systémem.">
-    <meta name="theme-color" content="#030b16">
-    <title>Team coaching pro leadership týmy | Silný tým</title>
-    <link rel="icon" type="image/png" href="/assets/silny-tym-mark.png">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Společná rozhodnutí, rozdílné názory a dohody v každodenní práci týmu. Úvodní rozhovor s Martinou Jonášovou a Veronikou Vojtovou.">
+    <meta name="theme-color" content="#faf9f6">
+    <title>
+      Týmový koučink pro vedení firem | Silný tým
+    </title>
+    <meta property="og:title" content="Týmový koučink pro vedení firem | Silný tým">
+    <meta property="og:description" content="Společná rozhodnutí, rozdílné názory a dohody v každodenní práci týmu. Úvodní rozhovor s Martinou Jonášovou a Veronikou Vojtovou.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:image" content="https://team1-beige.vercel.app/assets/silny-team-logo-01.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/silny-team-logo-01.svg">
     <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap">
-    <script src="/content-todos.js" defer></script>
-    <script src="/script.js" defer></script>
+    <script src="/script.js" defer>
+    </script>
   </head>
   <body class="home-page">
-    <a class="skip-link" href="#main-content">Přejít na hlavní obsah</a>
+    <a class="skip-link" href="#main-content">
+      Přejít na hlavní obsah
+    </a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/" aria-label="Silný tým — úvod"><img src="/assets/silny-tym-mark.png" alt="" width="40" height="40"><span class="brand-copy"><strong>Silný tým</strong><small>Team coaching</small></span></a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Otevřít navigaci"><span></span><span></span><span></span></button>
+        <a class="brand" href="/" aria-label="Silný tým — úvod">
+          <img src="/assets/silny-team-logo-01.svg" alt="" width="32" height="32">
+          <span class="brand-copy">
+            <strong>
+              Silný tým
+            </strong>
+            <small>
+              Team coaching
+            </small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Otevřít navigaci">
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+        </button>
         <nav class="site-nav" id="primary-navigation" aria-label="Hlavní navigace">
-          <a href="/" data-path="/">Úvod</a><a href="/pro-koho/" data-path="/pro-koho">Pro koho</a><a href="/jak-pracujeme/" data-path="/jak-pracujeme">Jak pracujeme</a><a href="/programy/" data-path="/programy">Programy</a><a href="/vysledky/" data-path="/vysledky">Výsledky</a><a href="/pro-hr/" data-path="/pro-hr">Pro HR</a><a href="/o-nas/" data-path="/o-nas">O nás</a><a class="nav-cta" href="/kontakt/" data-path="/kontakt">Rezervovat audit</a>
+          <a href="/pro-koho/" data-path="/pro-koho">
+            Pro koho
+          </a>
+          <a href="/jak-pracujeme/" data-path="/jak-pracujeme">
+            Jak pracujeme
+          </a>
+          <a href="/programy/" data-path="/programy">
+            Spolupráce
+          </a>
+          <a href="/o-nas/" data-path="/o-nas">
+            O nás
+          </a>
+          <a href="/pro-hr/" data-path="/pro-hr">
+            Pro HR
+          </a>
+          <a class="nav-cta" href="/kontakt/" data-path="/kontakt">
+            Domluvit úvodní rozhovor
+          </a>
         </nav>
       </div>
     </header>
-
     <main id="main-content" data-content-file="/content/pages/home.json">
       <section class="hero" aria-labelledby="hero-title">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Team coaching · Leadership týmy · Česko</p>
-            <h1 id="hero-title">Tým, který se na poradě shodne a mimo ni táhne <em>každý jinam,</em> nestojí firmu workshop.</h1>
-            <p class="hero-lede">Stojí ji pomalá rozhodnutí, tichý konflikt a odchody lidí, které jste nechtěli ztratit. Pracujeme s leadership týmy typicky 6–12 lidí jako s jedním klientem. Ne s jednotlivci vedle sebe.</p>
+            <p data-copy="hero-eyebrow" class="eyebrow">
+              Týmový koučink pro vedení firem
+            </p>
+            <h1 data-copy="hero-title" id="hero-title">
+              Aby společná rozhodnutí fungovala <em>i po poradě.</em>
+            </h1>
+            <p data-copy="hero-intro" class="hero-lede">
+              Pomáháme týmům vedení ujasnit priority, otevřeně pracovat s rozdílnými názory a převádět dohody do každodenní spolupráce. Vycházíme ze situací, které váš tým skutečně řeší.
+            </p>
             <ul class="outcome-list">
-              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 11 3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg><span class="outcome-copy">Rozhodnutí, která se nevracejí e-mailem.</span></li>
-              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 11a8 8 0 0 1-8 8H5l-4 3V11a8 8 0 0 1 8-8h4a8 8 0 0 1 8 8Z"></path><path d="M7 9h8M7 13h5"></path></svg><span class="outcome-copy">Konflikt, který se řeší ve stejné místnosti, ne v kuloárech.</span></li>
-              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span class="outcome-copy">Tým, který umí fungovat dál i bez kouče.</span></li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 11 3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                <span data-copy="hero-focus-1">Ujasnit priority.</span>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 11a8 8 0 0 1-8 8H5l-4 3V11a8 8 0 0 1 8-8h4a8 8 0 0 1 8 8Z"></path><path d="M7 9h8M7 13h5"></path></svg>
+                <span data-copy="hero-focus-2">Otevřeně pracovat s rozdílnými názory.</span>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span data-copy="hero-focus-3">Převádět dohody do každodenní spolupráce.</span>
+              </li>
             </ul>
-            <div class="hero-actions"><a class="button button-primary" href="/kontakt/">Rezervovat Team Health Audit <span aria-hidden="true">↗</span></a><a class="text-link" href="#co-to-neni">Jak poznáte, že to není teambuilding ↓</a></div>
+            <div class="hero-actions">
+              <a data-copy="hero-cta" class="button button-primary" href="/kontakt/">
+                Domluvit úvodní rozhovor
+              </a>
+              <a data-copy="hero-secondary" class="text-link" href="/jak-pracujeme/">
+                Jak spolupráce probíhá
+              </a>
+            </div>
+            <aside class="notice-todo" data-note-id="AUDIT_DURATION" aria-label="Poznámka k dokončení">
+              <strong data-note-title>
+                Délka rozhovoru — rozhodnutí
+              </strong>
+              <span class="note-status" data-note-status>
+                K doplnění
+              </span>
+              <p data-note-instruction>
+                Dosavadní návrh je 30 minut. Potvrďte délku, průběh a dostupnou formu; do té doby jde o návrh, ne závazek.
+              </p>
+            </aside>
           </div>
-          <div class="hero-visual" aria-label="Symbol propojeného týmu">
-            <div class="brand-orbit" aria-hidden="true"></div>
-            <article class="hero-card signal-card">
-              <div class="hero-card-heading"><small>Tým jako systém</small><img class="hero-mark" src="/assets/silny-tym-mark.png" alt="" width="24" height="24"></div>
-              <strong>Lidé · perspektiva · pokrok</strong>
-              <p class="hero-index">Silnější lidé.<br>Lepší týmy.<br>Lepší zítřek.</p>
-            </article>
+          <div class="hero-visual">
+            <div class="hero-art">
+              <div class="brand-orbit" aria-hidden="true"></div>
+              <div class="hero-card signal-card joint-visual" data-photo="joint" role="img" aria-label="Martina Jonášová a Veronika Vojtová">
+                <div class="hero-card-heading">
+                  <small data-copy="hero-visual-label">Týmový koučink</small>
+                  <img class="hero-mark" src="/assets/silny-team-logo-01.svg" alt="" width="24" height="24">
+                </div>
+                <strong data-copy="hero-visual-title">Lidé · perspektiva · pokrok</strong>
+                <p data-copy="hero-visual-people" class="hero-index">Martina Jonášová<br>Veronika Vojtová</p>
+              </div>
+            </div>
+            <aside class="notice-todo" data-note-id="PHOTOS" aria-label="Poznámka k dokončení">
+              <strong data-note-title>
+                Autentické fotografie kouček — obsah
+              </strong>
+              <span class="note-status" data-note-status>
+                K doplnění
+              </span>
+              <p data-note-instruction>
+                Nahrajte schválenou společnou fotografii a dva sjednocené portréty. Vyplňte alternativní text a ověřte práva k použití. Nevkládejte ilustrační ani generované portréty jako fotografie kouček.
+              </p>
+            </aside>
           </div>
         </div>
       </section>
-
       <section class="section" aria-labelledby="signals-title">
         <div class="container">
           <div class="section-heading diagnostic-heading">
             <div>
-              <div class="diagnostic-labels"><p class="section-index">01 / Poznáte se?</p><p class="section-kicker">Nejdřív realita týmu</p></div>
-              <h2 class="section-title" id="signals-title">Než začneme mluvit o metodě, podívejte se, jestli je tohle <em>váš tým.</em></h2>
+              <p data-copy="signals-index" class="section-index">01 / Témata k rozhovoru</p>
+              <h2 data-copy="signals-title" id="signals-title" class="section-title">
+                Co byste ve spolupráci <em>svého týmu</em> chtěli posunout?
+              </h2>
             </div>
-            <p class="diagnostic-instruction" id="diagnostic-instruction">Klikněte na symptomy, které reálně pozorujete na vlastních exekutivních poradách.</p>
+            <p data-copy="situations-help" class="diagnostic-instruction" id="diagnostic-instruction">
+              Vyberte situace, které byste chtěli probrat. Výběr slouží k ujasnění témat.
+            </p>
           </div>
           <ul class="signal-list symptom-grid" data-diagnostic aria-describedby="diagnostic-instruction">
-            <li><button class="symptom-card" type="button" aria-pressed="false"><span class="symptom-number" aria-hidden="true">01</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg><span class="symptom-copy">Porady trvají dlouho. Rozhodnutí se stejně vrací v e-mailu nebo chatu.</span></button></li>
-            <li><button class="symptom-card" type="button" aria-pressed="false"><span class="symptom-number" aria-hidden="true">02</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg><span class="symptom-copy">Lidé jsou slušní a opatrní. Konflikt jde do kuloárů.</span></button></li>
-            <li><button class="symptom-card" type="button" aria-pressed="false"><span class="symptom-number" aria-hidden="true">03</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg><span class="symptom-copy">Hybrid rozdělil tým na dva světy.</span></button></li>
-            <li><button class="symptom-card" type="button" aria-pressed="false"><span class="symptom-number" aria-hidden="true">04</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg><span class="symptom-copy">Firma vyrostla. Formálně je to jeden leadership tým. Fakticky ostrovy.</span></button></li>
-            <li><button class="symptom-card" type="button" aria-pressed="false"><span class="symptom-number" aria-hidden="true">05</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg><span class="symptom-copy">Šéf je bottleneck. Tým čeká, až to řekne on.</span></button></li>
-            <li><button class="symptom-card" type="button" aria-pressed="false"><span class="symptom-number" aria-hidden="true">06</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="m8 12 3 3 5-6"></path></svg><span class="symptom-copy">HR vidí fluktuaci a engagement. Vedení to popisuje jako chemii.</span></button></li>
+            <li>
+              <button class="symptom-card" type="button" aria-pressed="false">
+                <span class="symptom-number" aria-hidden="true">
+                  01
+                </span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <circle cx="12" cy="12" r="9">
+                  </circle>
+                  <path d="m8 12 3 3 5-6">
+                  </path>
+                </svg>
+                <span data-copy="situation-1" class="symptom-copy">
+                  Rozhodnutí se znovu otevírají bez nové informace.
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="symptom-card" type="button" aria-pressed="false">
+                <span class="symptom-number" aria-hidden="true">
+                  02
+                </span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <circle cx="12" cy="12" r="9">
+                  </circle>
+                  <path d="m8 12 3 3 5-6">
+                  </path>
+                </svg>
+                <span data-copy="situation-2" class="symptom-copy">
+                  Rozdílné názory nezazní při společném jednání.
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="symptom-card" type="button" aria-pressed="false">
+                <span class="symptom-number" aria-hidden="true">
+                  03
+                </span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <circle cx="12" cy="12" r="9">
+                  </circle>
+                  <path d="m8 12 3 3 5-6">
+                  </path>
+                </svg>
+                <span data-copy="situation-3" class="symptom-copy">
+                  Příliš mnoho rozhodnutí čeká na jednoho člověka.
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="symptom-card" type="button" aria-pressed="false">
+                <span class="symptom-number" aria-hidden="true">
+                  04
+                </span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <circle cx="12" cy="12" r="9">
+                  </circle>
+                  <path d="m8 12 3 3 5-6">
+                  </path>
+                </svg>
+                <span data-copy="situation-4" class="symptom-copy">
+                  Firma roste a potřebujeme upravit předávání práce.
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="symptom-card" type="button" aria-pressed="false">
+                <span class="symptom-number" aria-hidden="true">
+                  05
+                </span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <circle cx="12" cy="12" r="9">
+                  </circle>
+                  <path d="m8 12 3 3 5-6">
+                  </path>
+                </svg>
+                <span data-copy="situation-5" class="symptom-copy">
+                  Složení týmu vedení se změnilo a hledáme společný způsob práce.
+                </span>
+              </button>
+            </li>
+            <li>
+              <button class="symptom-card" type="button" aria-pressed="false">
+                <span class="symptom-number" aria-hidden="true">
+                  06
+                </span>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <circle cx="12" cy="12" r="9">
+                  </circle>
+                  <path d="m8 12 3 3 5-6">
+                  </path>
+                </svg>
+                <span data-copy="situation-6" class="symptom-copy">
+                  Nová strategie potřebuje společné priority a jasné dohody.
+                </span>
+              </button>
+            </li>
           </ul>
-          <div class="rule-callout"><strong data-diagnostic-count aria-live="polite" aria-atomic="true">3+</strong><div><p>Když sedí tři a více bodů, problém obvykle není v kompetenci lidí. Je ve způsobu, jakým tým pracuje jako celek.</p><div class="inline-actions"><a class="button button-dark" href="/kontakt/">Ověřit to v auditu <span aria-hidden="true">↗</span></a></div></div></div>
+          <div class="topic-summary" aria-live="polite" aria-atomic="true" data-topic-summary>
+            Vybraná témata se zobrazí zde. Nic se neodesílá.
+          </div>
         </div>
       </section>
-
-      <section class="section section-white" id="co-to-neni" aria-labelledby="compare-title">
-        <div class="container">
-          <div class="section-heading"><p class="section-index">02 / Co to není</p><div><p class="section-kicker">Pojmy bez mlhy</p><h2 class="section-title" id="compare-title">Team coaching není teambuilding s vážnějším názvem.</h2></div></div>
-          <div class="comparison-wrap"><table class="comparison"><thead><tr><th></th><th>Teambuilding</th><th>Facilitace</th><th>1:1 koučink</th><th>Team coaching</th></tr></thead><tbody><tr><th scope="row">Klient</th><td>nálada skupiny</td><td>agenda meetingu</td><td>jednotlivec</td><td>tým jako systém</td></tr><tr><th scope="row">Změna</th><td>zážitek</td><td>výstup ze schůzky</td><td>osobní vhled</td><td>vzorce spolupráce</td></tr><tr><th scope="row">Po skončení</th><td>vyprchá</td><td>zbude zápis</td><td>záleží na jednom člověku</td><td>tým umí sám</td></tr><tr><th scope="row">Kdy dává smysl</th><td>odměna, stmelení</td><td>jedno složité rozhodnutí</td><td>růst konkrétního leadera</td><td>opakující se dynamika, která brzdí výkon</td></tr></tbody></table></div>
-          <p class="comparison-note">Neděláme icebreaker a neodcházíme s flipchartem plným hodnot, které za dva týdny nikdo nepoužije.</p>
-        </div>
-      </section>
-
       <section class="section" aria-labelledby="process-title">
         <div class="container">
-          <div class="section-heading"><p class="section-index">03 / Jak to probíhá</p><div><p class="section-kicker">Od obrazu k novému rytmu</p><h2 class="section-title" id="process-title">Nejdřív vidět vzorec. Potom změnit práci, která se děje <em>mezi setkáními.</em></h2></div></div>
-          <div class="steps"><article class="step"><h3>Audit se sponsorem</h3><p>30 minut. Řekneme, zda team coaching dává smysl, nebo jestli potřebujete něco jiného.</p></article><article class="step"><h3>Diagnostika týmu</h3><p>Rozhovory, pozorování porady, pulzní skóre. Společný obraz, ne naše teorie.</p></article><article class="step"><h3>Práce s týmem</h3><p>Tým mluví k sobě, ne k nám. Pojmenováváme vzorce a vracíme odpovědnost týmu.</p></article><article class="step"><h3>Rituály, které zůstanou</h3><p>Končíme ve chvíli, kdy tým umí rozhodovat, eskalovat a opravovat spolupráci bez nás.</p></article></div>
-          <div class="inline-actions"><a class="text-link" href="/jak-pracujeme/">Celý proces na stránce Jak pracujeme →</a></div>
+          <div class="section-heading">
+            <p data-copy="process-index" class="section-index">02 / Jak pracujeme</p>
+            <h2 data-copy="process-title" id="process-title" class="section-title">
+              Čtyři kroky <em>společné práce.</em>
+            </h2>
+            <p data-copy="process-intro">
+              Úvodní rozhovor předchází týmové práci. Zachycuje pohled zájemce, nikoli objektivní obraz celého týmu.
+            </p>
+          </div>
+          <div class="steps">
+            <article class="step">
+              <h3 data-copy="step-1-title">
+                Dohoda o cíli a pravidlech.
+              </h3>
+              <p data-copy="step-1-copy">
+                Se zadavatelem i týmem vyjasníme smysl práce, role, očekávání, důvěrnost a způsob hodnocení. Zadavatel odpovídá za zadání a rozpočet.
+              </p>
+            </article>
+            <article class="step">
+              <h3 data-copy="step-2-title">
+                Společné porozumění situaci.
+              </h3>
+              <p data-copy="step-2-copy">
+                Propojíme různé pohledy, silné stránky a opakující se situace. Případné pozorování porady a další metody závisí na dohodnutém rozsahu.
+              </p>
+            </article>
+            <article class="step">
+              <h3 data-copy="step-3-title">
+                Zkoušení změn v praxi.
+              </h3>
+              <p data-copy="step-3-copy">
+                Setkání navazují na malé experimenty při rozhodování, předávání práce a řešení rozdílných názorů.
+              </p>
+            </article>
+            <article class="step">
+              <h3 data-copy="step-4-title">
+                Vyhodnocení a další fungování.
+              </h3>
+              <p data-copy="step-4-copy">
+                Tým posoudí, co se změnilo, co chce udržet a co případně vyžaduje jiný krok.
+              </p>
+            </article>
+          </div>
+          <div class="inline-actions">
+            <a class="text-link" href="/jak-pracujeme/">
+              Podrobněji o postupu →
+            </a>
+          </div>
         </div>
       </section>
-
       <section class="section" aria-labelledby="coaches-title">
         <div class="container">
-          <div class="section-heading"><p class="section-index">04 / Dvě koučky</p><div><p class="section-kicker">Jeden tým jako klient</p><h2 class="section-title" id="coaches-title">Dvě perspektivy. Jeden společný rámec práce.</h2><p class="lede">Martina Jonášová přináší koučovací rámec a týmový koučink. Veronika Vojtová přidává mimo jiné osmnáct let zkušeností v HR, práci s komunikací a rozvojem lidí a výcvik týmového koučování AATC. U každé zakázky nejdřív řešíme, co potřebuje tým.</p></div></div>
-          <div class="profile-grid">
-            <article class="profile-card"><div class="profile-visual" aria-label="Místo pro portrét Martiny Jonášové">MJ</div><div class="profile-copy"><h3>Martina Jonášová</h3><p class="profile-role">Team coach · ACC</p><p>Pracuje s týmy jako se systémem a opírá se o výcvik týmového koučování certifikovaný ICF jako AATC.</p><div class="credential-row"><span class="credential">ICF ACC</span><span class="credential">AATC</span></div></div></article>
-            <article class="profile-card"><div class="profile-visual" aria-label="Místo pro portrét Veroniky Vojtové">VV</div><div class="profile-copy"><h3>Veronika Vojtová</h3><p class="profile-role">Team coach · ACC · HR perspektiva</p><p>Přináší osmnáct let zkušeností v HR, zkušenost s firemním prostředím, komunikací a rozvojem lidí.</p><div class="credential-row"><span class="credential">ICF ACC</span><span class="credential">AATC</span><span class="credential">18 let v HR</span></div></div></article>
+          <div class="section-heading">
+            <p data-copy="coaches-index" class="section-index">03 / Dvě perspektivy</p>
+            <h2 data-copy="coaches-title" id="coaches-title" class="section-title">
+              Martina a Veronika. <em>Dvě perspektivy.</em>
+            </h2>
+            <p data-copy="coaches-intro">
+              Vhodné obsazení zakázky vychází z potřeb týmu a dohodnutého rozsahu.
+            </p>
           </div>
-          <div class="notice-todo"><strong>Obsah k doplnění</strong><span data-todo-key="PHOTOS">Doplnit autentickou společnou fotografii a dva sjednocené portréty.</span></div>
-          <div class="notice-todo"><strong>Model k potvrzení</strong><span data-todo-key="DELIVERY_MODEL">Potvrdit model: jedna vedoucí koučka vs. práce ve dvojici.</span></div>
-          <div class="inline-actions"><a class="button button-ghost" href="/o-nas/">Poznat Martinu a Veroniku <span aria-hidden="true">→</span></a></div>
+          <div class="profile-grid">
+            <article class="profile-card" id="martina">
+              <div class="profile-visual" data-photo="martina" role="img" aria-label="Portrét Martiny Jonášové">
+                MJ
+              </div>
+              <div class="profile-copy">
+                <h3 data-copy="martina-name">
+                  Martina Jonášová
+                </h3>
+                <p data-copy="martina-role" class="profile-role">
+                  Týmový koučink
+                </p>
+                <p data-copy="martina-short">
+                  Společně hledáme vhodný rámec pro práci s vaším týmem.
+                </p>
+                <a class="text-link" href="/o-nas/#martina">
+                  Více o koučce →
+                </a>
+              </div>
+            </article>
+            <article class="profile-card" id="veronika">
+              <div class="profile-visual" data-photo="veronika" role="img" aria-label="Portrét Veroniky Vojtové">
+                VV
+              </div>
+              <div class="profile-copy">
+                <h3 data-copy="veronika-name">
+                  Veronika Vojtová
+                </h3>
+                <p data-copy="veronika-role" class="profile-role">
+                  Týmový koučink
+                </p>
+                <p data-copy="veronika-short">
+                  Společně hledáme vhodný rámec pro práci s vaším týmem.
+                </p>
+                <a class="text-link" href="/o-nas/#veronika">
+                  Více o koučce →
+                </a>
+              </div>
+            </article>
+          </div>
+          <aside class="notice-todo" data-note-id="PHOTOS" aria-label="Poznámka k dokončení">
+            <strong data-note-title>
+              Autentické fotografie kouček — obsah
+            </strong>
+            <span class="note-status" data-note-status>
+              K doplnění
+            </span>
+            <p data-note-instruction>
+              Nahrajte schválenou společnou fotografii a dva sjednocené portréty. Vyplňte alternativní text a ověřte práva k použití. Nevkládejte ilustrační ani generované portréty jako fotografie kouček.
+            </p>
+          </aside>
+          <aside class="notice-todo" data-note-id="DELIVERY_MODEL" aria-label="Poznámka k dokončení">
+            <strong data-note-title>
+              Jedna nebo dvě koučky — rozhodnutí
+            </strong>
+            <span class="note-status" data-note-status>
+              K doplnění
+            </span>
+            <p data-note-instruction>
+              Potvrďte model vedení zakázky, zapojení druhé koučky, odpovědnosti a vliv na cenu. Neslibujte automatickou účast obou ani zastupitelnost bez dohody.
+            </p>
+          </aside>
         </div>
       </section>
-
-      <section class="statement" aria-label="Filosofie práce Silného týmu"><div class="container statement-inner"><p class="statement-title">Méně dojmů.<span>Jiné chování.</span></p><p class="statement-note">Výsledek není dobrá nálada na konci setkání. Je to jiné chování o čtyři týdny později.</p></div></section>
-
       <section class="section section-white" aria-labelledby="programs-title">
         <div class="container">
-          <div class="section-heading"><p class="section-index">05 / Programy</p><div><p class="section-kicker">Neprodáváme hodiny</p><h2 class="section-title" id="programs-title">Čtyři úrovně práce. Od rychlého „ano / ne“ po změnu systému.</h2></div></div>
-          <div class="cards-4 program-grid">
-            <article class="card program-card"><div class="program-meta"><span class="chip">Program 0</span><span class="chip">30 min</span></div><h3>Team Health Audit</h3><p>Tři pracovní hypotézy o dynamice týmu a doporučení dalšího kroku. Žádný nátlak na program.</p><a class="card-link" href="/kontakt/">Rezervovat audit →</a></article>
-            <article class="card program-card"><div class="program-meta"><span class="chip">Program 1</span><span class="chip">2–3 týdny</span></div><h3>Diagnostický sprint</h3><p>Rozhovory, pozorování porady, scorecard a společný obraz fungování týmu.</p><a class="card-link" href="/programy/">Zobrazit program →</a></article>
-            <article class="card card-dark program-card program-featured"><div class="program-meta"><span class="chip">Program 2</span><span class="chip">90 dní</span></div><h3>Tým, který se umí dohodnout</h3><p>Vlajkový program pro nový rozhodovací rytmus a pravidla konfliktu.</p><a class="card-link" href="/programy/#program-90">Zobrazit program →</a></article>
-            <article class="card program-card"><div class="program-meta"><span class="chip">Program 3</span><span class="chip">6 měsíců</span></div><h3>Leadership Team System</h3><p>Pro složitější změnu, práci napříč vrstvami, zeměmi nebo po fúzi.</p><a class="card-link" href="/programy/">Zobrazit program →</a></article>
+          <div class="section-heading">
+            <p data-copy="programs-index" class="section-index">04 / Spolupráce</p>
+            <h2 data-copy="programs-title" id="programs-title" class="section-title">
+              Úvodní rozhovor a tři <em>formáty spolupráce.</em>
+            </h2>
+          </div>
+          <div class="intro-offer">
+            <h3 data-copy="intro-title">
+              Úvodní rozhovor
+            </h3>
+            <p data-copy="intro-purpose">
+              Probrat situaci z pohledu zájemce a domluvit vhodný další krok
+            </p>
+            <aside class="notice-todo" data-note-id="AUDIT_PRICE" aria-label="Poznámka k dokončení">
+              <strong data-note-title>
+                Cena úvodního rozhovoru — rozhodnutí
+              </strong>
+              <span class="note-status" data-note-status>
+                K doplnění
+              </span>
+              <p data-note-instruction>
+                Potvrďte cenu úvodního rozhovoru a zda se hradí samostatně. Bez schválení jej neoznačujte jako bezplatný.
+              </p>
+            </aside>
+          </div>
+          <div class="cards-3">
+            <article class="card program-card">
+              <h3 data-copy="format-0-title">
+                Mapování fungování týmu
+              </h3>
+              <p data-copy="format-0-purpose">
+                Propojit více pohledů a společně vybrat priority
+              </p>
+              <a data-copy="format-0-link" class="card-link" href="/programy/">
+                Podrobnosti spolupráce →
+              </a>
+            </article>
+            <article class="card card-dark program-card program-featured">
+              <h3 data-copy="format-1-title">
+                Tříměsíční týmový program
+              </h3>
+              <p data-copy="format-1-purpose">
+                Zkoušet a vyhodnocovat změny v každodenní spolupráci
+              </p>
+              <a data-copy="format-1-link" class="card-link" href="/programy/#program-90">
+                Podrobnosti spolupráce →
+              </a>
+            </article>
+            <article class="card program-card">
+              <h3 data-copy="format-2-title">
+                Dlouhodobá spolupráce
+              </h3>
+              <p data-copy="format-2-purpose">
+                Pracovat se širší nebo náročnější změnou
+              </p>
+              <a data-copy="format-2-link" class="card-link" href="/programy/">
+                Podrobnosti spolupráce →
+              </a>
+            </article>
           </div>
         </div>
       </section>
-
       <section class="section" aria-labelledby="trust-title">
         <div class="container">
-          <div class="section-heading"><p class="section-index">06 / Důvěra</p><div><p class="section-kicker">Rámec spolupráce</p><h2 class="section-title" id="trust-title">Jasný mandát. Důvěrná místnost. Transparentní reporting.</h2></div></div>
-          <div class="trust-strip"><div class="trust-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"></path><path d="m8 12 3 3 5-6"></path></svg><strong>Ověřený koučovací základ</strong><p>Obě koučky ICF ACC a výcvik týmového koučování AATC.</p></div><div class="trust-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="13" rx="2"></rect><path d="M12 16v5M8 21h8"></path></svg><strong>Onsite i online</strong><p>Praha a dle dohody. Online po celé ČR/SR.</p></div><div class="trust-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg><strong>Smlouva a NDA</strong><p>Pravidla důvěrnosti určujeme před vstupem k týmu.</p></div><div class="trust-item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg><strong>Bez tajných reportů</strong><p>Sponsor dostává obraz systému, ne přepis toho, kdo co řekl.</p></div></div>
+          <div class="section-heading">
+            <p data-copy="trust-index" class="section-index">05 / Pravidla spolupráce</p>
+            <h2 data-copy="trust-title" id="trust-title" class="section-title">
+              Jasná pravidla <em>před společnou prací.</em>
+            </h2>
+          </div>
+          <p data-copy="trust-copy">
+            Se zadavatelem i týmem vyjasňujeme, co je cílem práce, jak budeme sledovat posun a co lze sdílet. Pravidla se týkají také individuálních rozhovorů. Důvěrnost a její hranice musí být součástí dohody.
+          </p>
+          <aside class="notice-todo" data-note-id="LEGAL_MODEL" aria-label="Poznámka k dokončení">
+            <strong data-note-title>
+              Dodavatel a správce údajů — právní vstupy
+            </strong>
+            <span class="note-status" data-note-status>
+              K doplnění
+            </span>
+            <p data-note-instruction>
+              Doplňte skutečného smluvního dodavatele, fakturační subjekt, správce údajů a kontakt. Potvrďte smluvní rámec, pravidla důvěrnosti, výjimky a sdílení výstupů s týmem i zadavatelem.
+            </p>
+          </aside>
+          <div id="co-to-neni" class="statement-inner methods-summary">
+            <h3 data-copy="methods-title" id="compare-title" class="statement-title">
+              Přístup vybíráme podle potřeby.
+            </h3>
+            <p data-copy="methods-copy" class="statement-note">
+              Facilitace pomáhá vést konkrétní společné jednání, teambuilding může podpořit vztahy a individuální koučink pracuje s cílem jednoho člověka. Týmový koučink se zaměřuje na spolupráci týmu v čase. Přístupy se mohou doplňovat.
+            </p>
+            <a class="text-link" href="/faq/">
+              Rozdíly a praktické otázky →
+            </a>
+          </div>
         </div>
       </section>
-
       <section class="section section-white" aria-labelledby="faq-title">
         <div class="narrow">
-          <div class="faq-heading"><p class="section-kicker">Časté otázky</p><h2 class="section-title" id="faq-title">Než rezervujete audit.</h2></div>
-          <div class="faq-list">
-            <details><summary>Musí u toho být šéf?</summary><div class="faq-answer"><p>Ano, pokud je součástí týmu-klienta. Bez jasného sponsora a mandátu týmovou zakázku nezačínáme.</p></div></details>
-            <details><summary>Hodí se to na hybridní tým?</summary><div class="faq-answer"><p>Ano. Kick-off a důležité review doporučujeme onsite. Zbytek může být online, pokud má tým funkční pravidla pro vzdálenou spolupráci.</p></div></details>
-            <details><summary>Budete u týmu vždy obě?</summary><div class="faq-answer"><p>Ne nutně. Obsazení volíme podle cíle, velikosti a dynamiky zakázky. Pokud má práce ve dvojici přidanou hodnotu, navrhneme ji předem.</p></div></details>
-            <details><summary>Kolik to stojí?</summary><div class="faq-answer"><p>Cenové údaje jsou zatím otevřenou obchodní otázkou. Přesný návrh vznikne po auditu; před zveřejněním webu budou zde doplněny schválené ceny nebo rozpětí.</p></div></details>
+          <div class="faq-heading">
+            <p data-copy="faq-index" class="section-index">06 / Časté otázky</p>
+            <h2 data-copy="faq-title" id="faq-title" class="section-title">
+              Než se spojíme.
+            </h2>
           </div>
-          <div class="inline-actions"><a class="text-link" href="/faq/">Všechny otázky →</a></div>
+          <div class="faq-list">
+            <details>
+              <summary>
+                Musí se zapojit vedoucí týmu?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Pokud je součástí týmu, jeho role a zapojení patří do společné dohody. Nejde jen o souhlas zadavatele mimo tým.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Lze pracovat s hybridním týmem?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Ano, vhodnou kombinaci osobních a online setkání je třeba dohodnout podle situace a podmínek týmu.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Je úvodní rozhovor placený?
+              </summary>
+              <div class="faq-answer">
+                <p>
+                  Cena čeká na potvrzení. Při rozhovoru probereme váš pohled na situaci a vhodný další krok; nejde o diagnózu celého týmu.
+                </p>
+              </div>
+            </details>
+          </div>
+          <div class="inline-actions">
+            <a class="text-link" href="/faq/">
+              Všechny otázky →
+            </a>
+          </div>
         </div>
       </section>
-
-      <section class="cta-band"><div class="container cta-band-inner"><h2>Nejdřív 30 minut. Pak případně návrh.</h2><div class="cta-band-copy"><p>Stačí jedna konkrétní situace z posledních dvou týdnů: porada, rozhodnutí, které se vrátilo, nebo konflikt, který šel mimo místnost.</p><a class="button button-dark" href="/kontakt/">Rezervovat Team Health Audit <span aria-hidden="true">↗</span></a></div></div></section>
+      <section class="cta-band">
+        <div class="container cta-band-inner">
+          <h2 data-copy="cta-title">
+            Začněme úvodním rozhovorem.
+          </h2>
+          <div class="cta-band-copy">
+            <p data-copy="cta-copy">
+              Nemusíte mít hotové zadání. Můžeme společně probrat, co byste ve spolupráci týmu chtěli posunout.
+            </p>
+            <a data-copy="cta-link" class="button button-dark" href="/kontakt/">
+              Domluvit úvodní rozhovor
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <a class="mobile-audit" href="/kontakt/">Rezervovat audit ↗</a>
+    <a class="mobile-audit" href="/kontakt/">
+      Domluvit úvodní rozhovor
+    </a>
     <footer class="site-footer">
-      <div class="container footer-main"><div class="footer-brand"><a class="brand" href="/"><img src="/assets/silny-tym-mark.png" alt="" width="40" height="40"><span class="brand-copy"><strong>Silný tým</strong><small>Team coaching</small></span></a><p>Team coaching pro leadership týmy. Martina Jonášová · Veronika Vojtová.</p></div><div><p class="footer-title">Pro tým</p><nav class="footer-links" aria-label="Služby"><a href="/pro-koho/">Pro koho</a><a href="/jak-pracujeme/">Jak pracujeme</a><a href="/programy/">Programy</a><a href="/team-health-scorecard/">Team Health Scorecard</a></nav></div><div><p class="footer-title">O značce</p><nav class="footer-links" aria-label="O značce"><a href="/vysledky/">Výsledky</a><a href="/pro-hr/">Pro HR</a><a href="/o-nas/">O nás</a><a href="/faq/">FAQ</a><a href="/kontakt/">Kontakt / Audit</a></nav></div></div>
-      <div class="container footer-bottom"><span>© <span data-year>2026</span> Silný tým</span><nav class="footer-legal" aria-label="Právní informace"><a href="/soukromi/">Soukromí</a><a href="/cookies/">Cookies</a></nav></div>
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Silný tým — úvod">
+            <img src="/assets/silny-team-logo-01.svg" alt="" width="32" height="32">
+            <span class="brand-copy">
+              <strong>
+                Silný tým
+              </strong>
+              <small>
+                Team coaching
+              </small>
+            </span>
+          </a>
+          <p>
+            Týmový koučink pro vedení firem. Martina Jonášová · Veronika Vojtová.
+          </p>
+          <p>
+            Pracovní návrh s viditelnými poznámkami k dokončení.
+          </p>
+        </div>
+        <div>
+          <p class="footer-title">
+            Spolupráce
+          </p>
+          <nav class="footer-links" aria-label="Spolupráce">
+            <a href="/pro-koho/">
+              Pro koho
+            </a>
+            <a href="/jak-pracujeme/">
+              Jak pracujeme
+            </a>
+            <a href="/programy/">
+              Spolupráce
+            </a>
+            <a href="/team-health-scorecard/">
+              Reflexe spolupráce · pracovní nástroj
+            </a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-title">
+            Další informace
+          </p>
+          <nav class="footer-links" aria-label="Další informace">
+            <a href="/vysledky/">
+              Jak poznáme posun
+            </a>
+            <a href="/o-nas/">
+              O nás
+            </a>
+            <a href="/pro-hr/">
+              Pro HR
+            </a>
+            <a href="/faq/">
+              Časté otázky
+            </a>
+            <a href="/kontakt/">
+              Kontakt
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>
+          ©
+          <span data-year>
+            2026
+          </span>
+          Silný tým
+        </span>
+        <nav class="footer-legal" aria-label="Právní informace">
+          <a href="/soukromi/">
+            Soukromí
+          </a>
+          <a href="/cookies/">
+            Cookies
+          </a>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>

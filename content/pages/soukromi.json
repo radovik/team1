@@ -1,27 +1,56 @@
 {
   "meta": {
-    "title": "Ochrana soukromí | Silný tým",
-    "description": "Pracovní stránka pro budoucí zásady ochrany osobních údajů."
+    "title": "Ochrana soukromí — pracovní osnova | Silný tým",
+    "description": "Pracovní osnova informací o soukromí s konkrétními vstupy k dokončení. Nejde o hotové zásady ani právní posouzení."
   },
   "sections": [
     {
-      "label": "Hero",
+      "label": "Úvod stránky",
       "items": [
-        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "Právní informace" },
-        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Ochrana *soukromí.*" },
-        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Tato stránka je připravená jako místo pro finální zásady ochrany osobních údajů. Před spuštěním musí projít právním doplněním." }
+        {
+          "label": "Název stránky",
+          "selector": "[data-copy=\"page-code\"]",
+          "mode": "text",
+          "value": "Soukromí · pracovní osnova"
+        },
+        {
+          "label": "Hlavní titulek",
+          "selector": "[data-copy=\"page-title\"]",
+          "mode": "text",
+          "value": "Ochrana soukromí."
+        },
+        {
+          "label": "Úvodní text",
+          "selector": "[data-copy=\"page-intro\"]",
+          "mode": "text",
+          "value": "Tato osnova není dokončenou informací o zpracování údajů. Konkrétní odpovědnosti, služby a postupy je třeba ověřit před aktivací sběru údajů."
+        }
       ]
     },
     {
-      "label": "Právní obsah",
+      "label": "Současné fungování a vstupy",
       "items": [
-        { "label": "První titulek", "selector": ".prose h2:nth-of-type(1)", "mode": "text", "value": "Co je potřeba doplnit" },
-        { "label": "Správce – štítek", "selector": ".notice-todo:nth-of-type(1) strong", "mode": "text", "value": "Správce a dodavatel" },
-        { "label": "Uložení dat – štítek", "selector": ".notice-todo:nth-of-type(2) strong", "mode": "text", "value": "Uložení dat" },
-        { "label": "Formulář – štítek", "selector": ".notice-todo:nth-of-type(3) strong", "mode": "text", "value": "Formulář" },
-        { "label": "Druhý titulek", "selector": ".prose h2:nth-of-type(2)", "mode": "text", "value": "Stav stránky" },
-        { "label": "Závěrečný text", "selector": ".prose > p:last-child", "mode": "text", "value": "Tento text není finální zásadou ochrany osobních údajů a web s aktivním formulářem nesmí být veřejně spuštěn, dokud nebudou uvedeny všechny povinné informace." }
+        {
+          "label": "Současné fungování – nadpis",
+          "selector": "[data-copy=\"privacy-current-title\"]",
+          "mode": "text",
+          "value": "Jak funguje současný náhled"
+        },
+        {
+          "label": "Současné fungování – text",
+          "selector": "[data-copy=\"privacy-current-copy\"]",
+          "mode": "text",
+          "value": "Kontaktní formulář pouze ověřuje pole v prohlížeči. Odpovědi reflexe se neodesílají ani trvale neukládají. To neznamená, že hosting nebo externí služby nezpracovávají provozní údaje."
+        },
+        {
+          "label": "Schválené informace o zpracování",
+          "selector": "[data-copy=\"privacy-final\"]",
+          "mode": "text",
+          "value": ""
+        }
       ]
     }
-  ]
+  ],
+  "images": [],
+  "links": []
 }

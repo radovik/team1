@@ -1,64 +1,180 @@
 {
   "meta": {
-    "title": "Jak probíhá team coaching | Silný tým",
-    "description": "Jak probíhá team coaching: dohoda se sponsorem, diagnostika, společná práce a předání rituálů týmu."
+    "title": "Jak pracujeme s týmem | Silný tým",
+    "description": "Dohoda s týmem i zadavatelem, společné porozumění, malé experimenty a vyhodnocení. Postup týmového koučinku."
   },
   "sections": [
     {
-      "label": "Hero",
+      "label": "Úvod stránky",
       "items": [
-        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "02 / Jak pracujeme" },
-        { "label": "Nadpis nad titulkem", "selector": ".page-hero .eyebrow", "mode": "text", "value": "Tým jako systém" },
-        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Klientem je tým. Ne součet *jednotlivců.*" },
-        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Když tým mluví k nám, vracíme ho k sobě. Když přijde shoda moc rychle, ptáme se, co nebylo řečeno. Když se objeví vzorec, pojmenujeme ho a necháme tým, ať s ním naloží." }
+        {
+          "label": "Název stránky",
+          "selector": "[data-copy=\"page-code\"]",
+          "mode": "text",
+          "value": "Jak pracujeme"
+        },
+        {
+          "label": "Hlavní titulek",
+          "selector": "[data-copy=\"page-title\"]",
+          "mode": "text",
+          "value": "Společně zkoumáme, zkoušíme a vyhodnocujeme."
+        },
+        {
+          "label": "Úvodní text",
+          "selector": "[data-copy=\"page-intro\"]",
+          "mode": "text",
+          "value": "Úvodní rozhovor pomáhá porozumět pohledu zájemce a domluvit další krok. Dohoda o týmové práci pak vzniká se zadavatelem i samotným týmem."
+        }
       ]
     },
     {
-      "label": "Proces",
+      "label": "Čtyři kroky",
       "items": [
-        { "label": "Číslo sekce", "selector": ".section-dark .section-index", "mode": "text", "value": "01 / Proces" },
-        { "label": "Nadpis nad sekcí", "selector": ".section-dark .section-kicker", "mode": "text", "value": "90 dní v praxi" },
-        { "label": "Titulek sekce", "selector": ".section-dark .section-title", "mode": "text", "value": "Od jasného mandátu k rituálům, které tým umí opakovat bez nás." },
-        { "label": "Krok 1 – titulek", "selector": ".steps .step:nth-child(1) h3", "mode": "text", "value": "Dohoda se sponsorem" },
-        { "label": "Krok 1 – text", "selector": ".steps .step:nth-child(1) p", "mode": "text", "value": "Ujasníme, k čemu má práce sloužit, co je úspěch za 90 dní, co se smí reportovat a kdo musí být v místnosti." },
-        { "label": "Krok 2 – titulek", "selector": ".steps .step:nth-child(2) h3", "mode": "text", "value": "Diagnostika" },
-        { "label": "Krok 2 – text", "selector": ".steps .step:nth-child(2) p", "mode": "text", "value": "Krátké rozhovory, pozorování reálné porady a pulzní skóre. Obraz, ve kterém tým pozná sebe — ne 80stránková analýza." },
-        { "label": "Krok 3 – titulek", "selector": ".steps .step:nth-child(3) h3", "mode": "text", "value": "Společná práce" },
-        { "label": "Krok 3 – text", "selector": ".steps .step:nth-child(3) p", "mode": "text", "value": "Typicky 6 setkání po 90–120 minutách. Mezi nimi malé experimenty v reálné práci: porada, eskalace, rozhodování, nesouhlas." },
-        { "label": "Krok 4 – titulek", "selector": ".steps .step:nth-child(4) h3", "mode": "text", "value": "Předání" },
-        { "label": "Krok 4 – text", "selector": ".steps .step:nth-child(4) p", "mode": "text", "value": "Retrospektiva rozhodnutí. Pravidlo konfliktu. Role na poradě. Cílem je, aby nás tým přestal potřebovat." }
+        {
+          "label": "Nadpis sekce",
+          "selector": "[data-copy=\"process-title\"]",
+          "mode": "text",
+          "value": "Postup spolupráce."
+        },
+        {
+          "label": "Krok 1 – nadpis",
+          "selector": "[data-copy=\"step-1-title\"]",
+          "mode": "text",
+          "value": "Dohoda o cíli a pravidlech."
+        },
+        {
+          "label": "Krok 1 – text",
+          "selector": "[data-copy=\"step-1-copy\"]",
+          "mode": "text",
+          "value": "Se zadavatelem i týmem vyjasníme smysl práce, role, očekávání, důvěrnost a způsob hodnocení. Zadavatel odpovídá za zadání a rozpočet."
+        },
+        {
+          "label": "Krok 2 – nadpis",
+          "selector": "[data-copy=\"step-2-title\"]",
+          "mode": "text",
+          "value": "Společné porozumění situaci."
+        },
+        {
+          "label": "Krok 2 – text",
+          "selector": "[data-copy=\"step-2-copy\"]",
+          "mode": "text",
+          "value": "Propojíme různé pohledy, silné stránky a opakující se situace. Případné pozorování porady a další metody závisí na dohodnutém rozsahu."
+        },
+        {
+          "label": "Krok 3 – nadpis",
+          "selector": "[data-copy=\"step-3-title\"]",
+          "mode": "text",
+          "value": "Zkoušení změn v praxi."
+        },
+        {
+          "label": "Krok 3 – text",
+          "selector": "[data-copy=\"step-3-copy\"]",
+          "mode": "text",
+          "value": "Setkání navazují na malé experimenty při rozhodování, předávání práce a řešení rozdílných názorů."
+        },
+        {
+          "label": "Krok 4 – nadpis",
+          "selector": "[data-copy=\"step-4-title\"]",
+          "mode": "text",
+          "value": "Vyhodnocení a další fungování."
+        },
+        {
+          "label": "Krok 4 – text",
+          "selector": "[data-copy=\"step-4-copy\"]",
+          "mode": "text",
+          "value": "Tým posoudí, co se změnilo, co chce udržet a co případně vyžaduje jiný krok."
+        }
       ]
     },
     {
-      "label": "Práce v místnosti",
+      "label": "Podmínky a příklad",
       "items": [
-        { "label": "Co děláme – titulek", "selector": ".prose h2:nth-of-type(1)", "mode": "text", "value": "Co děláme v místnosti" },
-        { "label": "Co děláme – text", "selector": ".prose > p:nth-of-type(1)", "mode": "text", "value": "Neodnášíme si jejich práci domů v podobě rad, které by měly zaznít mezi nimi. Držíme rámec, vracíme pozornost k chování týmu a pracujeme s tím, co se děje právě teď." },
-        { "label": "Jedna nebo dvě koučky – titulek", "selector": ".prose h2:nth-of-type(2)", "mode": "text", "value": "Jedna nebo dvě koučky?" },
-        { "label": "Jedna nebo dvě koučky – text", "selector": ".prose > p:nth-of-type(2)", "mode": "text", "value": "Zakázka má mít jasně určenou vedoucí koučku. Druhá se zapojuje pouze tam, kde dvě perspektivy nebo práce ve dvojici reálně zvyšují kvalitu intervence — například u většího leadership týmu, offsite dne nebo komplexnější změny." },
-        { "label": "Otevřený model – štítek", "selector": ".prose .notice-todo strong", "mode": "text", "value": "Model k potvrzení" },
-        { "label": "Důvěrnost – titulek", "selector": ".prose h2:nth-of-type(3)", "mode": "text", "value": "Důvěrnost" },
-        { "label": "Důvěrnost – text", "selector": ".prose > p:nth-of-type(3)", "mode": "text", "value": "Se sponsorem se domlouváme na tom, co smí být reportováno. Neděláme tajné reporty o tom, kdo je „problém“. Když tým přestane věřit místnosti, práce nedává smysl." },
-        { "label": "Postranní nadpis", "selector": ".sidebar-card .section-kicker", "mode": "text", "value": "Začátek" },
-        { "label": "Postranní titulek", "selector": ".sidebar-card h2", "mode": "text", "value": "Audit před programem." },
-        { "label": "Postranní text", "selector": ".sidebar-card > p:last-of-type", "mode": "text", "value": "Nejdřív jedna konkrétní situace a 30 minut se sponsorem. Potom jasné doporučení dalšího kroku." },
-        { "label": "Postranní tlačítko", "selector": ".sidebar-card .button", "mode": "text", "value": "Rezervovat audit ↗" }
-      ]
-    },
-    {
-      "label": "Prohlášení",
-      "items": [
-        { "label": "Velký titulek", "selector": ".statement-title", "mode": "statement", "value": "Tým mluví\nk sobě." },
-        { "label": "Poznámka", "selector": ".statement-note", "mode": "text", "value": "Odpovědnost za rozhodnutí a způsob spolupráce zůstává tam, kam patří — v týmu." }
+        {
+          "label": "Širší podmínky – nadpis",
+          "selector": "[data-copy=\"system-title\"]",
+          "mode": "text",
+          "value": "Tým je součástí organizace."
+        },
+        {
+          "label": "Širší podmínky – text",
+          "selector": "[data-copy=\"system-copy\"]",
+          "mode": "text",
+          "value": "Vedle dění na poradě sledujeme společný účel, rozhodovací pravomoci, rozdílné cíle oddělení a očekávání lidí mimo tým. Zkoumáme také to, co už funguje a na čem lze stavět."
+        },
+        {
+          "label": "Bezpečí – nadpis",
+          "selector": "[data-copy=\"safety-title\"]",
+          "mode": "text",
+          "value": "Prostor pro otázku i nesouhlas"
+        },
+        {
+          "label": "Bezpečí – text",
+          "selector": "[data-copy=\"safety-copy\"]",
+          "mode": "text",
+          "value": "Pracujeme na tom, aby bylo možné položit otázku, upozornit na riziko, přiznat chybu nebo požádat o pomoc. Nevyžadujeme sdílení osobních věcí ani neslibujeme okamžitou otevřenost."
+        },
+        {
+          "label": "Ilustrační příklad – nadpis",
+          "selector": "[data-copy=\"example-title\"]",
+          "mode": "text",
+          "value": "Ilustrační příklad: návrat k rozhodnutí"
+        },
+        {
+          "label": "Ilustrační příklad – text",
+          "selector": "[data-copy=\"example-copy\"]",
+          "mode": "text",
+          "value": "Tým se po poradách vrací k uzavřeným rozhodnutím. Společně zkoumá proč, zkusí výslovně uzavírat rozhodnutí, určit odpovědnost za dohodu a podmínky jejího přehodnocení. Po dohodnutém období vyhodnotí zkušenost. Nové informace mohou být dobrým důvodem rozhodnutí změnit. Jde o ilustraci postupu, nikoli klientskou referenci."
+        },
+        {
+          "label": "Obsazení – nadpis",
+          "selector": "[data-copy=\"staff-title\"]",
+          "mode": "text",
+          "value": "Jedna nebo dvě koučky"
+        },
+        {
+          "label": "Obsazení – text",
+          "selector": "[data-copy=\"staff-copy\"]",
+          "mode": "text",
+          "value": "Dvě perspektivy mohou pomoci zachytit více dění v týmu; jedna koučka může zajistit soustředěné vedení práce. Vhodné obsazení a odpovědnosti je třeba dohodnout podle cíle a rozsahu."
+        },
+        {
+          "label": "Důvěrnost – nadpis",
+          "selector": "[data-copy=\"sharing-title\"]",
+          "mode": "text",
+          "value": "Dohoda o sdílení"
+        },
+        {
+          "label": "Důvěrnost – text",
+          "selector": "[data-copy=\"sharing-copy\"]",
+          "mode": "text",
+          "value": "Tým a zadavatel se podílejí na vyjasnění, jaké výstupy se sdílejí, komu a za jakých podmínek. Totéž platí pro individuální rozhovory a případnou práci koučky se zadavatelem."
+        }
       ]
     },
     {
       "label": "Závěrečná výzva",
       "items": [
-        { "label": "Titulek", "selector": ".cta-band h2", "mode": "text", "value": "Chcete vědět, jaký rozsah dává smysl?" },
-        { "label": "Text", "selector": ".cta-band-copy p", "mode": "text", "value": "Audit oddělí týmový problém od tématu pro facilitaci, 1:1 nebo jiný typ práce." },
-        { "label": "Tlačítko", "selector": ".cta-band .button", "mode": "text", "value": "Rezervovat Team Health Audit ↗" }
+        {
+          "label": "Nadpis",
+          "selector": "[data-copy=\"cta-title\"]",
+          "mode": "text",
+          "value": "Začněme úvodním rozhovorem."
+        },
+        {
+          "label": "Text",
+          "selector": "[data-copy=\"cta-copy\"]",
+          "mode": "text",
+          "value": "Nemusíte mít hotové zadání. Můžeme společně probrat, co byste ve spolupráci týmu chtěli posunout."
+        },
+        {
+          "label": "Odkaz",
+          "selector": "[data-copy=\"cta-link\"]",
+          "mode": "text",
+          "value": "Domluvit úvodní rozhovor"
+        }
       ]
     }
-  ]
+  ],
+  "images": [],
+  "links": []
 }

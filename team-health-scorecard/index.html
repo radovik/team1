@@ -1,43 +1,900 @@
 <!doctype html>
 <html lang="cs">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="12 otázek pro rychlý obraz toho, jak tým rozhoduje, nese nesouhlas a drží dohody."><meta name="theme-color" content="#030b16"><title>Team Health Scorecard | Silný tým</title><link rel="icon" href="/assets/silny-tym-mark.png"><link rel="stylesheet" href="/styles.css"><script src="/content-todos.js" defer></script><script src="/script.js" defer></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Pracovní nástroj s 12 otázkami pro osobní reflexi spolupráce za poslední čtyři týdny. Bez skóre, e-mailu a odesílání odpovědí.">
+    <meta name="theme-color" content="#faf9f6">
+    <title>
+      Reflexe spolupráce v týmu | Silný tým
+    </title>
+    <meta property="og:title" content="Reflexe spolupráce v týmu | Silný tým">
+    <meta property="og:description" content="Pracovní nástroj s 12 otázkami pro osobní reflexi spolupráce za poslední čtyři týdny. Bez skóre, e-mailu a odesílání odpovědí.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:image" content="https://team1-beige.vercel.app/assets/silny-team-logo-01.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/silny-team-logo-01.svg">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap">
-</head>
-<body>
-<a class="skip-link" href="#main-content">Přejít na hlavní obsah</a>
-<header class="site-header"><div class="container header-inner"><a class="brand" href="/"><img src="/assets/silny-tym-mark.png" alt=""><span class="brand-copy"><strong>Silný tým</strong><small>Team coaching</small></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Otevřít navigaci"><span></span><span></span><span></span></button><nav class="site-nav" id="primary-navigation"><a href="/" data-path="/">Úvod</a><a href="/pro-koho/" data-path="/pro-koho">Pro koho</a><a href="/jak-pracujeme/" data-path="/jak-pracujeme">Jak pracujeme</a><a href="/programy/" data-path="/programy">Programy</a><a href="/vysledky/" data-path="/vysledky">Výsledky</a><a href="/pro-hr/" data-path="/pro-hr">Pro HR</a><a href="/o-nas/" data-path="/o-nas">O nás</a><a class="nav-cta" href="/kontakt/" data-path="/kontakt">Rezervovat audit</a></nav></div></header>
-<main id="main-content" data-content-file="/content/pages/team-health-scorecard.json">
-  <section class="page-hero"><div class="container page-hero-inner"><p class="page-code">Team Health Scorecard</p><div><p class="eyebrow">12 otázek · 8 minut</p><h1>Obraz týmu. Ne <em>osobnosti.</em></h1><p class="lede">Scorecard neměří, kdo je „dobrý člověk“. Měří, jak tým rozhoduje, nese nesouhlas a drží dohodu po poradě. Odpovídejte podle toho, co se reálně dělo v posledních čtyřech týdnech.</p></div></div></section>
-  <section class="section"><div class="narrow">
-    <div class="notice-todo"><strong>Pracovní verze</strong><span data-todo-key="SCORECARD_COPY">Potvrdit finální znění 12 otázek scorecardu; nyní je zobrazená pracovní verze.</span></div>
-    <div class="score-legend" aria-hidden="true"><span>1 · téměř nikdy</span><span>5 · téměř vždy</span></div>
-    <form class="scorecard" data-scorecard>
-      <section class="score-group" aria-labelledby="decisions-title"><div class="score-group-header"><h2 id="decisions-title">Rozhodování</h2><span>4 otázky</span></div>
-        <div class="score-question"><p>Po poradě je všem jasné, co bylo rozhodnuto a co ještě otevřené.</p><div class="score-scale" role="radiogroup" aria-label="Po poradě je všem jasné, co bylo rozhodnuto"><label><input type="radio" name="decisions-1" value="1" required><span>1</span></label><label><input type="radio" name="decisions-1" value="2"><span>2</span></label><label><input type="radio" name="decisions-1" value="3"><span>3</span></label><label><input type="radio" name="decisions-1" value="4"><span>4</span></label><label><input type="radio" name="decisions-1" value="5"><span>5</span></label></div></div>
-        <div class="score-question"><p>Uzavřená rozhodnutí se neotevírají znovu bez nové informace.</p><div class="score-scale" role="radiogroup" aria-label="Uzavřená rozhodnutí se neotevírají znovu"><label><input type="radio" name="decisions-2" value="1" required><span>1</span></label><label><input type="radio" name="decisions-2" value="2"><span>2</span></label><label><input type="radio" name="decisions-2" value="3"><span>3</span></label><label><input type="radio" name="decisions-2" value="4"><span>4</span></label><label><input type="radio" name="decisions-2" value="5"><span>5</span></label></div></div>
-        <div class="score-question"><p>Tým ví, kdo má pro konkrétní typ rozhodnutí poslední slovo.</p><div class="score-scale" role="radiogroup" aria-label="Tým ví, kdo má poslední slovo"><label><input type="radio" name="decisions-3" value="1" required><span>1</span></label><label><input type="radio" name="decisions-3" value="2"><span>2</span></label><label><input type="radio" name="decisions-3" value="3"><span>3</span></label><label><input type="radio" name="decisions-3" value="4"><span>4</span></label><label><input type="radio" name="decisions-3" value="5"><span>5</span></label></div></div>
-        <div class="score-question"><p>Porady končí rozhodnutím nebo jasným dalším krokem, ne neurčitým „vrátíme se k tomu“.</p><div class="score-scale" role="radiogroup" aria-label="Porady končí rozhodnutím nebo dalším krokem"><label><input type="radio" name="decisions-4" value="1" required><span>1</span></label><label><input type="radio" name="decisions-4" value="2"><span>2</span></label><label><input type="radio" name="decisions-4" value="3"><span>3</span></label><label><input type="radio" name="decisions-4" value="4"><span>4</span></label><label><input type="radio" name="decisions-4" value="5"><span>5</span></label></div></div>
+    <script src="/script.js" defer>
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">
+      Přejít na hlavní obsah
+    </a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Silný tým — úvod">
+          <img src="/assets/silny-team-logo-01.svg" alt="" width="32" height="32">
+          <span class="brand-copy">
+            <strong>
+              Silný tým
+            </strong>
+            <small>
+              Team coaching
+            </small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Otevřít navigaci">
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+        </button>
+        <nav class="site-nav" id="primary-navigation" aria-label="Hlavní navigace">
+          <a href="/pro-koho/" data-path="/pro-koho">
+            Pro koho
+          </a>
+          <a href="/jak-pracujeme/" data-path="/jak-pracujeme">
+            Jak pracujeme
+          </a>
+          <a href="/programy/" data-path="/programy">
+            Spolupráce
+          </a>
+          <a href="/o-nas/" data-path="/o-nas">
+            O nás
+          </a>
+          <a href="/pro-hr/" data-path="/pro-hr">
+            Pro HR
+          </a>
+          <a class="nav-cta" href="/kontakt/" data-path="/kontakt">
+            Domluvit úvodní rozhovor
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" data-content-file="/content/pages/team-health-scorecard.json">
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <p data-copy="page-code" class="page-code">
+            Reflexe spolupráce v týmu · pracovní nástroj
+          </p>
+          <div>
+            <h1 data-copy="page-title">
+              Jak vnímáte spolupráci ve svém týmu?
+            </h1>
+            <p data-copy="page-intro" class="lede">
+              Otázky vám pomohou ujasnit si zkušenost z posledních čtyř týdnů. Odpovědi zachycují váš pohled a mohou posloužit jako podklad pro rozhovor. Nejde o ověřený diagnostický test ani o objektivní hodnocení celého týmu.
+            </p>
+          </div>
+        </div>
       </section>
-      <section class="score-group" aria-labelledby="conflict-title"><div class="score-group-header"><h2 id="conflict-title">Nesouhlas a konflikt</h2><span>4 otázky</span></div>
-        <div class="score-question"><p>Lidé vysloví nesouhlas dřív, než se rozhodnutí přesune do kuloárů.</p><div class="score-scale" role="radiogroup" aria-label="Lidé vysloví nesouhlas včas"><label><input type="radio" name="conflict-1" value="1" required><span>1</span></label><label><input type="radio" name="conflict-1" value="2"><span>2</span></label><label><input type="radio" name="conflict-1" value="3"><span>3</span></label><label><input type="radio" name="conflict-1" value="4"><span>4</span></label><label><input type="radio" name="conflict-1" value="5"><span>5</span></label></div></div>
-        <div class="score-question"><p>Obtížná témata se řeší se správnými lidmi ve stejné místnosti.</p><div class="score-scale" role="radiogroup" aria-label="Obtížná témata se řeší se správnými lidmi"><label><input type="radio" name="conflict-2" value="1" required><span>1</span></label><label><input type="radio" name="conflict-2" value="2"><span>2</span></label><label><input type="radio" name="conflict-2" value="3"><span>3</span></label><label><input type="radio" name="conflict-2" value="4"><span>4</span></label><label><input type="radio" name="conflict-2" value="5"><span>5</span></label></div></div>
-        <div class="score-question"><p>Leader unese oponující názor, aniž by tým trestal za otevřenost.</p><div class="score-scale" role="radiogroup" aria-label="Leader unese oponující názor"><label><input type="radio" name="conflict-3" value="1" required><span>1</span></label><label><input type="radio" name="conflict-3" value="2"><span>2</span></label><label><input type="radio" name="conflict-3" value="3"><span>3</span></label><label><input type="radio" name="conflict-3" value="4"><span>4</span></label><label><input type="radio" name="conflict-3" value="5"><span>5</span></label></div></div>
-        <div class="score-question"><p>V hybridním týmu mají vzdálení členové reálný prostor ovlivnit debatu.</p><div class="score-scale" role="radiogroup" aria-label="Vzdálení členové mají prostor ovlivnit debatu"><label><input type="radio" name="conflict-4" value="1" required><span>1</span></label><label><input type="radio" name="conflict-4" value="2"><span>2</span></label><label><input type="radio" name="conflict-4" value="3"><span>3</span></label><label><input type="radio" name="conflict-4" value="4"><span>4</span></label><label><input type="radio" name="conflict-4" value="5"><span>5</span></label></div></div>
+      <section class="section" >
+        <div class="container">
+          <div class="narrow">
+            <aside class="notice-todo" data-note-id="SCORECARD_COPY" aria-label="Poznámka k dokončení">
+              <strong data-note-title>
+                Otázky reflexe — obsah ke kontrole
+              </strong>
+              <span class="note-status" data-note-status>
+                K doplnění
+              </span>
+              <p data-note-instruction>
+                Projděte znění všech 12 otázek, tři oblasti a srozumitelnost možností odpovědi. Schválení formulací není psychometrická validace; nástroj zachycuje osobní pohled, nikoli zdraví celého týmu.
+              </p>
+            </aside>
+            <p data-copy="privacy-copy">
+              Odpovědi zůstávají pouze v této otevřené stránce a neodesílají se. Po obnovení stránky se vymažou.
+            </p>
+            <p data-copy="answer-help">
+              Vyberte četnost podle vlastní zkušenosti za poslední čtyři týdny. Pokud nemáte možnost situaci pozorovat, použijte nečíselnou odpověď.
+            </p>
+            <p class="score-progress" data-score-progress role="status" aria-live="polite" aria-atomic="true">
+              Zodpovězeno 0 z 12 otázek.
+            </p>
+            <form class="scorecard" data-scorecard novalidate>
+              <section class="score-group" data-score-area="decisions" aria-labelledby="decisions-title">
+                <div class="score-group-header">
+                  <h2 data-copy="decisions-title" id="decisions-title">
+                    Rozhodování
+                  </h2>
+                </div>
+                <fieldset class="score-question" data-question-id="decisions-1" aria-describedby="decisions-1-error">
+                  <legend data-copy="decisions-1" id="decisions-1-label">
+                    Na konci porady zazní, co bylo rozhodnuto.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="decisions-1" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-1" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-1" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-1" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-1" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-1" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-1" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="decisions-1-error" hidden>
+                  </p>
+                </fieldset>
+                <fieldset class="score-question" data-question-id="decisions-2" aria-describedby="decisions-2-error">
+                  <legend data-copy="decisions-2" id="decisions-2-label">
+                    Při návratu k rozhodnutí zazní důvod jeho přehodnocení.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="decisions-2" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-2" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-2" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-2" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-2" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-2" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-2" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="decisions-2-error" hidden>
+                  </p>
+                </fieldset>
+                <fieldset class="score-question" data-question-id="decisions-3" aria-describedby="decisions-3-error">
+                  <legend data-copy="decisions-3" id="decisions-3-label">
+                    U společného rozhodnutí je řečeno, kdo má rozhodovací pravomoc.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="decisions-3" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-3" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-3" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-3" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-3" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-3" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-3" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="decisions-3-error" hidden>
+                  </p>
+                </fieldset>
+                <fieldset class="score-question" data-question-id="decisions-4" aria-describedby="decisions-4-error">
+                  <legend data-copy="decisions-4" id="decisions-4-label">
+                    U neuzavřeného tématu je domluven další krok.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="decisions-4" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-4" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-4" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-4" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-4" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-4" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="decisions-4" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="decisions-4-error" hidden>
+                  </p>
+                </fieldset>
+              </section>
+              <section class="score-group" data-score-area="conflict" aria-labelledby="conflict-title">
+                <div class="score-group-header">
+                  <h2 data-copy="conflict-title" id="conflict-title">
+                    Nesouhlas a rozdílné názory
+                  </h2>
+                </div>
+                <fieldset class="score-question" data-question-id="conflict-1" aria-describedby="conflict-1-error">
+                  <legend data-copy="conflict-1" id="conflict-1-label">
+                    Členové při společném jednání vysloví odlišný názor.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="conflict-1" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-1" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-1" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-1" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-1" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-1" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-1" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="conflict-1-error" hidden>
+                  </p>
+                </fieldset>
+                <fieldset class="score-question" data-question-id="conflict-2" aria-describedby="conflict-2-error">
+                  <legend data-copy="conflict-2" id="conflict-2-label">
+                    Obtížné téma se probírá s lidmi, kterých se týká.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="conflict-2" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-2" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-2" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-2" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-2" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-2" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-2" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="conflict-2-error" hidden>
+                  </p>
+                </fieldset>
+                <fieldset class="score-question" data-question-id="conflict-3" aria-describedby="conflict-3-error">
+                  <legend data-copy="conflict-3" id="conflict-3-label">
+                    Vedoucí se při odlišném názoru ptá na jeho důvody.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="conflict-3" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-3" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-3" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-3" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-3" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-3" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-3" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="conflict-3-error" hidden>
+                  </p>
+                </fieldset>
+                <fieldset class="score-question" data-question-id="conflict-4" aria-describedby="conflict-4-error">
+                  <legend data-copy="conflict-4" id="conflict-4-label">
+                    Vzdálení účastníci dostanou při jednání prostor vyjádřit se.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="conflict-4" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-4" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-4" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-4" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-4" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-4" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="conflict-4" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="conflict-4-error" hidden>
+                  </p>
+                </fieldset>
+              </section>
+              <section class="score-group" data-score-area="ownership" aria-labelledby="ownership-title">
+                <div class="score-group-header">
+                  <h2 data-copy="ownership-title" id="ownership-title">
+                    Odpovědnost za dohody
+                  </h2>
+                </div>
+                <fieldset class="score-question" data-question-id="ownership-1" aria-describedby="ownership-1-error">
+                  <legend data-copy="ownership-1" id="ownership-1-label">
+                    U dohodnutého úkolu je pojmenován jeho nositel.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="ownership-1" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-1" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-1" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-1" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-1" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-1" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-1" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="ownership-1-error" hidden>
+                  </p>
+                </fieldset>
+                <fieldset class="score-question" data-question-id="ownership-2" aria-describedby="ownership-2-error">
+                  <legend data-copy="ownership-2" id="ownership-2-label">
+                    Tým se při společném jednání vrací k plnění dohod.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="ownership-2" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-2" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-2" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-2" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-2" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-2" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-2" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="ownership-2-error" hidden>
+                  </p>
+                </fieldset>
+                <fieldset class="score-question" data-question-id="ownership-3" aria-describedby="ownership-3-error">
+                  <legend data-copy="ownership-3" id="ownership-3-label">
+                    Členové upozorní na překážku před dohodnutým termínem.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="ownership-3" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-3" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-3" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-3" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-3" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-3" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-3" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="ownership-3-error" hidden>
+                  </p>
+                </fieldset>
+                <fieldset class="score-question" data-question-id="ownership-4" aria-describedby="ownership-4-error">
+                  <legend data-copy="ownership-4" id="ownership-4-label">
+                    Tým společně probírá, jak upravit způsob spolupráce.
+                  </legend>
+                  <div class="reflection-options">
+                    <label>
+                      <input type="radio" name="ownership-4" value="1" required>
+                      <span data-answer-value="1">
+                        Téměř nikdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-4" value="2" required>
+                      <span data-answer-value="2">
+                        Zřídka
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-4" value="3" required>
+                      <span data-answer-value="3">
+                        Někdy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-4" value="4" required>
+                      <span data-answer-value="4">
+                        Často
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-4" value="5" required>
+                      <span data-answer-value="5">
+                        Téměř vždy
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-4" value="cannot_assess" required>
+                      <span data-answer-value="cannot_assess">
+                        Nemohu posoudit
+                      </span>
+                    </label>
+                    <label>
+                      <input type="radio" name="ownership-4" value="not_applicable" required>
+                      <span data-answer-value="not_applicable">
+                        Netýká se nás
+                      </span>
+                    </label>
+                  </div>
+                  <p class="field-error" id="ownership-4-error" hidden>
+                  </p>
+                </fieldset>
+              </section>
+              <div class="form-submit">
+                <button class="button button-dark" type="submit" disabled>
+                  Zobrazit moje odpovědi
+                </button>
+                <button class="button button-ghost" type="reset">
+                  Vymazat odpovědi
+                </button>
+                <p class="form-status" data-score-status role="status" aria-live="polite">
+                </p>
+              </div>
+              <noscript>
+                <p>
+                  Pro zobrazení souhrnu zapněte JavaScript. Odpovědi se neodesílají.
+                </p>
+              </noscript>
+            </form>
+            <section class="score-result" data-score-result tabindex="-1" aria-labelledby="reflection-title">
+              <h2 id="reflection-title">
+                Moje odpovědi
+              </h2>
+              <p data-reflection-summary>
+              </p>
+              <div data-reflection-answers>
+              </div>
+              <div class="field">
+                <label for="reflection-topic">
+                  Kterou situaci chcete prozkoumat dál? (volitelné)
+                </label>
+                <select id="reflection-topic">
+                  <option value="">
+                    Zatím nevybírám
+                  </option>
+                </select>
+              </div>
+              <p data-reflection-topic role="status">
+              </p>
+              <div class="prose">
+                <h3 data-copy="prompt-strength">
+                  Co se vám daří opakovat?
+                </h3>
+                <h3 data-copy="prompt-situation">
+                  Kterou situaci byste chtěli probrat s týmem?
+                </h3>
+                <h3 data-copy="prompt-step">
+                  Jaký malý krok můžete vyzkoušet?
+                </h3>
+              </div>
+              <p>
+                Souhrn zachycuje váš pohled, ne hodnocení celého týmu. Můžete se vrátit k otázkám, změnit odpovědi a zobrazit souhrn znovu.
+              </p>
+            </section>
+          </div>
+        </div>
       </section>
-      <section class="score-group" aria-labelledby="ownership-title"><div class="score-group-header"><h2 id="ownership-title">Ownership a dohody</h2><span>4 otázky</span></div>
-        <div class="score-question"><p>Každý závazek má po poradě jasného vlastníka a termín.</p><div class="score-scale" role="radiogroup" aria-label="Každý závazek má vlastníka a termín"><label><input type="radio" name="ownership-1" value="1" required><span>1</span></label><label><input type="radio" name="ownership-1" value="2"><span>2</span></label><label><input type="radio" name="ownership-1" value="3"><span>3</span></label><label><input type="radio" name="ownership-1" value="4"><span>4</span></label><label><input type="radio" name="ownership-1" value="5"><span>5</span></label></div></div>
-        <div class="score-question"><p>Tým kontroluje plnění dohod bez toho, aby vše musel hlídat šéf.</p><div class="score-scale" role="radiogroup" aria-label="Tým kontroluje dohody bez šéfa"><label><input type="radio" name="ownership-2" value="1" required><span>1</span></label><label><input type="radio" name="ownership-2" value="2"><span>2</span></label><label><input type="radio" name="ownership-2" value="3"><span>3</span></label><label><input type="radio" name="ownership-2" value="4"><span>4</span></label><label><input type="radio" name="ownership-2" value="5"><span>5</span></label></div></div>
-        <div class="score-question"><p>Problém se eskaluje včas, ne až ve chvíli, kdy už ohrožuje výsledek.</p><div class="score-scale" role="radiogroup" aria-label="Problém se eskaluje včas"><label><input type="radio" name="ownership-3" value="1" required><span>1</span></label><label><input type="radio" name="ownership-3" value="2"><span>2</span></label><label><input type="radio" name="ownership-3" value="3"><span>3</span></label><label><input type="radio" name="ownership-3" value="4"><span>4</span></label><label><input type="radio" name="ownership-3" value="5"><span>5</span></label></div></div>
-        <div class="score-question"><p>Tým umí sám pojmenovat a opravit způsob spolupráce, který přestal fungovat.</p><div class="score-scale" role="radiogroup" aria-label="Tým umí opravit nefunkční spolupráci"><label><input type="radio" name="ownership-4" value="1" required><span>1</span></label><label><input type="radio" name="ownership-4" value="2"><span>2</span></label><label><input type="radio" name="ownership-4" value="3"><span>3</span></label><label><input type="radio" name="ownership-4" value="4"><span>4</span></label><label><input type="radio" name="ownership-4" value="5"><span>5</span></label></div></div>
+      <section class="cta-band">
+        <div class="container cta-band-inner">
+          <h2 data-copy="cta-title">
+            Začněme úvodním rozhovorem.
+          </h2>
+          <div class="cta-band-copy">
+            <p data-copy="cta-copy">
+              Nemusíte mít hotové zadání. Můžeme společně probrat, co byste ve spolupráci týmu chtěli posunout.
+            </p>
+            <a data-copy="cta-link" class="button button-dark" href="/kontakt/">
+              Domluvit úvodní rozhovor
+            </a>
+          </div>
+        </div>
       </section>
-      <div class="form-submit"><button class="button button-dark" type="submit">Zobrazit obraz týmu →</button><p class="form-status" data-score-status role="status" aria-live="polite"></p></div>
-    </form>
-    <section class="score-result" data-score-result tabindex="-1" aria-live="polite"><p class="section-kicker">Orientační výsledek</p><h2>Tři oblasti fungování týmu</h2><div class="score-result-grid"><div class="result-item"><span>Rozhodování</span><strong data-result="decisions">—</strong></div><div class="result-item"><span>Nesouhlas</span><strong data-result="conflict">—</strong></div><div class="result-item"><span>Ownership</span><strong data-result="ownership">—</strong></div></div><p>Výsledek není diagnóza ani hodnocení jednotlivců. Je to podklad pro rozhovor o tom, co se v týmu opakuje. Čím nižší skóre, tím víc prostoru je pro konkrétní změnu společných pravidel.</p><div class="inline-actions"><a class="button button-dark" href="/kontakt/">Probrat výsledek v auditu ↗</a></div></section>
-  </div></section>
-  <section class="cta-band"><div class="container cta-band-inner"><h2>Číslo samo tým nezmění.</h2><div class="cta-band-copy"><p>Pomůže ale zpřesnit rozhovor. V auditu se podíváme na jednu situaci, která se za skóre skrývá.</p><a class="button button-dark" href="/kontakt/">Rezervovat audit ↗</a></div></div></section>
-</main>
-<a class="mobile-audit" href="/kontakt/">Rezervovat audit ↗</a>
-<footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand" href="/"><img src="/assets/silny-tym-mark.png" alt=""><span class="brand-copy"><strong>Silný tým</strong><small>Team coaching</small></span></a><p>Team coaching pro leadership týmy. Martina Jonášová · Veronika Vojtová.</p></div><div><p class="footer-title">Pro tým</p><nav class="footer-links"><a href="/pro-koho/">Pro koho</a><a href="/jak-pracujeme/">Jak pracujeme</a><a href="/programy/">Programy</a><a href="/team-health-scorecard/">Team Health Scorecard</a></nav></div><div><p class="footer-title">O značce</p><nav class="footer-links"><a href="/vysledky/">Výsledky</a><a href="/pro-hr/">Pro HR</a><a href="/o-nas/">O nás</a><a href="/faq/">FAQ</a><a href="/kontakt/">Kontakt / Audit</a></nav></div></div><div class="container footer-bottom"><span>© <span data-year>2026</span> Silný tým</span><nav class="footer-legal"><a href="/soukromi/">Soukromí</a><a href="/cookies/">Cookies</a></nav></div></footer>
-</body></html>
+    </main>
+    <a class="mobile-audit" href="/kontakt/">
+      Domluvit úvodní rozhovor
+    </a>
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Silný tým — úvod">
+            <img src="/assets/silny-team-logo-01.svg" alt="" width="32" height="32">
+            <span class="brand-copy">
+              <strong>
+                Silný tým
+              </strong>
+              <small>
+                Team coaching
+              </small>
+            </span>
+          </a>
+          <p>
+            Týmový koučink pro vedení firem. Martina Jonášová · Veronika Vojtová.
+          </p>
+          <p>
+            Pracovní návrh s viditelnými poznámkami k dokončení.
+          </p>
+        </div>
+        <div>
+          <p class="footer-title">
+            Spolupráce
+          </p>
+          <nav class="footer-links" aria-label="Spolupráce">
+            <a href="/pro-koho/">
+              Pro koho
+            </a>
+            <a href="/jak-pracujeme/">
+              Jak pracujeme
+            </a>
+            <a href="/programy/">
+              Spolupráce
+            </a>
+            <a href="/team-health-scorecard/">
+              Reflexe spolupráce · pracovní nástroj
+            </a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer-title">
+            Další informace
+          </p>
+          <nav class="footer-links" aria-label="Další informace">
+            <a href="/vysledky/">
+              Jak poznáme posun
+            </a>
+            <a href="/o-nas/">
+              O nás
+            </a>
+            <a href="/pro-hr/">
+              Pro HR
+            </a>
+            <a href="/faq/">
+              Časté otázky
+            </a>
+            <a href="/kontakt/">
+              Kontakt
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>
+          ©
+          <span data-year>
+            2026
+          </span>
+          Silný tým
+        </span>
+        <nav class="footer-legal" aria-label="Právní informace">
+          <a href="/soukromi/">
+            Soukromí
+          </a>
+          <a href="/cookies/">
+            Cookies
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,73 +1,233 @@
 {
   "meta": {
-    "title": "Programy team coachingu | Silný tým",
-    "description": "Programy team coachingu: Team Health Audit, diagnostický sprint, 90denní program a Leadership Team System."
+    "title": "Spolupráce s týmem | Silný tým",
+    "description": "Úvodní rozhovor a tři formáty: mapování fungování týmu, tříměsíční týmový program a dlouhodobá spolupráce."
   },
   "sections": [
     {
-      "label": "Hero",
+      "label": "Úvod stránky",
       "items": [
-        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "03 / Programy" },
-        { "label": "Nadpis nad titulkem", "selector": ".page-hero .eyebrow", "mode": "text", "value": "Změna místo odpracovaných hodin" },
-        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Tři úrovně práce. Neprodáváme *hodiny.*" },
-        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Firmy nekupují naši přítomnost. Kupují změnu v tom, jak tým rozhoduje, nese konflikt a drží dohodu po poradě. Proto nabízíme programy, ne otevřený ceník sezení." }
+        {
+          "label": "Název stránky",
+          "selector": "[data-copy=\"page-code\"]",
+          "mode": "text",
+          "value": "Spolupráce"
+        },
+        {
+          "label": "Hlavní titulek",
+          "selector": "[data-copy=\"page-title\"]",
+          "mode": "text",
+          "value": "Úvodní rozhovor a tři formáty spolupráce."
+        },
+        {
+          "label": "Úvodní text",
+          "selector": "[data-copy=\"page-intro\"]",
+          "mode": "text",
+          "value": "Formát vybíráme podle cíle, podmínek a potřeb týmu. Rozsah, časové nároky, výstupy a cenu je třeba dohodnout před začátkem."
+        }
       ]
     },
     {
-      "label": "Programy",
+      "label": "Úvodní rozhovor",
       "items": [
-        { "label": "Audit – štítek", "selector": ".program-card:nth-child(1) .chip:nth-child(1)", "mode": "text", "value": "Program 0" },
-        { "label": "Audit – délka", "selector": ".program-card:nth-child(1) .chip:nth-child(2)", "mode": "text", "value": "30 minut" },
-        { "label": "Audit – forma", "selector": ".program-card:nth-child(1) .chip:nth-child(3)", "mode": "text", "value": "online" },
-        { "label": "Audit – titulek", "selector": ".program-card:nth-child(1) h2", "mode": "text", "value": "Team Health Audit" },
-        { "label": "Audit – text", "selector": ".program-card:nth-child(1) > p", "mode": "text", "value": "Se sponsorem. Výstup: 3 pracovní hypotézy o dynamice týmu a doporučení dalšího kroku. Žádný nátlak na program." },
-        { "label": "Audit – cena štítek", "selector": ".program-card:nth-child(1) .notice-todo strong", "mode": "text", "value": "Cena" },
-        { "label": "Audit – tlačítko", "selector": ".program-card:nth-child(1) .card-link", "mode": "text", "value": "Rezervovat audit →" },
-        { "label": "Sprint – štítek", "selector": ".program-card:nth-child(2) .chip:nth-child(1)", "mode": "text", "value": "Program 1" },
-        { "label": "Sprint – délka", "selector": ".program-card:nth-child(2) .chip:nth-child(2)", "mode": "text", "value": "2–3 týdny" },
-        { "label": "Sprint – velikost týmu", "selector": ".program-card:nth-child(2) .chip:nth-child(3)", "mode": "text", "value": "6–12 lidí" },
-        { "label": "Sprint – titulek", "selector": ".program-card:nth-child(2) h2", "mode": "text", "value": "Diagnostický sprint" },
-        { "label": "Sprint – text", "selector": ".program-card:nth-child(2) > p", "mode": "text", "value": "Vstupní dohoda, rozhovory, pozorování porady, Team Health Scorecard, debrief se sponsorem a s týmem." },
-        { "label": "Sprint – cena štítek", "selector": ".program-card:nth-child(2) .notice-todo strong", "mode": "text", "value": "Cena" },
-        { "label": "Sprint – tlačítko", "selector": ".program-card:nth-child(2) .card-link", "mode": "text", "value": "Chci návrh sprintu →" },
-        { "label": "90 dní – štítek", "selector": ".program-card:nth-child(3) .chip:nth-child(1)", "mode": "text", "value": "Program 2" },
-        { "label": "90 dní – délka", "selector": ".program-card:nth-child(3) .chip:nth-child(2)", "mode": "text", "value": "90 dní" },
-        { "label": "90 dní – typ", "selector": ".program-card:nth-child(3) .chip:nth-child(3)", "mode": "text", "value": "Vlajkový program" },
-        { "label": "90 dní – titulek", "selector": ".program-card:nth-child(3) h2", "mode": "text", "value": "Tým, který se umí dohodnout" },
-        { "label": "90 dní – text", "selector": ".program-card:nth-child(3) > p", "mode": "text", "value": "Diagnostika, kick-off, 6 týmových setkání, práce se sponsorem, mid-point review a závěrečné předání rituálů." },
-        { "label": "90 dní – cena štítek", "selector": ".program-card:nth-child(3) .notice-todo strong", "mode": "text", "value": "Cena" },
-        { "label": "90 dní – tlačítko", "selector": ".program-card:nth-child(3) .card-link", "mode": "text", "value": "Chci návrh programu →" },
-        { "label": "Systém – štítek", "selector": ".program-card:nth-child(4) .chip:nth-child(1)", "mode": "text", "value": "Program 3" },
-        { "label": "Systém – délka", "selector": ".program-card:nth-child(4) .chip:nth-child(2)", "mode": "text", "value": "6 měsíců" },
-        { "label": "Systém – typ", "selector": ".program-card:nth-child(4) .chip:nth-child(3)", "mode": "text", "value": "Individuální návrh" },
-        { "label": "Systém – titulek", "selector": ".program-card:nth-child(4) h2", "mode": "text", "value": "Leadership Team System" },
-        { "label": "Systém – text", "selector": ".program-card:nth-child(4) > p", "mode": "text", "value": "Pro složitější změnu: nová vrstva managementu, fúze, opakovaný rozpad dohod nebo práce napříč zeměmi." },
-        { "label": "Systém – tlačítko", "selector": ".program-card:nth-child(4) .card-link", "mode": "text", "value": "Probrat situaci →" }
+        {
+          "label": "Název",
+          "selector": "[data-copy=\"intro-title\"]",
+          "mode": "text",
+          "value": "Úvodní rozhovor"
+        },
+        {
+          "label": "Účel",
+          "selector": "[data-copy=\"intro-purpose\"]",
+          "mode": "text",
+          "value": "Probrat situaci z pohledu zájemce a domluvit vhodný další krok"
+        },
+        {
+          "label": "Průběh",
+          "selector": "[data-copy=\"intro-details\"]",
+          "mode": "text",
+          "value": "Můžeme probrat jednu situaci, očekávání a podmínky pro další domluvu. Rozhovor s jedním člověkem není diagnóza celého týmu."
+        },
+        {
+          "label": "Navrhovaná délka",
+          "selector": "[data-copy=\"intro-time\"]",
+          "mode": "text",
+          "value": "Návrh ke kontrole: 30 minut."
+        }
       ]
     },
     {
-      "label": "Co programy neobsahují",
+      "label": "Tři formáty",
       "items": [
-        { "label": "Titulek", "selector": ".prose h2:nth-of-type(1)", "mode": "text", "value": "Co programy záměrně neobsahují" },
-        { "label": "Bod 1", "selector": ".prose li:nth-child(1)", "mode": "text", "value": "Osobnostní testy jako hlavní produkt." },
-        { "label": "Bod 2", "selector": ".prose li:nth-child(2)", "mode": "text", "value": "Školení soft skills vydávané za team coaching." },
-        { "label": "Bod 3", "selector": ".prose li:nth-child(3)", "mode": "text", "value": "Veřejné hodnocení lidí před týmem." },
-        { "label": "Bod 4", "selector": ".prose li:nth-child(4)", "mode": "text", "value": "Neomezený chat s koučkami. Mezi setkáními pracuje tým." },
-        { "label": "Cena – titulek", "selector": ".prose h2:nth-of-type(2)", "mode": "text", "value": "Jedna cena až po pochopení rozsahu" },
-        { "label": "Cena – text", "selector": ".prose > p", "mode": "text", "value": "Rozsah ovlivňuje velikost týmu, onsite dny, složitost dynamiky a smysluplné obsazení jednou nebo dvěma koučkami. Přesný návrh vzniká po auditu." },
-        { "label": "Postranní nadpis", "selector": ".sidebar-card .section-kicker", "mode": "text", "value": "Kde začít" },
-        { "label": "Postranní titulek", "selector": ".sidebar-card h2", "mode": "text", "value": "Nejdřív audit. Potom program." },
-        { "label": "Postranní text", "selector": ".sidebar-card > p:last-of-type", "mode": "text", "value": "Nepotřebujete předem vědět, který formát je správný." },
-        { "label": "Postranní tlačítko", "selector": ".sidebar-card .button", "mode": "text", "value": "Rezervovat audit ↗" }
+        {
+          "label": "Nadpis sekce",
+          "selector": "[data-copy=\"formats-title\"]",
+          "mode": "text",
+          "value": "Tři formáty týmové práce."
+        },
+        {
+          "label": "Název formátu",
+          "selector": "[data-copy=\"mapovani-name\"]",
+          "mode": "text",
+          "value": "Mapování fungování týmu"
+        },
+        {
+          "label": "Účel",
+          "selector": "[data-copy=\"mapovani-purpose\"]",
+          "mode": "text",
+          "value": "Propojit více pohledů a společně vybrat priority"
+        },
+        {
+          "label": "Kdy se hodí",
+          "selector": "[data-copy=\"mapovani-fit\"]",
+          "mode": "text",
+          "value": "Když potřebujete propojit pohledy více lidí a vybrat společné priority."
+        },
+        {
+          "label": "Obsah",
+          "selector": "[data-copy=\"mapovani-content\"]",
+          "mode": "text",
+          "value": "Dohoda o cíli a pravidlech, společné zkoumání situací a případné rozhovory nebo pozorování skutečné porady v dohodnutém rozsahu."
+        },
+        {
+          "label": "Časová náročnost",
+          "selector": "[data-copy=\"mapovani-time\"]",
+          "mode": "text",
+          "value": "Návrh ke kontrole: 2–3 týdny. Čas setkání, přípravy a zadavatele čeká na potvrzení."
+        },
+        {
+          "label": "Výstupy a vyhodnocení",
+          "selector": "[data-copy=\"mapovani-outputs\"]",
+          "mode": "text",
+          "value": "Cílem je společně pojmenovat priority a vyhodnotit zkušenost. Konkrétní výstupy, ukazatele a sdílení se dohodnou s týmem a zadavatelem."
+        },
+        {
+          "label": "Název formátu",
+          "selector": "[data-copy=\"program-90-name\"]",
+          "mode": "text",
+          "value": "Tříměsíční týmový program"
+        },
+        {
+          "label": "Účel",
+          "selector": "[data-copy=\"program-90-purpose\"]",
+          "mode": "text",
+          "value": "Zkoušet a vyhodnocovat změny v každodenní spolupráci"
+        },
+        {
+          "label": "Kdy se hodí",
+          "selector": "[data-copy=\"program-90-fit\"]",
+          "mode": "text",
+          "value": "Když chce tým zkoušet změny v rozhodování, předávání práce a řešení rozdílných názorů."
+        },
+        {
+          "label": "Obsah",
+          "selector": "[data-copy=\"program-90-content\"]",
+          "mode": "text",
+          "value": "Dohoda o cíli, týmová setkání, malé experimenty v běžné práci a průběžné i závěrečné vyhodnocení."
+        },
+        {
+          "label": "Časová náročnost",
+          "selector": "[data-copy=\"program-90-time\"]",
+          "mode": "text",
+          "value": "Návrh ke kontrole: přibližně 3 měsíce. Počet setkání a čas mezi nimi čeká na potvrzení."
+        },
+        {
+          "label": "Výstupy a vyhodnocení",
+          "selector": "[data-copy=\"program-90-outputs\"]",
+          "mode": "text",
+          "value": "Cílem je společně pojmenovat priority a vyhodnotit zkušenost. Konkrétní výstupy, ukazatele a sdílení se dohodnou s týmem a zadavatelem."
+        },
+        {
+          "label": "Název formátu",
+          "selector": "[data-copy=\"dlouhodoba-name\"]",
+          "mode": "text",
+          "value": "Dlouhodobá spolupráce"
+        },
+        {
+          "label": "Účel",
+          "selector": "[data-copy=\"dlouhodoba-purpose\"]",
+          "mode": "text",
+          "value": "Pracovat se širší nebo náročnější změnou"
+        },
+        {
+          "label": "Kdy se hodí",
+          "selector": "[data-copy=\"dlouhodoba-fit\"]",
+          "mode": "text",
+          "value": "Když je změna širší, zahrnuje více rozhraní nebo potřebuje delší průběžnou práci."
+        },
+        {
+          "label": "Obsah",
+          "selector": "[data-copy=\"dlouhodoba-content\"]",
+          "mode": "text",
+          "value": "Průběžná práce s týmem a jeho organizačními podmínkami, experimenty a opakované společné vyhodnocení."
+        },
+        {
+          "label": "Časová náročnost",
+          "selector": "[data-copy=\"dlouhodoba-time\"]",
+          "mode": "text",
+          "value": "Dosud navrhováno 6 měsíců; čas setkání a práce mezi nimi čeká na potvrzení."
+        },
+        {
+          "label": "Výstupy a vyhodnocení",
+          "selector": "[data-copy=\"dlouhodoba-outputs\"]",
+          "mode": "text",
+          "value": "Cílem je společně pojmenovat priority a vyhodnotit zkušenost. Konkrétní výstupy, ukazatele a sdílení se dohodnou s týmem a zadavatelem."
+        }
+      ]
+    },
+    {
+      "label": "Návaznost a nabídka",
+      "items": [
+        {
+          "label": "Návaznost – nadpis",
+          "selector": "[data-copy=\"sequence-title\"]",
+          "mode": "text",
+          "value": "Jak na sebe formáty navazují"
+        },
+        {
+          "label": "Návaznost – text",
+          "selector": "[data-copy=\"sequence-copy\"]",
+          "mode": "text",
+          "value": "Mapování může sloužit k výběru dalších priorit. Zda je součástí tříměsíčního programu, je otevřené obchodní rozhodnutí; musí být jasné v nabídce."
+        },
+        {
+          "label": "Nabídka – nadpis",
+          "selector": "[data-copy=\"quote-title\"]",
+          "mode": "text",
+          "value": "Cena podle dohodnutého rozsahu"
+        },
+        {
+          "label": "Nabídka – text",
+          "selector": "[data-copy=\"quote-copy\"]",
+          "mode": "text",
+          "value": "U týmové práce se nabídka odvíjí od dohodnutého rozsahu a obsazení. Cena úvodního rozhovoru je samostatná otázka. Délka spolupráce sama o sobě nezaručuje určitý výsledek."
+        }
       ]
     },
     {
       "label": "Závěrečná výzva",
       "items": [
-        { "label": "Titulek", "selector": ".cta-band h2", "mode": "text", "value": "Program začíná cílem, ne kalendářem." },
-        { "label": "Text", "selector": ".cta-band-copy p", "mode": "text", "value": "Řekněte nám jednu situaci, která se v týmu opakuje. Další krok navrhneme až potom." },
-        { "label": "Tlačítko", "selector": ".cta-band .button", "mode": "text", "value": "Chci návrh programu ↗" }
+        {
+          "label": "Nadpis",
+          "selector": "[data-copy=\"cta-title\"]",
+          "mode": "text",
+          "value": "Začněme úvodním rozhovorem."
+        },
+        {
+          "label": "Text",
+          "selector": "[data-copy=\"cta-copy\"]",
+          "mode": "text",
+          "value": "Nemusíte mít hotové zadání. Můžeme společně probrat, co byste ve spolupráci týmu chtěli posunout."
+        },
+        {
+          "label": "Odkaz",
+          "selector": "[data-copy=\"cta-link\"]",
+          "mode": "text",
+          "value": "Domluvit úvodní rozhovor"
+        }
       ]
     }
-  ]
+  ],
+  "images": [],
+  "links": []
 }

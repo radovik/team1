@@ -1,79 +1,243 @@
 {
   "meta": {
-    "title": "Team Health Scorecard | Silný tým",
-    "description": "12 otázek pro rychlý obraz toho, jak tým rozhoduje, nese nesouhlas a drží dohody."
+    "title": "Reflexe spolupráce v týmu | Silný tým",
+    "description": "Pracovní nástroj s 12 otázkami pro osobní reflexi spolupráce za poslední čtyři týdny. Bez skóre, e-mailu a odesílání odpovědí."
   },
   "sections": [
     {
-      "label": "Hero",
+      "label": "Úvod stránky",
       "items": [
-        { "label": "Kód stránky", "selector": ".page-hero .page-code", "mode": "text", "value": "Team Health Scorecard" },
-        { "label": "Nadpis nad titulkem", "selector": ".page-hero .eyebrow", "mode": "text", "value": "12 otázek · 8 minut" },
-        { "label": "Hlavní titulek", "selector": ".page-hero h1", "mode": "inline", "value": "Obraz týmu. Ne *osobnosti.*" },
-        { "label": "Úvodní text", "selector": ".page-hero .lede", "mode": "text", "value": "Scorecard neměří, kdo je „dobrý člověk“. Měří, jak tým rozhoduje, nese nesouhlas a drží dohodu po poradě. Odpovídejte podle toho, co se reálně dělo v posledních čtyřech týdnech." }
+        {
+          "label": "Název stránky",
+          "selector": "[data-copy=\"page-code\"]",
+          "mode": "text",
+          "value": "Reflexe spolupráce v týmu · pracovní nástroj"
+        },
+        {
+          "label": "Hlavní titulek",
+          "selector": "[data-copy=\"page-title\"]",
+          "mode": "text",
+          "value": "Jak vnímáte spolupráci ve svém týmu?"
+        },
+        {
+          "label": "Úvodní text",
+          "selector": "[data-copy=\"page-intro\"]",
+          "mode": "text",
+          "value": "Otázky vám pomohou ujasnit si zkušenost z posledních čtyř týdnů. Odpovědi zachycují váš pohled a mohou posloužit jako podklad pro rozhovor. Nejde o ověřený diagnostický test ani o objektivní hodnocení celého týmu."
+        }
       ]
     },
     {
-      "label": "Instrukce a škála",
+      "label": "Pokyny a odpovědi",
       "items": [
-        { "label": "Pracovní verze – štítek", "selector": ".section .notice-todo strong", "mode": "text", "value": "Pracovní verze" },
-        { "label": "Levá část škály", "selector": ".score-legend span:nth-child(1)", "mode": "text", "value": "1 · téměř nikdy" },
-        { "label": "Pravá část škály", "selector": ".score-legend span:nth-child(2)", "mode": "text", "value": "5 · téměř vždy" }
+        {
+          "label": "Soukromí odpovědí",
+          "selector": "[data-copy=\"privacy-copy\"]",
+          "mode": "text",
+          "value": "Odpovědi zůstávají pouze v této otevřené stránce a neodesílají se. Po obnovení stránky se vymažou."
+        },
+        {
+          "label": "Pokyn",
+          "selector": "[data-copy=\"answer-help\"]",
+          "mode": "text",
+          "value": "Vyberte četnost podle vlastní zkušenosti za poslední čtyři týdny. Pokud nemáte možnost situaci pozorovat, použijte nečíselnou odpověď."
+        }
       ]
     },
     {
       "label": "Rozhodování",
       "items": [
-        { "label": "Titulek skupiny", "selector": ".score-group:nth-child(1) h2", "mode": "text", "value": "Rozhodování" },
-        { "label": "Počet otázek", "selector": ".score-group:nth-child(1) .score-group-header span", "mode": "text", "value": "4 otázky" },
-        { "label": "Otázka 1", "selector": ".score-group:nth-child(1) .score-question:nth-child(2) p", "mode": "text", "value": "Po poradě je všem jasné, co bylo rozhodnuto a co ještě otevřené." },
-        { "label": "Otázka 2", "selector": ".score-group:nth-child(1) .score-question:nth-child(3) p", "mode": "text", "value": "Uzavřená rozhodnutí se neotevírají znovu bez nové informace." },
-        { "label": "Otázka 3", "selector": ".score-group:nth-child(1) .score-question:nth-child(4) p", "mode": "text", "value": "Tým ví, kdo má pro konkrétní typ rozhodnutí poslední slovo." },
-        { "label": "Otázka 4", "selector": ".score-group:nth-child(1) .score-question:nth-child(5) p", "mode": "text", "value": "Porady končí rozhodnutím nebo jasným dalším krokem, ne neurčitým „vrátíme se k tomu“." }
+        {
+          "label": "Název oblasti",
+          "selector": "[data-copy=\"decisions-title\"]",
+          "mode": "text",
+          "value": "Rozhodování"
+        },
+        {
+          "label": "Otázka 1",
+          "selector": "[data-copy=\"decisions-1\"]",
+          "mode": "text",
+          "value": "Na konci porady zazní, co bylo rozhodnuto."
+        },
+        {
+          "label": "Otázka 2",
+          "selector": "[data-copy=\"decisions-2\"]",
+          "mode": "text",
+          "value": "Při návratu k rozhodnutí zazní důvod jeho přehodnocení."
+        },
+        {
+          "label": "Otázka 3",
+          "selector": "[data-copy=\"decisions-3\"]",
+          "mode": "text",
+          "value": "U společného rozhodnutí je řečeno, kdo má rozhodovací pravomoc."
+        },
+        {
+          "label": "Otázka 4",
+          "selector": "[data-copy=\"decisions-4\"]",
+          "mode": "text",
+          "value": "U neuzavřeného tématu je domluven další krok."
+        }
       ]
     },
     {
-      "label": "Nesouhlas a konflikt",
+      "label": "Nesouhlas a rozdílné názory",
       "items": [
-        { "label": "Titulek skupiny", "selector": ".score-group:nth-child(2) h2", "mode": "text", "value": "Nesouhlas a konflikt" },
-        { "label": "Počet otázek", "selector": ".score-group:nth-child(2) .score-group-header span", "mode": "text", "value": "4 otázky" },
-        { "label": "Otázka 1", "selector": ".score-group:nth-child(2) .score-question:nth-child(2) p", "mode": "text", "value": "Lidé vysloví nesouhlas dřív, než se rozhodnutí přesune do kuloárů." },
-        { "label": "Otázka 2", "selector": ".score-group:nth-child(2) .score-question:nth-child(3) p", "mode": "text", "value": "Obtížná témata se řeší se správnými lidmi ve stejné místnosti." },
-        { "label": "Otázka 3", "selector": ".score-group:nth-child(2) .score-question:nth-child(4) p", "mode": "text", "value": "Leader unese oponující názor, aniž by tým trestal za otevřenost." },
-        { "label": "Otázka 4", "selector": ".score-group:nth-child(2) .score-question:nth-child(5) p", "mode": "text", "value": "V hybridním týmu mají vzdálení členové reálný prostor ovlivnit debatu." }
+        {
+          "label": "Název oblasti",
+          "selector": "[data-copy=\"conflict-title\"]",
+          "mode": "text",
+          "value": "Nesouhlas a rozdílné názory"
+        },
+        {
+          "label": "Otázka 1",
+          "selector": "[data-copy=\"conflict-1\"]",
+          "mode": "text",
+          "value": "Členové při společném jednání vysloví odlišný názor."
+        },
+        {
+          "label": "Otázka 2",
+          "selector": "[data-copy=\"conflict-2\"]",
+          "mode": "text",
+          "value": "Obtížné téma se probírá s lidmi, kterých se týká."
+        },
+        {
+          "label": "Otázka 3",
+          "selector": "[data-copy=\"conflict-3\"]",
+          "mode": "text",
+          "value": "Vedoucí se při odlišném názoru ptá na jeho důvody."
+        },
+        {
+          "label": "Otázka 4",
+          "selector": "[data-copy=\"conflict-4\"]",
+          "mode": "text",
+          "value": "Vzdálení účastníci dostanou při jednání prostor vyjádřit se."
+        }
       ]
     },
     {
-      "label": "Ownership a dohody",
+      "label": "Odpovědnost za dohody",
       "items": [
-        { "label": "Titulek skupiny", "selector": ".score-group:nth-child(3) h2", "mode": "text", "value": "Ownership a dohody" },
-        { "label": "Počet otázek", "selector": ".score-group:nth-child(3) .score-group-header span", "mode": "text", "value": "4 otázky" },
-        { "label": "Otázka 1", "selector": ".score-group:nth-child(3) .score-question:nth-child(2) p", "mode": "text", "value": "Každý závazek má po poradě jasného vlastníka a termín." },
-        { "label": "Otázka 2", "selector": ".score-group:nth-child(3) .score-question:nth-child(3) p", "mode": "text", "value": "Tým kontroluje plnění dohod bez toho, aby vše musel hlídat šéf." },
-        { "label": "Otázka 3", "selector": ".score-group:nth-child(3) .score-question:nth-child(4) p", "mode": "text", "value": "Problém se eskaluje včas, ne až ve chvíli, kdy už ohrožuje výsledek." },
-        { "label": "Otázka 4", "selector": ".score-group:nth-child(3) .score-question:nth-child(5) p", "mode": "text", "value": "Tým umí sám pojmenovat a opravit způsob spolupráce, který přestal fungovat." },
-        { "label": "Tlačítko výsledku", "selector": ".scorecard > .form-submit button", "mode": "text", "value": "Zobrazit obraz týmu →" }
+        {
+          "label": "Název oblasti",
+          "selector": "[data-copy=\"ownership-title\"]",
+          "mode": "text",
+          "value": "Odpovědnost za dohody"
+        },
+        {
+          "label": "Otázka 1",
+          "selector": "[data-copy=\"ownership-1\"]",
+          "mode": "text",
+          "value": "U dohodnutého úkolu je pojmenován jeho nositel."
+        },
+        {
+          "label": "Otázka 2",
+          "selector": "[data-copy=\"ownership-2\"]",
+          "mode": "text",
+          "value": "Tým se při společném jednání vrací k plnění dohod."
+        },
+        {
+          "label": "Otázka 3",
+          "selector": "[data-copy=\"ownership-3\"]",
+          "mode": "text",
+          "value": "Členové upozorní na překážku před dohodnutým termínem."
+        },
+        {
+          "label": "Otázka 4",
+          "selector": "[data-copy=\"ownership-4\"]",
+          "mode": "text",
+          "value": "Tým společně probírá, jak upravit způsob spolupráce."
+        },
+        {
+          "label": "Podnět 1",
+          "selector": "[data-copy=\"prompt-strength\"]",
+          "mode": "text",
+          "value": "Co se vám daří opakovat?"
+        },
+        {
+          "label": "Podnět 2",
+          "selector": "[data-copy=\"prompt-situation\"]",
+          "mode": "text",
+          "value": "Kterou situaci byste chtěli probrat s týmem?"
+        },
+        {
+          "label": "Podnět 3",
+          "selector": "[data-copy=\"prompt-step\"]",
+          "mode": "text",
+          "value": "Jaký malý krok můžete vyzkoušet?"
+        }
       ]
     },
     {
-      "label": "Výsledek",
+      "label": "Názvy možností odpovědi",
       "items": [
-        { "label": "Nadpis nad výsledkem", "selector": ".score-result .section-kicker", "mode": "text", "value": "Orientační výsledek" },
-        { "label": "Titulek výsledku", "selector": ".score-result h2", "mode": "text", "value": "Tři oblasti fungování týmu" },
-        { "label": "Oblast 1", "selector": ".result-item:nth-child(1) span", "mode": "text", "value": "Rozhodování" },
-        { "label": "Oblast 2", "selector": ".result-item:nth-child(2) span", "mode": "text", "value": "Nesouhlas" },
-        { "label": "Oblast 3", "selector": ".result-item:nth-child(3) span", "mode": "text", "value": "Ownership" },
-        { "label": "Vysvětlení", "selector": ".score-result > p:last-of-type", "mode": "text", "value": "Výsledek není diagnóza ani hodnocení jednotlivců. Je to podklad pro rozhovor o tom, co se v týmu opakuje. Čím nižší skóre, tím víc prostoru je pro konkrétní změnu společných pravidel." },
-        { "label": "Tlačítko", "selector": ".score-result .button", "mode": "text", "value": "Probrat výsledek v auditu ↗" }
+        {
+          "label": "Odpověď: Téměř nikdy",
+          "selector": "[data-answer-value=\"1\"]",
+          "mode": "text",
+          "value": "Téměř nikdy"
+        },
+        {
+          "label": "Odpověď: Zřídka",
+          "selector": "[data-answer-value=\"2\"]",
+          "mode": "text",
+          "value": "Zřídka"
+        },
+        {
+          "label": "Odpověď: Někdy",
+          "selector": "[data-answer-value=\"3\"]",
+          "mode": "text",
+          "value": "Někdy"
+        },
+        {
+          "label": "Odpověď: Často",
+          "selector": "[data-answer-value=\"4\"]",
+          "mode": "text",
+          "value": "Často"
+        },
+        {
+          "label": "Odpověď: Téměř vždy",
+          "selector": "[data-answer-value=\"5\"]",
+          "mode": "text",
+          "value": "Téměř vždy"
+        },
+        {
+          "label": "Odpověď: Nemohu posoudit",
+          "selector": "[data-answer-value=\"cannot_assess\"]",
+          "mode": "text",
+          "value": "Nemohu posoudit"
+        },
+        {
+          "label": "Odpověď: Netýká se nás",
+          "selector": "[data-answer-value=\"not_applicable\"]",
+          "mode": "text",
+          "value": "Netýká se nás"
+        }
       ]
     },
     {
       "label": "Závěrečná výzva",
       "items": [
-        { "label": "Titulek", "selector": ".cta-band h2", "mode": "text", "value": "Číslo samo tým nezmění." },
-        { "label": "Text", "selector": ".cta-band-copy p", "mode": "text", "value": "Pomůže ale zpřesnit rozhovor. V auditu se podíváme na jednu situaci, která se za skóre skrývá." },
-        { "label": "Tlačítko", "selector": ".cta-band .button", "mode": "text", "value": "Rezervovat audit ↗" }
+        {
+          "label": "Nadpis",
+          "selector": "[data-copy=\"cta-title\"]",
+          "mode": "text",
+          "value": "Začněme úvodním rozhovorem."
+        },
+        {
+          "label": "Text",
+          "selector": "[data-copy=\"cta-copy\"]",
+          "mode": "text",
+          "value": "Nemusíte mít hotové zadání. Můžeme společně probrat, co byste ve spolupráci týmu chtěli posunout."
+        },
+        {
+          "label": "Odkaz",
+          "selector": "[data-copy=\"cta-link\"]",
+          "mode": "text",
+          "value": "Domluvit úvodní rozhovor"
+        }
       ]
     }
-  ]
+  ],
+  "images": [],
+  "links": []
 }
