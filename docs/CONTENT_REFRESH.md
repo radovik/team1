@@ -40,6 +40,12 @@ Applicable local and Preview checks are recorded below when completed. Configura
 - Actual devices, screen-reader output, native browser zoom, a full privacy/legal review, credential evidence and real message delivery were not verified. Delivery is intentionally not connected.
 - Preview build/routing and production preservation are checked separately during release; local meta refresh does not prove Vercel HTTP status codes.
 
+### Preview checks
+
+- First Preview reached READY from the review branch. Twenty deployed HTML/JSON/CSS/JS/CMS resources returned 200 and matched the reviewed source (excluding Vercel's injected feedback toolbar). Production HTML still matched unchanged `origin/main` at `81eb61d`.
+- The initial server check exposed a trailing-slash edge case: wildcard redirects handled bare/nested paths, while `/programy/` and the other five slash-ending legacy routes served the HTML redirect fallback. Added explicit slash-ending rules alongside the wildcard rules; the resulting Preview needs the same HTTP-header check. There are six logical legacy redirects expressed as twelve matching rules.
+- The build used no framework or repository build step. Vercel compiled the existing OAuth functions from ESM to CommonJS; the platform's package.json suggestion does not authorize adding a package manager or changing authentication.
+
 ## Remaining inputs and approval boundary
 
 - Approve the five-page proposal and owner-supplied qualification wording before production publication.
