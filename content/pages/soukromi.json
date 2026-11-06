@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Ochrana soukromí — pracovní osnova | Silný tým",
-    "description": "Pracovní osnova informací o soukromí s konkrétními vstupy k dokončení. Nejde o hotové zásady ani právní posouzení."
+    "title": "Soukromí | Silný tým",
+    "description": "Informace o tomto pracovním náhledu. Kontaktní formulář provádí pouze kontrolu polí v prohlížeči. Jeho obsah se neodesílá ani neukládá do trvalého úložiště prohlížeče. Skutečné doručování zpráv není zapojené."
   },
   "sections": [
     {
@@ -11,46 +11,47 @@
           "label": "Název stránky",
           "selector": "[data-copy=\"page-code\"]",
           "mode": "text",
-          "value": "Soukromí · pracovní osnova"
+          "value": "Soukromí"
         },
         {
-          "label": "Hlavní titulek",
+          "label": "Hlavní nadpis",
           "selector": "[data-copy=\"page-title\"]",
           "mode": "text",
-          "value": "Ochrana soukromí."
+          "value": "Soukromí"
         },
         {
           "label": "Úvodní text",
           "selector": "[data-copy=\"page-intro\"]",
           "mode": "text",
-          "value": "Tato osnova není dokončenou informací o zpracování údajů. Konkrétní odpovědnosti, služby a postupy je třeba ověřit před aktivací sběru údajů."
+          "value": "Informace o tomto pracovním náhledu."
         }
       ]
     },
     {
-      "label": "Současné fungování a vstupy",
+      "label": "Jak náhled funguje",
       "items": [
         {
-          "label": "Současné fungování – nadpis",
-          "selector": "[data-copy=\"privacy-current-title\"]",
+          "label": "Nadpis sekce",
+          "selector": "[data-copy=\"information-title\"]",
           "mode": "text",
-          "value": "Jak funguje současný náhled"
+          "value": "Jak náhled funguje"
         },
         {
-          "label": "Současné fungování – text",
-          "selector": "[data-copy=\"privacy-current-copy\"]",
+          "label": "Informace o náhledu",
+          "selector": "[data-copy=\"information-copy\"]",
           "mode": "text",
-          "value": "Kontaktní formulář pouze ověřuje pole v prohlížeči. Odpovědi reflexe se neodesílají ani trvale neukládají. To neznamená, že hosting nebo externí služby nezpracovávají provozní údaje."
+          "value": "Kontaktní formulář provádí pouze kontrolu polí v prohlížeči. Jeho obsah se neodesílá ani neukládá do trvalého úložiště prohlížeče. Skutečné doručování zpráv není zapojené."
         },
         {
-          "label": "Schválené informace o zpracování",
-          "selector": "[data-copy=\"privacy-final\"]",
+          "label": "Hranice náhledu",
+          "selector": "[data-copy=\"information-status\"]",
           "mode": "text",
-          "value": ""
+          "value": "Tento web je pracovní náhled. Kontaktní formulář není spojen se službou pro doručování zpráv ani s rezervací termínů."
         }
       ]
     }
   ],
   "images": [],
-  "links": []
+  "links": [],
+  "tables": []
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Úvodní rozhovor | Silný tým",
-    "description": "Domluva úvodního rozhovoru s Martinou a Veronikou. Pracovní náhled formuláře pouze ověřuje pole a nic neodesílá."
+    "title": "Domluvit schůzku | Silný tým",
+    "description": "Pojďme si promluvit o vašem týmu. Úvodní rozhovor o vaší situaci, očekáváních a možnostech tandemové spolupráce."
   },
   "sections": [
     {
@@ -11,100 +11,101 @@
           "label": "Název stránky",
           "selector": "[data-copy=\"page-code\"]",
           "mode": "text",
-          "value": "Kontakt"
+          "value": "Domluvit schůzku"
         },
         {
-          "label": "Hlavní titulek",
+          "label": "Hlavní nadpis",
           "selector": "[data-copy=\"page-title\"]",
           "mode": "text",
-          "value": "Domluvme si úvodní rozhovor."
+          "value": "Pojďme si promluvit o vašem týmu."
         },
         {
           "label": "Úvodní text",
           "selector": "[data-copy=\"page-intro\"]",
           "mode": "text",
-          "value": "Pro začátek stačí stručně popsat, co byste chtěli ve spolupráci týmu posunout. Nemusíte předem vybírat program ani konkrétní koučku."
+          "value": "Nemusíte mít předem přesně pojmenovaný problém ani připravené zadání. Při úvodním rozhovoru se společně podíváme na vaši situaci, očekávání a možnosti spolupráce."
         }
       ]
     },
     {
-      "label": "Náhled formuláře",
+      "label": "Kontaktní formulář",
       "items": [
         {
           "label": "Nadpis formuláře",
           "selector": "[data-copy=\"form-title\"]",
           "mode": "text",
-          "value": "Vyzkoušejte místní kontrolu polí"
+          "value": "Napište nám, co je pro vás důležité."
         },
         {
-          "label": "Upozornění",
-          "selector": "[data-copy=\"form-preview\"]",
+          "label": "Informace o funkčnosti",
+          "selector": "[data-copy=\"form-notice\"]",
           "mode": "text",
-          "value": "Pracovní náhled formuláře. Údaje se neodesílají; pro vyzkoušení použijte smyšlené údaje."
+          "value": "Formulář zatím neodesílá zprávy. V tomto pracovním náhledu můžete pouze vyzkoušet kontrolu polí."
         },
         {
-          "label": "Jméno – popisek",
+          "label": "Popisek jména",
           "selector": "[data-copy=\"name-label\"]",
           "mode": "text",
           "value": "Jméno a příjmení"
         },
         {
-          "label": "E-mail – popisek",
+          "label": "Popisek e-mailu",
           "selector": "[data-copy=\"email-label\"]",
           "mode": "text",
           "value": "E-mail"
         },
         {
-          "label": "Role – popisek",
-          "selector": "[data-copy=\"role-label\"]",
+          "label": "Popisek organizace",
+          "selector": "[data-copy=\"organization-label\"]",
           "mode": "text",
-          "value": "Vaše role (volitelné)"
+          "value": "Organizace (volitelné)"
         },
         {
-          "label": "Velikost – popisek",
-          "selector": "[data-copy=\"size-label\"]",
+          "label": "Popisek zprávy",
+          "selector": "[data-copy=\"message-label\"]",
           "mode": "text",
-          "value": "Velikost týmu (volitelné)"
+          "value": "Co chcete společně řešit? (volitelné)"
         },
         {
-          "label": "Téma – popisek",
-          "selector": "[data-copy=\"situation-label\"]",
+          "label": "Nápověda ke zprávě",
+          "selector": "[data-copy=\"message-hint\"]",
           "mode": "text",
-          "value": "Téma rozhovoru (volitelné)"
+          "value": "Stačí stručně popsat vaši situaci. Nevkládejte citlivé údaje o dalších lidech."
         },
         {
-          "label": "Téma – nápověda",
-          "selector": "[data-copy=\"situation-hint\"]",
+          "label": "Tlačítko místní kontroly",
+          "selector": "[data-copy=\"form-button\"]",
           "mode": "text",
-          "value": "Stačí krátké téma. Nevkládejte osobní nebo citlivé údaje o členech týmu."
+          "value": "Vyzkoušet kontrolu polí"
         },
         {
-          "label": "Preference – popisek",
-          "selector": "[data-copy=\"coach-label\"]",
+          "label": "Nadpis rozhovoru",
+          "selector": "[data-copy=\"conversation-title\"]",
           "mode": "text",
-          "value": "Preferujete konkrétní koučku? (volitelné)"
+          "value": "Co můžete od rozhovoru čekat?"
         },
         {
-          "label": "Bez preference",
-          "selector": "[data-copy=\"coach-either\"]",
+          "label": "Odstavec 1",
+          "selector": "[data-copy=\"conversation-copy-1\"]",
           "mode": "text",
-          "value": "Nechám si doporučit"
+          "value": "Probereme, jak vnímáte situaci týmu, co byste chtěli změnit nebo rozvíjet a jaká máte očekávání."
         },
         {
-          "label": "Tlačítko",
-          "selector": "[data-copy=\"form-submit\"]",
+          "label": "Odstavec 2",
+          "selector": "[data-copy=\"conversation-copy-2\"]",
           "mode": "text",
-          "value": "Vyzkoušet formulář"
+          "value": "Společně zvážíme možnosti týmového koučinku, diagnostiky Belbin či HEXACO-PI-R a případného propojení. Diagnostika není podmínkou."
         },
         {
-          "label": "Budoucí domluva",
-          "selector": "[data-copy=\"contact-next\"]",
+          "label": "Odstavec 3",
+          "selector": "[data-copy=\"conversation-copy-3\"]",
           "mode": "text",
-          "value": "Tento formulář zatím neslouží k odeslání žádosti. Ověřený kontaktní údaj a případný způsob rezervace doplníme po schválení."
+          "value": "Úvodní rozhovor není závazkem k dlouhodobé spolupráci. Můžete si ujasnit, zda a jak vám naše nabídka dává smysl."
         }
       ]
     }
   ],
   "images": [],
-  "links": []
+  "links": [],
+  "tables": []
 }

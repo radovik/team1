@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Týmový koučink pro vedení firem | Silný tým",
-    "description": "Společná rozhodnutí, rozdílné názory a dohody v každodenní práci týmu. Úvodní rozhovor s Martinou Jonášovou a Veronikou Vojtovou."
+    "title": "Týmový koučink pro pracovní týmy | Silný tým",
+    "description": "Máte schopné lidi. Jak dobře fungují spolu? Tandemové týmové koučování a volitelná diagnostika Belbin a HEXACO-PI-R."
   },
   "sections": [
     {
@@ -11,64 +11,46 @@
           "label": "Nadpis nad titulkem",
           "selector": "[data-copy=\"hero-eyebrow\"]",
           "mode": "text",
-          "value": "Týmový koučink pro vedení firem"
+          "value": "Týmový koučink vedený dvěma profesionálními koučkami"
         },
         {
-          "label": "Hlavní titulek",
+          "label": "Hlavní nadpis",
           "selector": "[data-copy=\"hero-title\"]",
           "mode": "inline",
-          "value": "Aby společná rozhodnutí fungovala *i po poradě.*"
+          "value": "Máte schopné lidi. *Jak dobře fungují spolu?*"
         },
         {
-          "label": "Úvodní text",
-          "selector": "[data-copy=\"hero-intro\"]",
+          "label": "Odstavec 1",
+          "selector": "[data-copy=\"hero-intro-1\"]",
           "mode": "text",
-          "value": "Pomáháme týmům vedení ujasnit priority, otevřeně pracovat s rozdílnými názory a převádět dohody do každodenní spolupráce. Vycházíme ze situací, které váš tým skutečně řeší."
+          "value": "Můžete mít v týmu skvělé odborníky, a přesto spolupráce nemusí fungovat tak, jak byste si přáli."
         },
         {
-          "label": "Hlavní odkaz",
-          "selector": "[data-copy=\"hero-cta\"]",
+          "label": "Odstavec 2",
+          "selector": "[data-copy=\"hero-intro-2\"]",
           "mode": "text",
-          "value": "Domluvit úvodní rozhovor"
+          "value": "Možná se ztrácejí důležité informace, opakují se stejná nedorozumění nebo máte pocit, že bez vašeho zásahu se některé věci nepohnou. A možná váš tým funguje dobře, ale chcete zjistit, kam se může posunout dál."
         },
         {
-          "label": "Vedlejší odkaz",
-          "selector": "[data-copy=\"hero-secondary\"]",
+          "label": "Odstavec 3",
+          "selector": "[data-copy=\"hero-intro-3\"]",
           "mode": "text",
-          "value": "Jak spolupráce probíhá"
+          "value": "Týmový koučink nabízí příležitost zastavit se, podívat se na společnou práci z nové perspektivy a hledat vlastní cestu k lepší spolupráci."
         },
         {
-          "label": "Zaměření – priority",
-          "selector": "[data-copy=\"hero-focus-1\"]",
-          "mode": "text",
-          "value": "Ujasnit priority."
-        },
-        {
-          "label": "Zaměření – rozdílné názory",
-          "selector": "[data-copy=\"hero-focus-2\"]",
-          "mode": "text",
-          "value": "Otevřeně pracovat s rozdílnými názory."
-        },
-        {
-          "label": "Zaměření – dohody",
-          "selector": "[data-copy=\"hero-focus-3\"]",
-          "mode": "text",
-          "value": "Převádět dohody do každodenní spolupráce."
-        },
-        {
-          "label": "Úvodní karta – popisek",
+          "label": "Popisek karty",
           "selector": "[data-copy=\"hero-visual-label\"]",
           "mode": "text",
           "value": "Týmový koučink"
         },
         {
-          "label": "Úvodní karta – značka",
+          "label": "Text karty",
           "selector": "[data-copy=\"hero-visual-title\"]",
           "mode": "text",
           "value": "Lidé · perspektiva · pokrok"
         },
         {
-          "label": "Úvodní karta – koučky",
+          "label": "Jména kouček",
           "selector": "[data-copy=\"hero-visual-people\"]",
           "mode": "inline",
           "value": "Martina Jonášová\nVeronika Vojtová"
@@ -76,349 +58,285 @@
       ]
     },
     {
-      "label": "Situace k rozhovoru",
+      "label": "Poznáváte v tom svůj tým?",
       "items": [
         {
-          "label": "Označení sekce",
-          "selector": "[data-copy=\"signals-index\"]",
+          "label": "Popisek sekce",
+          "selector": "[data-copy=\"signals-title-index\"]",
           "mode": "text",
-          "value": "01 / Témata k rozhovoru"
+          "value": "01 / Poznáváte se?"
         },
         {
           "label": "Nadpis sekce",
           "selector": "[data-copy=\"signals-title\"]",
-          "mode": "inline",
-          "value": "Co byste ve spolupráci *svého týmu* chtěli posunout?"
+          "mode": "text",
+          "value": "Poznáváte v tom svůj tým?"
         },
         {
-          "label": "Pokyn k výběru",
-          "selector": "[data-copy=\"situations-help\"]",
+          "label": "Název situace 1",
+          "selector": "[data-copy=\"situation-1-title\"]",
           "mode": "text",
-          "value": "Vyberte situace, které byste chtěli probrat. Výběr slouží k ujasnění témat."
+          "value": "Všechno nakonec skončí u vás."
         },
         {
-          "label": "Situace 1",
-          "selector": "[data-copy=\"situation-1\"]",
+          "label": "Popis situace 1",
+          "selector": "[data-copy=\"situation-1-copy\"]",
           "mode": "text",
-          "value": "Rozhodnutí se znovu otevírají bez nové informace."
+          "value": "Chtěli byste lidem více důvěřovat a předávat odpovědnost, ale rozhodnutí se stále vracejí na váš stůl. Místo důležitých věcí znovu řešíte každodenní operativu."
         },
         {
-          "label": "Situace 2",
-          "selector": "[data-copy=\"situation-2\"]",
+          "label": "Název situace 2",
+          "selector": "[data-copy=\"situation-2-title\"]",
           "mode": "text",
-          "value": "Rozdílné názory nezazní při společném jednání."
+          "value": "Na poradách se shodnete. V praxi se míjíte."
         },
         {
-          "label": "Situace 3",
-          "selector": "[data-copy=\"situation-3\"]",
+          "label": "Popis situace 2",
+          "selector": "[data-copy=\"situation-2-copy\"]",
           "mode": "text",
-          "value": "Příliš mnoho rozhodnutí čeká na jednoho člověka."
+          "value": "Všichni mají pocit, že je vše domluvené. Jenže později se ukáže, že každý pochopil dohodu trochu jinak. Některé důležité věci navíc zůstávají nevyřčené."
         },
         {
-          "label": "Situace 4",
-          "selector": "[data-copy=\"situation-4\"]",
+          "label": "Název situace 3",
+          "selector": "[data-copy=\"situation-3-title\"]",
           "mode": "text",
-          "value": "Firma roste a potřebujeme upravit předávání práce."
+          "value": "Máte dobré nápady, ale nedaří se je dotahovat."
         },
         {
-          "label": "Situace 5",
-          "selector": "[data-copy=\"situation-5\"]",
+          "label": "Popis situace 3",
+          "selector": "[data-copy=\"situation-3-copy\"]",
           "mode": "text",
-          "value": "Složení týmu vedení se změnilo a hledáme společný způsob práce."
+          "value": "Vznikají plány, probíhají diskuse, přesto se některé úkoly stále vracejí. Každý se snaží odvádět svou práci, ale společný výsledek tomu ne vždy odpovídá."
         },
         {
-          "label": "Situace 6",
-          "selector": "[data-copy=\"situation-6\"]",
+          "label": "Název situace 4",
+          "selector": "[data-copy=\"situation-4-title\"]",
           "mode": "text",
-          "value": "Nová strategie potřebuje společné priority a jasné dohody."
+          "value": "Něco se změnilo a potřebujete se znovu sladit."
+        },
+        {
+          "label": "Popis situace 4",
+          "selector": "[data-copy=\"situation-4-copy\"]",
+          "mode": "text",
+          "value": "Do týmu přišli noví lidé, změnilo se vedení nebo vás čekají nové výzvy. Dosavadní způsob spolupráce už nemusí stačit."
+        },
+        {
+          "label": "Název situace 5",
+          "selector": "[data-copy=\"situation-5-title\"]",
+          "mode": "text",
+          "value": "Dosahujete výsledků, ale stojí vás to příliš sil."
+        },
+        {
+          "label": "Popis situace 5",
+          "selector": "[data-copy=\"situation-5-copy\"]",
+          "mode": "text",
+          "value": "Práce běží, termíny se plní, ale lidé jsou stále více unavení. Na důležité věci nezbývá čas a dlouhodobé tempo začíná být vyčerpávající."
+        },
+        {
+          "label": "Název situace 6",
+          "selector": "[data-copy=\"situation-6-title\"]",
+          "mode": "text",
+          "value": "Fungujete dobře, ale víte, že máte na víc."
+        },
+        {
+          "label": "Popis situace 6",
+          "selector": "[data-copy=\"situation-6-copy\"]",
+          "mode": "text",
+          "value": "Chcete lépe poznat a využít silné stránky členů týmu, posílit vzájemnou důvěru a objevovat nové možnosti společného rozvoje."
         }
       ]
     },
     {
-      "label": "Postup spolupráce",
+      "label": "Když tým lépe rozumí sám sobě, může lépe spolupracovat",
       "items": [
         {
-          "label": "Označení sekce",
-          "selector": "[data-copy=\"process-index\"]",
+          "label": "Popisek sekce",
+          "selector": "[data-copy=\"benefits-title-index\"]",
           "mode": "text",
-          "value": "02 / Jak pracujeme"
+          "value": "02 / Možné přínosy"
         },
         {
           "label": "Nadpis sekce",
-          "selector": "[data-copy=\"process-title\"]",
-          "mode": "inline",
-          "value": "Čtyři kroky *společné práce.*"
+          "selector": "[data-copy=\"benefits-title\"]",
+          "mode": "text",
+          "value": "Když tým lépe rozumí sám sobě, může lépe spolupracovat"
         },
         {
-          "label": "Úvod",
-          "selector": "[data-copy=\"process-intro\"]",
+          "label": "Odstavec 1",
+          "selector": "[data-copy=\"benefits-intro-1\"]",
           "mode": "text",
-          "value": "Úvodní rozhovor předchází týmové práci. Zachycuje pohled zájemce, nikoli objektivní obraz celého týmu."
+          "value": "Týmový koučink není o hledání viníků ani o předávání hotových návodů."
         },
         {
-          "label": "Krok 1 – nadpis",
-          "selector": "[data-copy=\"step-1-title\"]",
+          "label": "Odstavec 2",
+          "selector": "[data-copy=\"benefits-intro-2\"]",
           "mode": "text",
-          "value": "Dohoda o cíli a pravidlech."
+          "value": "Pomáhá lidem lépe porozumět tomu, co jejich spolupráci podporuje a co ji naopak brzdí. Otevírá důležitá témata a podporuje tým v hledání vlastních řešení."
         },
         {
-          "label": "Krok 1 – text",
-          "selector": "[data-copy=\"step-1-copy\"]",
+          "label": "Přínos 1",
+          "selector": "[data-copy=\"benefit-1-title\"]",
           "mode": "text",
-          "value": "Se zadavatelem i týmem vyjasníme smysl práce, role, očekávání, důvěrnost a způsob hodnocení. Zadavatel odpovídá za zadání a rozpočet."
+          "value": "Méně domněnek. Více porozumění."
         },
         {
-          "label": "Krok 2 – nadpis",
-          "selector": "[data-copy=\"step-2-title\"]",
+          "label": "Vysvětlení přínosu 1",
+          "selector": "[data-copy=\"benefit-1-copy\"]",
           "mode": "text",
-          "value": "Společné porozumění situaci."
+          "value": "Aby lidé dokázali otevřeněji mluvit o svých očekáváních, naslouchat odlišným názorům a řešit neshody bez zbytečného obviňování."
         },
         {
-          "label": "Krok 2 – text",
-          "selector": "[data-copy=\"step-2-copy\"]",
+          "label": "Přínos 2",
+          "selector": "[data-copy=\"benefit-2-title\"]",
           "mode": "text",
-          "value": "Propojíme různé pohledy, silné stránky a opakující se situace. Případné pozorování porady a další metody závisí na dohodnutém rozsahu."
+          "value": "Jasnější dohody. Více společné odpovědnosti."
         },
         {
-          "label": "Krok 3 – nadpis",
-          "selector": "[data-copy=\"step-3-title\"]",
+          "label": "Vysvětlení přínosu 2",
+          "selector": "[data-copy=\"benefit-2-copy\"]",
           "mode": "text",
-          "value": "Zkoušení změn v praxi."
+          "value": "Aby bylo zřejmé, kdo co přebírá, jaké jsou společné priority a na čem záleží. A aby všechno nemuselo zůstávat na bedrech jediného člověka."
         },
         {
-          "label": "Krok 3 – text",
-          "selector": "[data-copy=\"step-3-copy\"]",
+          "label": "Přínos 3",
+          "selector": "[data-copy=\"benefit-3-title\"]",
           "mode": "text",
-          "value": "Setkání navazují na malé experimenty při rozhodování, předávání práce a řešení rozdílných názorů."
+          "value": "Lepší využití toho, v čem je každý dobrý."
         },
         {
-          "label": "Krok 4 – nadpis",
-          "selector": "[data-copy=\"step-4-title\"]",
+          "label": "Vysvětlení přínosu 3",
+          "selector": "[data-copy=\"benefit-3-copy\"]",
           "mode": "text",
-          "value": "Vyhodnocení a další fungování."
+          "value": "Aby lidé lépe rozuměli svým silným stránkám i přínosu ostatních. Aby se dokázali vzájemně doplňovat, místo aby je jejich odlišnosti zbytečně rozdělovaly."
         },
         {
-          "label": "Krok 4 – text",
-          "selector": "[data-copy=\"step-4-copy\"]",
+          "label": "Přínos 4",
+          "selector": "[data-copy=\"benefit-4-title\"]",
           "mode": "text",
-          "value": "Tým posoudí, co se změnilo, co chce udržet a co případně vyžaduje jiný krok."
+          "value": "Změny, které nezůstanou jen na papíře."
+        },
+        {
+          "label": "Vysvětlení přínosu 4",
+          "selector": "[data-copy=\"benefit-4-copy\"]",
+          "mode": "text",
+          "value": "Aby společná uvědomění a dohody nezůstaly pouze tématem jednoho setkání, ale mohly se postupně promítat do každodenní práce, porad a rozhodování."
         }
       ]
     },
     {
-      "label": "Koučky",
+      "label": "Dvě koučky. Jeden tým v centru pozornosti.",
       "items": [
         {
-          "label": "Označení sekce",
-          "selector": "[data-copy=\"coaches-index\"]",
+          "label": "Popisek sekce",
+          "selector": "[data-copy=\"tandem-title-index\"]",
           "mode": "text",
-          "value": "03 / Dvě perspektivy"
+          "value": "03 / Společně"
         },
         {
           "label": "Nadpis sekce",
-          "selector": "[data-copy=\"coaches-title\"]",
-          "mode": "inline",
-          "value": "Martina a Veronika. *Dvě perspektivy.*"
+          "selector": "[data-copy=\"tandem-title\"]",
+          "mode": "text",
+          "value": "Dvě koučky. Jeden tým v centru pozornosti."
         },
         {
-          "label": "Úvod",
-          "selector": "[data-copy=\"coaches-intro\"]",
+          "label": "Odstavec 1",
+          "selector": "[data-copy=\"tandem-copy-1\"]",
           "mode": "text",
-          "value": "Vhodné obsazení zakázky vychází z potřeb týmu a dohodnutého rozsahu."
+          "value": "Týmovým koučováním vás provázíme společně, v tandemu."
         },
         {
-          "label": "Jméno",
-          "selector": "[data-copy=\"martina-name\"]",
+          "label": "Odstavec 2",
+          "selector": "[data-copy=\"tandem-copy-2\"]",
           "mode": "text",
-          "value": "Martina Jonášová"
+          "value": "Dva pohledy nám umožňují věnovat pozornost různým stránkám týmové spolupráce. Nejen tomu, o čem se mluví, ale také tomu, co se mezi lidmi během rozhovoru odehrává. Jak na sebe reagují, jak se rozhodují, jak zacházejí s odlišnými názory nebo zda dostávají prostor všichni členové týmu."
         },
         {
-          "label": "Role",
-          "selector": "[data-copy=\"martina-role\"]",
+          "label": "Odstavec 3",
+          "selector": "[data-copy=\"tandem-copy-3\"]",
           "mode": "text",
-          "value": "Týmový koučink"
+          "value": "Právě tyto zdánlivé maličkosti mohou výrazně ovlivňovat to, jak tým funguje."
         },
         {
-          "label": "Krátké představení",
-          "selector": "[data-copy=\"martina-short\"]",
+          "label": "Odstavec 4",
+          "selector": "[data-copy=\"tandem-copy-4\"]",
           "mode": "text",
-          "value": "Společně hledáme vhodný rámec pro práci s vaším týmem."
+          "value": "Naší úlohou není určovat, kdo má pravdu, ani rozhodovat za vás. Pomáháme vám uvidět vlastní spolupráci z nových úhlů a hledat řešení, za kterými můžete jako tým stát."
         },
         {
-          "label": "Jméno",
-          "selector": "[data-copy=\"veronika-name\"]",
+          "label": "Odstavec 5",
+          "selector": "[data-copy=\"tandem-copy-5\"]",
           "mode": "text",
-          "value": "Veronika Vojtová"
-        },
-        {
-          "label": "Role",
-          "selector": "[data-copy=\"veronika-role\"]",
-          "mode": "text",
-          "value": "Týmový koučink"
-        },
-        {
-          "label": "Krátké představení",
-          "selector": "[data-copy=\"veronika-short\"]",
-          "mode": "text",
-          "value": "Společně hledáme vhodný rámec pro práci s vaším týmem."
+          "value": "Obě jsme certifikované koučky ACC ICF. Při práci klademe důraz na respekt, důvěru a odpovědnost týmu za vlastní rozhodnutí."
         }
       ]
     },
     {
-      "label": "Spolupráce",
+      "label": "Každý tým potřebuje něco jiného",
       "items": [
         {
-          "label": "Označení sekce",
-          "selector": "[data-copy=\"programs-index\"]",
+          "label": "Popisek sekce",
+          "selector": "[data-copy=\"methods-title-index\"]",
           "mode": "text",
-          "value": "04 / Spolupráce"
+          "value": "04 / Postup podle potřeb"
         },
         {
           "label": "Nadpis sekce",
-          "selector": "[data-copy=\"programs-title\"]",
-          "mode": "inline",
-          "value": "Úvodní rozhovor a tři *formáty spolupráce.*"
-        },
-        {
-          "label": "Název rozhovoru",
-          "selector": "[data-copy=\"intro-title\"]",
-          "mode": "text",
-          "value": "Úvodní rozhovor"
-        },
-        {
-          "label": "Smysl rozhovoru",
-          "selector": "[data-copy=\"intro-purpose\"]",
-          "mode": "text",
-          "value": "Probrat situaci z pohledu zájemce a domluvit vhodný další krok"
-        },
-        {
-          "label": "Formát – název",
-          "selector": "[data-copy=\"format-0-title\"]",
-          "mode": "text",
-          "value": "Mapování fungování týmu"
-        },
-        {
-          "label": "Formát – účel",
-          "selector": "[data-copy=\"format-0-purpose\"]",
-          "mode": "text",
-          "value": "Propojit více pohledů a společně vybrat priority"
-        },
-        {
-          "label": "Formát – odkaz",
-          "selector": "[data-copy=\"format-0-link\"]",
-          "mode": "text",
-          "value": "Podrobnosti spolupráce →"
-        },
-        {
-          "label": "Formát – název",
-          "selector": "[data-copy=\"format-1-title\"]",
-          "mode": "text",
-          "value": "Tříměsíční týmový program"
-        },
-        {
-          "label": "Formát – účel",
-          "selector": "[data-copy=\"format-1-purpose\"]",
-          "mode": "text",
-          "value": "Zkoušet a vyhodnocovat změny v každodenní spolupráci"
-        },
-        {
-          "label": "Formát – odkaz",
-          "selector": "[data-copy=\"format-1-link\"]",
-          "mode": "text",
-          "value": "Podrobnosti spolupráce →"
-        },
-        {
-          "label": "Formát – název",
-          "selector": "[data-copy=\"format-2-title\"]",
-          "mode": "text",
-          "value": "Dlouhodobá spolupráce"
-        },
-        {
-          "label": "Formát – účel",
-          "selector": "[data-copy=\"format-2-purpose\"]",
-          "mode": "text",
-          "value": "Pracovat se širší nebo náročnější změnou"
-        },
-        {
-          "label": "Formát – odkaz",
-          "selector": "[data-copy=\"format-2-link\"]",
-          "mode": "text",
-          "value": "Podrobnosti spolupráce →"
-        }
-      ]
-    },
-    {
-      "label": "Důvěrnost",
-      "items": [
-        {
-          "label": "Označení sekce",
-          "selector": "[data-copy=\"trust-index\"]",
-          "mode": "text",
-          "value": "05 / Pravidla spolupráce"
-        },
-        {
-          "label": "Nadpis sekce",
-          "selector": "[data-copy=\"trust-title\"]",
-          "mode": "inline",
-          "value": "Jasná pravidla *před společnou prací.*"
-        },
-        {
-          "label": "Pravidla",
-          "selector": "[data-copy=\"trust-copy\"]",
-          "mode": "text",
-          "value": "Se zadavatelem i týmem vyjasňujeme, co je cílem práce, jak budeme sledovat posun a co lze sdílet. Pravidla se týkají také individuálních rozhovorů. Důvěrnost a její hranice musí být součástí dohody."
-        },
-        {
-          "label": "Volba přístupu – nadpis",
           "selector": "[data-copy=\"methods-title\"]",
           "mode": "text",
-          "value": "Přístup vybíráme podle potřeby."
+          "value": "Každý tým potřebuje něco jiného"
         },
         {
-          "label": "Volba přístupu – text",
-          "selector": "[data-copy=\"methods-copy\"]",
+          "label": "Odstavec 1",
+          "selector": "[data-copy=\"methods-copy-1\"]",
           "mode": "text",
-          "value": "Facilitace pomáhá vést konkrétní společné jednání, teambuilding může podpořit vztahy a individuální koučink pracuje s cílem jednoho člověka. Týmový koučink se zaměřuje na spolupráci týmu v čase. Přístupy se mohou doplňovat."
+          "value": "Proto nezačínáme hotovým programem, ale rozhovorem o tom, co potřebujete a čeho chcete dosáhnout."
+        },
+        {
+          "label": "Odstavec 2",
+          "selector": "[data-copy=\"methods-copy-2\"]",
+          "mode": "inline",
+          "value": "Někdy je nejlepší začít přímo týmovým koučinkem. Jindy může být velmi přínosné zahájit spolupráci diagnostikou týmových rolí **Belbin** nebo osobnostní diagnostikou **HEXACO-PI-R**."
+        },
+        {
+          "label": "Odstavec 3",
+          "selector": "[data-copy=\"methods-copy-3\"]",
+          "mode": "text",
+          "value": "Zejména Belbin může už na začátku nabídnout cenný pohled na to, jak se členové týmu doplňují, jaké jsou jejich silné stránky a kde mohou vznikat překážky ve spolupráci. Díky těmto poznatkům se můžeme při následném koučování rychleji zaměřit na to podstatné, místo abychom tato témata teprve postupně odkrývali."
+        },
+        {
+          "label": "Odstavec 4",
+          "selector": "[data-copy=\"methods-copy-4\"]",
+          "mode": "text",
+          "value": "Diagnostika ale není podmínkou spolupráce. Můžeme pracovat bez ní, využít jednu z metod nebo obě kombinovat. Vždy záleží na tom, co bude pro váš tým skutečně užitečné."
         }
       ]
     },
     {
-      "label": "Praktické otázky",
+      "label": "Úvodní rozhovor",
       "items": [
         {
-          "label": "Označení sekce",
-          "selector": "[data-copy=\"faq-index\"]",
-          "mode": "text",
-          "value": "06 / Časté otázky"
-        },
-        {
-          "label": "Nadpis sekce",
-          "selector": "[data-copy=\"faq-title\"]",
-          "mode": "text",
-          "value": "Než se spojíme."
-        }
-      ]
-    },
-    {
-      "label": "Závěrečná výzva",
-      "items": [
-        {
-          "label": "Nadpis",
+          "label": "Nadpis kontaktu",
           "selector": "[data-copy=\"cta-title\"]",
           "mode": "text",
-          "value": "Začněme úvodním rozhovorem."
+          "value": "Co by se mohlo změnit právě ve vašem týmu?"
         },
         {
-          "label": "Text",
-          "selector": "[data-copy=\"cta-copy\"]",
+          "label": "Odstavec 1",
+          "selector": "[data-copy=\"cta-copy-1\"]",
           "mode": "text",
-          "value": "Nemusíte mít hotové zadání. Můžeme společně probrat, co byste ve spolupráci týmu chtěli posunout."
+          "value": "Nemusíte mít předem přesně pojmenovaný problém ani vědět, zda je týmový koučink pro vás tou správnou cestou."
         },
         {
-          "label": "Odkaz",
+          "label": "Odstavec 2",
+          "selector": "[data-copy=\"cta-copy-2\"]",
+          "mode": "text",
+          "value": "Při úvodním rozhovoru se podíváme na vaši situaci, očekávání a možnosti spolupráce. Společně zjistíme, zda a jak vám týmový koučink může pomoci."
+        },
+        {
+          "label": "Kontaktní tlačítko",
           "selector": "[data-copy=\"cta-link\"]",
           "mode": "text",
-          "value": "Domluvit úvodní rozhovor"
+          "value": "Domluvit schůzku"
         }
       ]
     }
@@ -429,48 +347,10 @@
       "selector": "[data-photo=\"joint\"]",
       "src": "",
       "alt": "Martina Jonášová a Veronika Vojtová",
-      "container": true,
-      "width": 640,
-      "height": 480
-    },
-    {
-      "label": "Portrét: Martina Jonášová",
-      "selector": "[data-photo=\"martina\"]",
-      "src": "",
-      "alt": "Portrét Martiny Jonášové",
-      "container": true,
-      "width": 320,
-      "height": 320
-    },
-    {
-      "label": "Portrét: Veronika Vojtová",
-      "selector": "[data-photo=\"veronika\"]",
-      "src": "",
-      "alt": "Portrét Veroniky Vojtové",
-      "container": true,
-      "width": 320,
-      "height": 320
+      "width": 440,
+      "height": 330
     }
   ],
   "links": [],
-  "faq": {
-    "selector": ".faq-list",
-    "items": [
-      {
-        "question": "Musí se zapojit vedoucí týmu?",
-        "answer": "Pokud je součástí týmu, jeho role a zapojení patří do společné dohody. Nejde jen o souhlas zadavatele mimo tým.",
-        "open": false
-      },
-      {
-        "question": "Lze pracovat s hybridním týmem?",
-        "answer": "Ano, vhodnou kombinaci osobních a online setkání je třeba dohodnout podle situace a podmínek týmu.",
-        "open": false
-      },
-      {
-        "question": "Je úvodní rozhovor placený?",
-        "answer": "Cena čeká na potvrzení. Při rozhovoru probereme váš pohled na situaci a vhodný další krok; nejde o diagnózu celého týmu.",
-        "open": false
-      }
-    ]
-  }
+  "tables": []
 }

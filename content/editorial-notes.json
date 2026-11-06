@@ -16,51 +16,51 @@
     },
     {
       "id": "DIAGNOSTIC_PRICE",
-      "section": "Mapování · spolupráce",
+      "section": "Archiv předchozí nabídky · Mapování · spolupráce",
       "title": "Cena mapování — rozhodnutí",
-      "instruction": "Doplňte schválený způsob stanovení ceny mapování fungování týmu a co nabídka zahrnuje. Neuvádějte nepodložené rozpětí.",
+      "instruction": "Původní úkol ponechaný pro dohledatelnost. Pevné programy ani reflexní dotazník nejsou součástí návrhu z 6. listopadu 2026. Nepřenášejte je do nabídky bez nového schválení. Původní znění: Doplňte schválený způsob stanovení ceny mapování fungování týmu a co nabídka zahrnuje. Neuvádějte nepodložené rozpětí.",
       "status": "needs_input"
     },
     {
       "id": "PROGRAM_PRICE",
-      "section": "Tříměsíční program · spolupráce, FAQ",
+      "section": "Archiv předchozí nabídky · Tříměsíční program · spolupráce, FAQ",
       "title": "Cena programu — rozhodnutí",
-      "instruction": "Potvrďte cenu nebo způsob sestavení individuální nabídky tříměsíčního programu, rozsah a případné další náklady.",
+      "instruction": "Původní úkol ponechaný pro dohledatelnost. Pevné programy ani reflexní dotazník nejsou součástí návrhu z 6. listopadu 2026. Nepřenášejte je do nabídky bez nového schválení. Původní znění: Potvrďte cenu nebo způsob sestavení individuální nabídky tříměsíčního programu, rozsah a případné další náklady.",
       "status": "needs_input"
     },
     {
       "id": "LONG_TERM_PRICE",
-      "section": "Dlouhodobá spolupráce · spolupráce",
+      "section": "Archiv předchozí nabídky · Dlouhodobá spolupráce · spolupráce",
       "title": "Cena dlouhodobé spolupráce — rozhodnutí",
-      "instruction": "Doplňte způsob sestavení nabídky, zahrnuté výstupy a pravidla změny rozsahu.",
+      "instruction": "Původní úkol ponechaný pro dohledatelnost. Pevné programy ani reflexní dotazník nejsou součástí návrhu z 6. listopadu 2026. Nepřenášejte je do nabídky bez nového schválení. Původní znění: Doplňte způsob sestavení nabídky, zahrnuté výstupy a pravidla změny rozsahu.",
       "status": "needs_input"
     },
     {
       "id": "MAPPING_SCOPE",
-      "section": "Mapování · spolupráce",
+      "section": "Archiv předchozí nabídky · Mapování · spolupráce",
       "title": "Rozsah mapování — ke kontrole",
-      "instruction": "Dosavadní návrh trvání je 2–3 týdny. Potvrďte metody, počet a délku setkání, čas týmu i zadavatele, výstupy a pravidla jejich sdílení.",
+      "instruction": "Původní úkol ponechaný pro dohledatelnost. Pevné programy ani reflexní dotazník nejsou součástí návrhu z 6. listopadu 2026. Nepřenášejte je do nabídky bez nového schválení. Původní znění: Dosavadní návrh trvání je 2–3 týdny. Potvrďte metody, počet a délku setkání, čas týmu i zadavatele, výstupy a pravidla jejich sdílení.",
       "status": "needs_input"
     },
     {
       "id": "PROGRAM_SCOPE",
-      "section": "Tříměsíční program · spolupráce",
+      "section": "Archiv předchozí nabídky · Tříměsíční program · spolupráce",
       "title": "Rozsah programu — ke kontrole",
-      "instruction": "Návrh je přibližně 3 měsíce. Potvrďte počet a délku setkání, práci mezi nimi, čas zadavatele, výstupy a zda je mapování součástí ceny. Původní návrh šesti setkání po 90–120 minutách není ověřený závazek.",
+      "instruction": "Původní úkol ponechaný pro dohledatelnost. Pevné programy ani reflexní dotazník nejsou součástí návrhu z 6. listopadu 2026. Nepřenášejte je do nabídky bez nového schválení. Původní znění: Návrh je přibližně 3 měsíce. Potvrďte počet a délku setkání, práci mezi nimi, čas zadavatele, výstupy a zda je mapování součástí ceny. Původní návrh šesti setkání po 90–120 minutách není ověřený závazek.",
       "status": "needs_input"
     },
     {
       "id": "LONG_TERM_SCOPE",
-      "section": "Dlouhodobá spolupráce · spolupráce",
+      "section": "Archiv předchozí nabídky · Dlouhodobá spolupráce · spolupráce",
       "title": "Rozsah dlouhodobé práce — ke kontrole",
-      "instruction": "Dosud se navrhovalo 6 měsíců. Potvrďte délku, návaznost na ostatní formáty, setkání, čas členů týmu, práci se zadavatelem a výstupy.",
+      "instruction": "Původní úkol ponechaný pro dohledatelnost. Pevné programy ani reflexní dotazník nejsou součástí návrhu z 6. listopadu 2026. Nepřenášejte je do nabídky bez nového schválení. Původní znění: Dosud se navrhovalo 6 měsíců. Potvrďte délku, návaznost na ostatní formáty, setkání, čas členů týmu, práci se zadavatelem a výstupy.",
       "status": "needs_input"
     },
     {
       "id": "DELIVERY_MODEL",
       "section": "Obsazení · úvod, postup, spolupráce, profily, HR, FAQ",
       "title": "Jedna nebo dvě koučky — rozhodnutí",
-      "instruction": "Potvrďte model vedení zakázky, zapojení druhé koučky, odpovědnosti a vliv na cenu. Neslibujte automatickou účast obou ani zastupitelnost bez dohody.",
+      "instruction": "Potvrďte model vedení zakázky, zapojení druhé koučky, odpovědnosti a vliv na cenu. Neslibujte automatickou účast obou ani zastupitelnost bez dohody. Nové zadání z 6. listopadu 2026 výslovně stanoví tandem obou kouček jako společnou nabídku. Původní volba jedné nebo dvou kouček se v novém obsahu nepoužívá; zbývá dohodnout provozní odpovědnosti.",
       "status": "needs_input"
     },
     {
@@ -74,7 +74,7 @@
       "id": "MARTINA_QUALIFICATION",
       "section": "Martinin profil · o nás",
       "title": "Martina: vzdělání a kvalifikace — ověření",
-      "instruction": "Doložte aktuální individuální credential ACC a absolvované výcviky. AATC označuje akreditaci výcvikového programu, nikoli osobní certifikaci; ACTC je samostatná certifikace a bez dokladu se neuvádí. Doplňte ověřený profesní odkaz.",
+      "instruction": "Doložte aktuální individuální credential ACC a absolvované výcviky. AATC označuje akreditaci výcvikového programu, nikoli osobní certifikaci; ACTC je samostatná certifikace a bez dokladu se neuvádí. Doplňte ověřený profesní odkaz. Majitelkou dodaný podklad z 6. listopadu 2026 uvádí ACC ICF, výcvik týmového koučování a certifikace Belbin a HEXACO-PI-R u obou kouček. Návrh vychází z tohoto podkladu; doplňte přesné názvy a ověřené profesní odkazy před finálním schválením. Stav se tím automaticky neuzavírá.",
       "status": "needs_input"
     },
     {
@@ -88,14 +88,14 @@
       "id": "VERONIKA_QUALIFICATION",
       "section": "Veroničin profil · o nás",
       "title": "Veronika: vzdělání a kvalifikace — ověření",
-      "instruction": "Ověřte mediální a sociální komunikaci, koučovací výcviky, skupinový koučink, Solution Focus, výcvik v Akademii Libchavy a aktuální ACC. Rozlišujte akreditaci výcviku AATC a individuální ACTC; doplňte jen doložené údaje a profesní odkaz.",
+      "instruction": "Ověřte mediální a sociální komunikaci, koučovací výcviky, skupinový koučink, Solution Focus, výcvik v Akademii Libchavy a aktuální ACC. Rozlišujte akreditaci výcviku AATC a individuální ACTC; doplňte jen doložené údaje a profesní odkaz. Majitelkou dodaný podklad z 6. listopadu 2026 uvádí ACC ICF, výcvik týmového koučování a certifikace Belbin a HEXACO-PI-R u obou kouček. Návrh vychází z tohoto podkladu; doplňte přesné názvy a ověřené profesní odkazy před finálním schválením. Stav se tím automaticky neuzavírá.",
       "status": "needs_input"
     },
     {
       "id": "REFERENCES",
-      "section": "Jak poznáme posun · příklady",
+      "section": "Archiv předchozí nabídky · Jak poznáme posun · příklady",
       "title": "Reference a případové studie — obsah",
-      "instruction": "Doplňte pouze ověřené reference se souhlasem klientů: kontext, cíl, rozsah, kdo práci vedl, způsob vyhodnocení, výsledky a jejich omezení. Ilustrační příklad není reference.",
+      "instruction": "Původní úkol ponechaný pro dohledatelnost. Pevné programy ani reflexní dotazník nejsou součástí návrhu z 6. listopadu 2026. Nepřenášejte je do nabídky bez nového schválení. Původní znění: Doplňte pouze ověřené reference se souhlasem klientů: kontext, cíl, rozsah, kdo práci vedl, způsob vyhodnocení, výsledky a jejich omezení. Ilustrační příklad není reference.",
       "status": "needs_input"
     },
     {
@@ -130,7 +130,7 @@
       "id": "PRIVACY_SERVICES",
       "section": "Soukromí a cookies",
       "title": "Používané služby a přenosy — kontrola",
-      "instruction": "Prověřte hosting Vercel, Google Fonts a oddělenou správu obsahu Decap na unpkg s GitHub OAuth. Potvrďte skutečné logování, příjemce a přenosy dat; statický web neznamená absenci požadavků třetím stranám.",
+      "instruction": "Prověřte hosting Vercel, Google Fonts a oddělenou správu obsahu Sveltia a záložní Decap na unpkg s GitHub OAuth. Potvrďte skutečné logování, příjemce a přenosy dat; statický web neznamená absenci požadavků třetím stranám.",
       "status": "needs_input"
     },
     {
@@ -156,9 +156,9 @@
     },
     {
       "id": "SCORECARD_COPY",
-      "section": "Reflexe · otázky",
+      "section": "Archiv předchozí nabídky · Reflexe · otázky",
       "title": "Otázky reflexe — obsah ke kontrole",
-      "instruction": "Projděte znění všech 12 otázek, tři oblasti a srozumitelnost možností odpovědi. Schválení formulací není psychometrická validace; nástroj zachycuje osobní pohled, nikoli zdraví celého týmu.",
+      "instruction": "Původní úkol ponechaný pro dohledatelnost. Pevné programy ani reflexní dotazník nejsou součástí návrhu z 6. listopadu 2026. Nepřenášejte je do nabídky bez nového schválení. Původní znění: Projděte znění všech 12 otázek, tři oblasti a srozumitelnost možností odpovědi. Schválení formulací není psychometrická validace; nástroj zachycuje osobní pohled, nikoli zdraví celého týmu.",
       "status": "needs_input"
     },
     {
@@ -172,28 +172,28 @@
       "id": "AUDIENCE_SCOPE",
       "section": "Pro koho · zaměření",
       "title": "Velikost a zaměření týmu — rozhodnutí",
-      "instruction": "Potvrďte, zda je 6–12 lidí skutečně typický rozsah. Původní zaměření na firmy se 40–250 zaměstnanci není potvrzené ani automaticky vylučující kritérium.",
+      "instruction": "Potvrďte, zda je 6–12 lidí skutečně typický rozsah. Původní zaměření na firmy se 40–250 zaměstnanci není potvrzené ani automaticky vylučující kritérium. Nové zadání stanoví univerzální nabídku pracovním týmům bez vymezení oboru a velikosti organizace. Historické počty proto nejsou zveřejněné.",
       "status": "needs_input"
     },
     {
       "id": "FOLLOW_UP",
-      "section": "Jak poznáme posun · vyhodnocení",
+      "section": "Archiv předchozí nabídky · Jak poznáme posun · vyhodnocení",
       "title": "Následné vyhodnocení — rozhodnutí",
-      "instruction": "Potvrďte, zda je následné vyhodnocení zahrnuto v nabídce, v jakém čase a kdo se zapojí. Neslibujte neověřený termín ani obchodní účinek.",
+      "instruction": "Původní úkol ponechaný pro dohledatelnost. Pevné programy ani reflexní dotazník nejsou součástí návrhu z 6. listopadu 2026. Nepřenášejte je do nabídky bez nového schválení. Původní znění: Potvrďte, zda je následné vyhodnocení zahrnuto v nabídce, v jakém čase a kdo se zapojí. Neslibujte neověřený termín ani obchodní účinek.",
       "status": "needs_input"
     },
     {
       "id": "FAQ_TIME",
-      "section": "FAQ · čas mezi setkáními",
+      "section": "Archiv předchozí nabídky · FAQ · čas mezi setkáními",
       "title": "Čas týmu mezi setkáními — rozhodnutí",
-      "instruction": "Doplňte reálné časové nároky pro každý formát, příklady práce v praxi a čas zadavatele odděleně od počtu setkání.",
+      "instruction": "Původní úkol ponechaný pro dohledatelnost. Pevné programy ani reflexní dotazník nejsou součástí návrhu z 6. listopadu 2026. Nepřenášejte je do nabídky bez nového schválení. Původní znění: Doplňte reálné časové nároky pro každý formát, příklady práce v praxi a čas zadavatele odděleně od počtu setkání.",
       "status": "needs_input"
     },
     {
       "id": "FAQ_ONE_TO_ONE",
-      "section": "FAQ · individuální práce",
+      "section": "Archiv předchozí nabídky · FAQ · individuální práce",
       "title": "Individuální práce — rozhodnutí",
-      "instruction": "Potvrďte, zda a kdy je individuální koučink součástí zakázky, jeho hranice a pravidla sdílení vůči týmu a zadavateli.",
+      "instruction": "Původní úkol ponechaný pro dohledatelnost. Pevné programy ani reflexní dotazník nejsou součástí návrhu z 6. listopadu 2026. Nepřenášejte je do nabídky bez nového schválení. Původní znění: Potvrďte, zda a kdy je individuální koučink součástí zakázky, jeho hranice a pravidla sdílení vůči týmu a zadavateli.",
       "status": "needs_input"
     },
     {
@@ -201,6 +201,27 @@
       "section": "Cookies · technický provoz",
       "title": "Budoucí vlastní doména — technický úkol",
       "instruction": "Potvrďte případnou vlastní doménu při samostatné přípravě spuštění; změna musí zahrnout veřejné adresy, OAuth a metadata. V této fázi zůstává současná doména.",
+      "status": "needs_input"
+    },
+    {
+      "id": "CONTENT_APPROVAL",
+      "section": "Všech pět hlavních stránek · obsahový návrh",
+      "title": "Obsahový návrh z 6. listopadu — schválení",
+      "instruction": "Projděte pět hlavních stránek v preview, schválené znění DOMŮ, kvalifikace a obecné zaměření. Produkční zveřejnění vyžaduje samostatné schválení. Poznámky v CMS nejsou součástí návštěvnických stránek.",
+      "status": "ready_for_review"
+    },
+    {
+      "id": "DIAGNOSTIC_CONDITIONS",
+      "section": "Jak pracujeme · Belbin a HEXACO-PI-R",
+      "title": "Pravidla diagnostiky — provozní vstupy",
+      "instruction": "Před skutečnou realizací potvrďte oprávnění a podmínky použití jednotlivých metod, schválené výstupy, souhlasy a pravidla sdílení individuálních výsledků. Návrh neobsahuje konkrétní cenu, délku ani počet setkání.",
+      "status": "needs_input"
+    },
+    {
+      "id": "PREVIEW_CMS",
+      "section": "Administrace · pracovní návrh",
+      "title": "Editace preview — technická hranice",
+      "instruction": "Připojený GitHub backend zůstává na větvi main a produkčním OAuth originu. Preview je určeno k vizuálnímu schválení; neprovádějte přes něj zkušební ukládání. Bezpečné testování ukládání vyžaduje oddělený výslovně schválený postup.",
       "status": "needs_input"
     }
   ]

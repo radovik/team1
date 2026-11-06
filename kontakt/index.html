@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
-    <meta name="description" content="Domluva úvodního rozhovoru s Martinou a Veronikou. Pracovní náhled formuláře pouze ověřuje pole a nic neodesílá.">
+    <meta name="description" content="Pojďme si promluvit o vašem týmu. Úvodní rozhovor o vaší situaci, očekáváních a možnostech tandemové spolupráce.">
     <meta name="theme-color" content="#faf9f6">
     <title>
-      Úvodní rozhovor | Silný tým
+      Domluvit schůzku | Silný tým
     </title>
-    <meta property="og:title" content="Úvodní rozhovor | Silný tým">
-    <meta property="og:description" content="Domluva úvodního rozhovoru s Martinou a Veronikou. Pracovní náhled formuláře pouze ověřuje pole a nic neodesílá.">
+    <meta property="og:title" content="Domluvit schůzku | Silný tým">
+    <meta property="og:description" content="Pojďme si promluvit o vašem týmu. Úvodní rozhovor o vaší situaci, očekáváních a možnostech tandemové spolupráce.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="cs_CZ">
     <meta property="og:image" content="https://team1-beige.vercel.app/assets/silny-team-logo-01.png">
@@ -28,7 +28,7 @@
     </a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/" aria-label="Silný tým — úvod">
+        <a class="brand" href="/" aria-label="Silný tým — domů">
           <img src="/assets/silny-team-logo-01.svg" alt="" width="32" height="32">
           <span class="brand-copy">
             <strong>
@@ -48,225 +48,120 @@
           </span>
         </button>
         <nav class="site-nav" id="primary-navigation" aria-label="Hlavní navigace">
-          <a href="/pro-koho/" data-path="/pro-koho">
-            Pro koho
+          <a href="/" data-path="/">
+            DOMŮ
+          </a>
+          <a href="/s-cim-pomahame/" data-path="/s-cim-pomahame">
+            S čím pomáháme
           </a>
           <a href="/jak-pracujeme/" data-path="/jak-pracujeme">
             Jak pracujeme
           </a>
-          <a href="/programy/" data-path="/programy">
-            Spolupráce
-          </a>
           <a href="/o-nas/" data-path="/o-nas">
             O nás
           </a>
-          <a href="/pro-hr/" data-path="/pro-hr">
-            Pro HR
-          </a>
           <a class="nav-cta" href="/kontakt/" data-path="/kontakt">
-            Domluvit úvodní rozhovor
+            Domluvit schůzku
           </a>
         </nav>
       </div>
     </header>
     <main id="main-content" data-content-file="/content/pages/kontakt.json">
-      <section class="page-hero">
+      <section class="page-hero" aria-labelledby="page-title">
         <div class="container page-hero-inner">
           <p data-copy="page-code" class="page-code">
-            Kontakt
+            Domluvit schůzku
           </p>
           <div>
-            <h1 data-copy="page-title">
-              Domluvme si úvodní rozhovor.
+            <h1 data-copy="page-title" id="page-title">
+              Pojďme si promluvit o vašem týmu.
             </h1>
             <p data-copy="page-intro" class="lede">
-              Pro začátek stačí stručně popsat, co byste chtěli ve spolupráci týmu posunout. Nemusíte předem vybírat program ani konkrétní koučku.
+              Nemusíte mít předem přesně pojmenovaný problém ani připravené zadání. Při úvodním rozhovoru se společně podíváme na vaši situaci, očekávání a možnosti spolupráce.
             </p>
           </div>
         </div>
       </section>
-      <section class="section" >
-        <div class="container">
-          <div class="content-grid">
-            <div>
-              <form class="form-card" data-demo-form novalidate>
-                <h2 data-copy="form-title">
-                  Vyzkoušejte místní kontrolu polí
-                </h2>
-                <p data-copy="form-preview" class="form-preview">
-                  Pracovní náhled formuláře. Údaje se neodesílají; pro vyzkoušení použijte smyšlené údaje.
-                </p>
-                <div class="form-row">
-                  <div class="field">
-                    <label data-copy="name-label" for="name">
-                      Jméno a příjmení
-                    </label>
-                    <input id="name" name="name" autocomplete="off" required aria-describedby="name-error">
-                    <p class="field-error" id="name-error" hidden>
-                    </p>
-                  </div>
-                  <div class="field">
-                    <label data-copy="email-label" for="email">
-                      E-mail
-                    </label>
-                    <input id="email" name="email" type="email" autocomplete="off" required aria-describedby="email-error">
-                    <p class="field-error" id="email-error" hidden>
-                    </p>
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="field">
-                    <label data-copy="role-label" for="role">
-                      Vaše role (volitelné)
-                    </label>
-                    <input id="role" name="role" autocomplete="off">
-                  </div>
-                  <div class="field">
-                    <label data-copy="size-label" for="team-size">
-                      Velikost týmu (volitelné)
-                    </label>
-                    <select id="team-size" name="team-size">
-                      <option value="">
-                        Neuvádím
-                      </option>
-                      <option>
-                        Do 5 lidí
-                      </option>
-                      <option>
-                        6–8 lidí
-                      </option>
-                      <option>
-                        9–12 lidí
-                      </option>
-                      <option>
-                        13 a více lidí
-                      </option>
-                    </select>
-                  </div>
+      <section class="section">
+        <div class="container content-grid">
+          <div>
+            <h2 data-copy="form-title" class="section-title">
+              Napište nám, co je pro vás důležité.
+            </h2>
+            <p data-copy="form-notice" id="form-notice">
+              Formulář zatím neodesílá zprávy. V tomto pracovním náhledu můžete pouze vyzkoušet kontrolu polí.
+            </p>
+            <form class="form-card" data-demo-form novalidate aria-describedby="form-notice">
+              <div class="form-row">
+                <div class="field">
+                  <label data-copy="name-label" for="contact-name">
+                    Jméno a příjmení
+                  </label>
+                  <input id="contact-name" name="name" autocomplete="name" required aria-describedby="contact-name-error">
+                  <p class="field-error" id="contact-name-error" hidden>
+                  </p>
                 </div>
                 <div class="field">
-                  <label data-copy="situation-label" for="situation">
-                    Téma rozhovoru (volitelné)
+                  <label data-copy="email-label" for="contact-email">
+                    E-mail
                   </label>
-                  <textarea id="situation" name="situation" aria-describedby="situation-hint">
-                  </textarea>
-                  <p data-copy="situation-hint" id="situation-hint" class="field-hint">
-                    Stačí krátké téma. Nevkládejte osobní nebo citlivé údaje o členech týmu.
+                  <input id="contact-email" name="email" type="email" autocomplete="email" required aria-describedby="contact-email-error">
+                  <p class="field-error" id="contact-email-error" hidden>
                   </p>
                 </div>
-                <fieldset class="radio-field">
-                  <legend data-copy="coach-label">
-                    Preferujete konkrétní koučku? (volitelné)
-                  </legend>
-                  <div class="radio-group">
-                    <label class="radio-pill">
-                      <input type="radio" name="coach" value="martina">
-                      <span>
-                        Martina
-                      </span>
-                    </label>
-                    <label class="radio-pill">
-                      <input type="radio" name="coach" value="veronika">
-                      <span>
-                        Veronika
-                      </span>
-                    </label>
-                    <label class="radio-pill">
-                      <input type="radio" name="coach" value="either">
-                      <span data-copy="coach-either">
-                        Nechám si doporučit
-                      </span>
-                    </label>
-                  </div>
-                </fieldset>
-                <div class="form-submit">
-                  <button data-copy="form-submit" class="button button-dark" type="submit" disabled>
-                    Vyzkoušet formulář
-                  </button>
-                  <p class="form-status" data-form-status role="status" tabindex="-1" aria-live="polite">
-                  </p>
-                </div>
-                <noscript>
-                  <p>
-                    Pro místní kontrolu polí zapněte JavaScript. Náhled nic neodesílá.
-                  </p>
-                </noscript>
-              </form>
-              <aside class="notice-todo" data-note-id="FORM_ENDPOINT" aria-label="Poznámka k dokončení">
-                <strong data-note-title>
-                  Doručování poptávek — technický úkol
-                </strong>
-                <span class="note-status" data-note-status>
-                  K doplnění
-                </span>
-                <p data-note-instruction>
-                  Majitelky mají nejprve schválit způsob doručování a zpracování poptávek, příjemce a potřebné informace o soukromí. Technické zapojení a ověření doručení je samostatný úkol; nyní formulář nic neodesílá.
+              </div>
+              <div class="field">
+                <label data-copy="organization-label" for="contact-organization">
+                  Organizace (volitelné)
+                </label>
+                <input id="contact-organization" name="organization" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label data-copy="message-label" for="contact-message">
+                  Co chcete společně řešit? (volitelné)
+                </label>
+                <textarea id="contact-message" name="message" rows="5" aria-describedby="message-hint">
+                </textarea>
+                <p data-copy="message-hint" class="field-hint" id="message-hint">
+                  Stačí stručně popsat vaši situaci. Nevkládejte citlivé údaje o dalších lidech.
                 </p>
-              </aside>
-            </div>
-            <aside class="prose">
-              <h2>
-                Domluva ještě čeká na propojení.
-              </h2>
-              <p data-copy="contact-next">
-                Tento formulář zatím neslouží k odeslání žádosti. Ověřený kontaktní údaj a případný způsob rezervace doplníme po schválení.
+              </div>
+              <div class="form-submit">
+                <button data-copy="form-button" class="button button-primary" type="submit" disabled>
+                  Vyzkoušet kontrolu polí
+                </button>
+              </div>
+              <p class="form-status" data-form-status role="status" tabindex="-1">
               </p>
-              <aside class="notice-todo" data-note-id="PRIVACY_CONTACT" aria-label="Poznámka k dokončení">
-                <strong data-note-title>
-                  Kontaktní postup — obsah
-                </strong>
-                <span class="note-status" data-note-status>
-                  K doplnění
-                </span>
-                <p data-note-instruction>
-                  Doplňte ověřený kontaktní údaj a postup pro dotazy k údajům. Nezveřejňujte vymyšlený e-mail ani neověřenou lhůtu odpovědi.
-                </p>
-              </aside>
-              <aside class="notice-todo" data-note-id="CALENDAR" aria-label="Poznámka k dokončení">
-                <strong data-note-title>
-                  Společný kalendář — technický úkol
-                </strong>
-                <span class="note-status" data-note-status>
-                  K doplnění
-                </span>
-                <p data-note-instruction>
-                  Rozhodněte, zda má být schválen jeden společný kalendář pro úvodní rozhovor, nebo ruční domluva. Případné propojení, kontrola přenosů a ověření rezervace patří do pozdější fáze.
-                </p>
-              </aside>
-              <aside class="notice-todo" data-note-id="AUDIT_PRICE" aria-label="Poznámka k dokončení">
-                <strong data-note-title>
-                  Cena úvodního rozhovoru — rozhodnutí
-                </strong>
-                <span class="note-status" data-note-status>
-                  K doplnění
-                </span>
-                <p data-note-instruction>
-                  Potvrďte cenu úvodního rozhovoru a zda se hradí samostatně. Bez schválení jej neoznačujte jako bezplatný.
-                </p>
-              </aside>
-              <aside class="notice-todo" data-note-id="AUDIT_DURATION" aria-label="Poznámka k dokončení">
-                <strong data-note-title>
-                  Délka rozhovoru — rozhodnutí
-                </strong>
-                <span class="note-status" data-note-status>
-                  K doplnění
-                </span>
-                <p data-note-instruction>
-                  Dosavadní návrh je 30 minut. Potvrďte délku, průběh a dostupnou formu; do té doby jde o návrh, ne závazek.
-                </p>
-              </aside>
-            </aside>
+              <noscript>
+                Pro místní kontrolu polí je potřeba JavaScript. Nic se neodesílá.
+              </noscript>
+            </form>
           </div>
+          <aside class="prose">
+            <h2 data-copy="conversation-title">
+              Co můžete od rozhovoru čekat?
+            </h2>
+            <p data-copy="conversation-copy-1">
+              Probereme, jak vnímáte situaci týmu, co byste chtěli změnit nebo rozvíjet a jaká máte očekávání.
+            </p>
+            <p data-copy="conversation-copy-2">
+              Společně zvážíme možnosti týmového koučinku, diagnostiky Belbin či HEXACO-PI-R a případného propojení. Diagnostika není podmínkou.
+            </p>
+            <p data-copy="conversation-copy-3">
+              Úvodní rozhovor není závazkem k dlouhodobé spolupráci. Můžete si ujasnit, zda a jak vám naše nabídka dává smysl.
+            </p>
+          </aside>
         </div>
       </section>
     </main>
     <a class="mobile-audit" href="/kontakt/">
-      Domluvit úvodní rozhovor
+      Domluvit schůzku
     </a>
     <footer class="site-footer">
       <div class="container footer-main">
         <div class="footer-brand">
-          <a class="brand" href="/" aria-label="Silný tým — úvod">
+          <a class="brand" href="/" aria-label="Silný tým — domů">
             <img src="/assets/silny-team-logo-01.svg" alt="" width="32" height="32">
             <span class="brand-copy">
               <strong>
@@ -278,28 +173,30 @@
             </span>
           </a>
           <p>
-            Týmový koučink pro vedení firem. Martina Jonášová · Veronika Vojtová.
-          </p>
-          <p>
-            Pracovní návrh s viditelnými poznámkami k dokončení.
+            Týmový koučink pro pracovní týmy.
+            <br>
+            Martina Jonášová · Veronika Vojtová.
           </p>
         </div>
         <div>
           <p class="footer-title">
-            Spolupráce
+            Silný tým
           </p>
-          <nav class="footer-links" aria-label="Spolupráce">
-            <a href="/pro-koho/">
-              Pro koho
+          <nav class="footer-links" aria-label="Navigace v zápatí">
+            <a href="/">
+              DOMŮ
+            </a>
+            <a href="/s-cim-pomahame/">
+              S čím pomáháme
             </a>
             <a href="/jak-pracujeme/">
               Jak pracujeme
             </a>
-            <a href="/programy/">
-              Spolupráce
+            <a href="/o-nas/">
+              O nás
             </a>
-            <a href="/team-health-scorecard/">
-              Reflexe spolupráce · pracovní nástroj
+            <a href="/kontakt/">
+              Domluvit schůzku
             </a>
           </nav>
         </div>
@@ -307,21 +204,12 @@
           <p class="footer-title">
             Další informace
           </p>
-          <nav class="footer-links" aria-label="Další informace">
-            <a href="/vysledky/">
-              Jak poznáme posun
+          <nav class="footer-links" aria-label="Právní informace">
+            <a href="/soukromi/">
+              Soukromí
             </a>
-            <a href="/o-nas/">
-              O nás
-            </a>
-            <a href="/pro-hr/">
-              Pro HR
-            </a>
-            <a href="/faq/">
-              Časté otázky
-            </a>
-            <a href="/kontakt/">
-              Kontakt
+            <a href="/cookies/">
+              Cookies
             </a>
           </nav>
         </div>
@@ -334,14 +222,9 @@
           </span>
           Silný tým
         </span>
-        <nav class="footer-legal" aria-label="Právní informace">
-          <a href="/soukromi/">
-            Soukromí
-          </a>
-          <a href="/cookies/">
-            Cookies
-          </a>
-        </nav>
+        <span>
+          Týmový koučink · Belbin · HEXACO-PI-R
+        </span>
       </div>
     </footer>
   </body>

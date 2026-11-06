@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Cookies a externí služby — pracovní osnova | Silný tým",
-    "description": "Současné externí služby a otevřené vstupy k jejich posouzení. Pracovní informace o cookies a budoucích integracích."
+    "title": "Cookies a externí služby | Silný tým",
+    "description": "Technické fungování tohoto webu. Web načítá písmo ze služby Google Fonts a je hostovaný na Vercelu. Administrace je oddělená od návštěvnických stránek a používá Sveltia CMS, případně Decap CMS, s přihlášením přes GitHub. Není přidaná analytika ani vložený kalendář."
   },
   "sections": [
     {
@@ -11,58 +11,47 @@
           "label": "Název stránky",
           "selector": "[data-copy=\"page-code\"]",
           "mode": "text",
-          "value": "Cookies · pracovní osnova"
+          "value": "Cookies a externí služby"
         },
         {
-          "label": "Hlavní titulek",
+          "label": "Hlavní nadpis",
           "selector": "[data-copy=\"page-title\"]",
           "mode": "text",
-          "value": "Cookies a externí služby."
+          "value": "Cookies a externí služby"
         },
         {
           "label": "Úvodní text",
           "selector": "[data-copy=\"page-intro\"]",
           "mode": "text",
-          "value": "Ve veřejném kódu není analytika ani marketingové měření. Posouzení skutečného provozu hostingu a externích služeb však ještě vyžaduje doplnění."
+          "value": "Technické fungování tohoto webu."
         }
       ]
     },
     {
-      "label": "Technické fungování a kontrola",
+      "label": "Jak náhled funguje",
       "items": [
         {
-          "label": "Služby – nadpis",
-          "selector": "[data-copy=\"services-title\"]",
+          "label": "Nadpis sekce",
+          "selector": "[data-copy=\"information-title\"]",
           "mode": "text",
-          "value": "Současné požadavky třetím stranám"
+          "value": "Jak náhled funguje"
         },
         {
-          "label": "Služby – text",
-          "selector": "[data-copy=\"services-copy\"]",
+          "label": "Informace o náhledu",
+          "selector": "[data-copy=\"information-copy\"]",
           "mode": "text",
-          "value": "Veřejné stránky načítají písmo Plus Jakarta Sans z Google Fonts. Hosting je určen pro Vercel. Oddělená správa /admin načítá Decap z unpkg a používá GitHub OAuth. Statická prezentace proto neznamená absenci externích požadavků ani provozních logů."
+          "value": "Web načítá písmo ze služby Google Fonts a je hostovaný na Vercelu. Administrace je oddělená od návštěvnických stránek a používá Sveltia CMS, případně Decap CMS, s přihlášením přes GitHub. Není přidaná analytika ani vložený kalendář."
         },
         {
-          "label": "Budoucí služby – nadpis",
-          "selector": "[data-copy=\"future-title\"]",
+          "label": "Hranice náhledu",
+          "selector": "[data-copy=\"information-status\"]",
           "mode": "text",
-          "value": "Před případným zapojením dalších služeb"
-        },
-        {
-          "label": "Budoucí služby – text",
-          "selector": "[data-copy=\"future-copy\"]",
-          "mode": "text",
-          "value": "Případný kalendář, doručování formuláře nebo jiné propojení musí být samostatně schváleno. Podle skutečného zpracování je třeba posoudit informace, cookies, přenosy a případnou potřebu souhlasu. Nyní žádnou novou službu ani souhlasový panel nepřidáváme."
-        },
-        {
-          "label": "Schválené informace o cookies",
-          "selector": "[data-copy=\"cookies-final\"]",
-          "mode": "text",
-          "value": ""
+          "value": "Tento web je pracovní náhled. Kontaktní formulář není spojen se službou pro doručování zpráv ani s rezervací termínů."
         }
       ]
     }
   ],
   "images": [],
-  "links": []
+  "links": [],
+  "tables": []
 }

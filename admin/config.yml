@@ -19,7 +19,7 @@ collections:
   - name: pages
     label: Stránky
     files:
-      - label: Úvod
+      - label: DOMŮ
         name: home
         file: content/pages/home.json
         format: json
@@ -52,7 +52,7 @@ collections:
                   - { label: Režim zobrazení, name: mode, widget: hidden }
                   - { label: Atribut, name: attribute, widget: hidden, required: false }
                   - { label: Číslo nebo předpona, name: prefix, widget: string, required: false }
-                  - { label: Text, name: value, widget: text, required: false, hint: "Hotový text. Poznámky k dokončení upravujte v samostatné kolekci Poznámky. Prázdná profilová pole se nezobrazují." }
+                  - { label: Text, name: value, widget: text, required: false, hint: "Text návrhu stránky. Úkoly upravujte v kolekci Poznámky k dokončení; návštěvnické stránky je nezobrazují. Prázdná profilová pole se nezobrazují." }
           - label: Obrázky
             name: images
             widget: list
@@ -120,11 +120,11 @@ collections:
                     name: cells
                     widget: list
                     field: { label: Buňka, name: cell, widget: string }
-      - label: Pro koho
-        name: pro-koho
-        file: content/pages/pro-koho.json
+      - label: S čím pomáháme
+        name: s-cim-pomahame
+        file: content/pages/s-cim-pomahame.json
         format: json
-        preview_path: "/pro-koho/"
+        preview_path: "/s-cim-pomahame/"
         fields: *page_fields
       - label: Jak pracujeme
         name: jak-pracujeme
@@ -132,47 +132,17 @@ collections:
         format: json
         preview_path: "/jak-pracujeme/"
         fields: *page_fields
-      - label: Spolupráce
-        name: programy
-        file: content/pages/programy.json
-        format: json
-        preview_path: "/programy/"
-        fields: *page_fields
-      - label: Jak poznáme posun
-        name: vysledky
-        file: content/pages/vysledky.json
-        format: json
-        preview_path: "/vysledky/"
-        fields: *page_fields
-      - label: Pro HR
-        name: pro-hr
-        file: content/pages/pro-hr.json
-        format: json
-        preview_path: "/pro-hr/"
-        fields: *page_fields
       - label: O nás
         name: o-nas
         file: content/pages/o-nas.json
         format: json
         preview_path: "/o-nas/"
         fields: *page_fields
-      - label: FAQ
-        name: faq
-        file: content/pages/faq.json
-        format: json
-        preview_path: "/faq/"
-        fields: *page_fields
-      - label: Kontakt
+      - label: Domluvit schůzku
         name: kontakt
         file: content/pages/kontakt.json
         format: json
         preview_path: "/kontakt/"
-        fields: *page_fields
-      - label: Reflexe spolupráce v týmu
-        name: team-health-scorecard
-        file: content/pages/team-health-scorecard.json
-        format: json
-        preview_path: "/team-health-scorecard/"
         fields: *page_fields
       - label: Ochrana soukromí
         name: soukromi
@@ -200,7 +170,7 @@ collections:
             allow_add: false
             collapsed: true
             summary: "{{fields.title}}"
-            hint: "Poznámky jsou veřejně viditelné vedle příslušného obsahu. Nevkládejte hesla, citlivé údaje klientů ani soukromé důkazy. Uložení do připojeného CMS vytvoří commit v main a může spustit nasazení."
+            hint: "Úkoly zůstávají v administraci a na návštěvnických stránkách se nevykreslují. Soubor JSON je technicky veřejně dostupný, nejde o soukromé úložiště. Nevkládejte citlivé údaje. Uložení přes toto přihlášení zapisuje do main a může nasadit produkci; preview slouží jen k prohlížení."
             fields:
               - { label: Identifikátor, name: id, widget: hidden }
               - { label: Umístění v sekcích, name: section, widget: hidden }
@@ -210,7 +180,7 @@ collections:
                 name: status
                 widget: select
                 default: needs_input
-                hint: "K doplnění a Ke kontrole zůstávají viditelné. Vyřešeno skryje pouze poznámku, nikoli text nebo fotografii. Vyplnění pole samo o sobě nepotvrzuje ověření."
+                hint: "Stav eviduje dokončení úkolu v administraci. Poznámky se na návštěvnických stránkách nezobrazují bez ohledu na stav. Vyřešeno zvolte až po výslovném ověření; hotový obsah tím nezmizí."
                 options:
                   - { label: K doplnění, value: needs_input }
                   - { label: Ke kontrole, value: ready_for_review }

@@ -1,0 +1,34 @@
+{
+  "redirects": [
+    {
+      "source": "/pro-koho/:path*",
+      "destination": "/s-cim-pomahame/",
+      "permanent": false
+    },
+    {
+      "source": "/programy/:path*",
+      "destination": "/jak-pracujeme/",
+      "permanent": false
+    },
+    {
+      "source": "/vysledky/:path*",
+      "destination": "/s-cim-pomahame/",
+      "permanent": false
+    },
+    {
+      "source": "/pro-hr/:path*",
+      "destination": "/s-cim-pomahame/",
+      "permanent": false
+    },
+    {
+      "source": "/faq/:path*",
+      "destination": "/jak-pracujeme/",
+      "permanent": false
+    },
+    {
+      "source": "/team-health-scorecard/:path*",
+      "destination": "/s-cim-pomahame/",
+      "permanent": false
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "title": "S čím vám může týmový koučink pomoci | Silný tým",
+    "description": "Komunikace, role, odpovědnost, rozhodování, změny i rozvoj dobře fungujícího týmu. Témata spolupráce vybíráme podle vašich potřeb."
+  },
+  "sections": [
+    {
+      "label": "Úvod stránky",
+      "items": [
+        {
+          "label": "Název stránky",
+          "selector": "[data-copy=\"page-code\"]",
+          "mode": "text",
+          "value": "S čím pomáháme"
+        },
+        {
+          "label": "Hlavní nadpis",
+          "selector": "[data-copy=\"page-title\"]",
+          "mode": "text",
+          "value": "S čím vám může týmový koučink pomoci"
+        },
+        {
+          "label": "Úvodní text",
+          "selector": "[data-copy=\"page-intro\"]",
+          "mode": "text",
+          "value": "Každý tým má své silné stránky, svůj způsob spolupráce i své výzvy. Někdy potřebuje překonat překážky, které mu brání dobře fungovat. Jindy hledá nový společný směr, prochází změnou nebo chce lépe využít schopnosti a zkušenosti svých členů."
+        }
+      ]
+    },
+    {
+      "label": "Konkrétní situace. Vlastní řešení.",
+      "items": [
+        {
+          "label": "Popisek sekce",
+          "selector": "[data-copy=\"topics-title-index\"]",
+          "mode": "text",
+          "value": "01 / Témata spolupráce"
+        },
+        {
+          "label": "Nadpis sekce",
+          "selector": "[data-copy=\"topics-title\"]",
+          "mode": "text",
+          "value": "Konkrétní situace. Vlastní řešení."
+        },
+        {
+          "label": "Téma 1",
+          "selector": "[data-copy=\"topic-1-title\"]",
+          "mode": "text",
+          "value": "Komunikace a vzájemné porozumění"
+        },
+        {
+          "label": "Situace 1",
+          "selector": "[data-copy=\"topic-1-situation\"]",
+          "mode": "text",
+          "value": "Informace se ztrácejí, očekávání zůstávají nevyřčená a lidé si stejné dohody vykládají odlišně."
+        },
+        {
+          "label": "Možný přínos 1",
+          "selector": "[data-copy=\"topic-1-benefit\"]",
+          "mode": "text",
+          "value": "Společně se můžete zaměřit na otevřenější komunikaci, méně domněnek a lepší porozumění tomu, co od sebe potřebujete."
+        },
+        {
+          "label": "Téma 2",
+          "selector": "[data-copy=\"topic-2-title\"]",
+          "mode": "text",
+          "value": "Role, odpovědnosti a samostatnost"
+        },
+        {
+          "label": "Situace 2",
+          "selector": "[data-copy=\"topic-2-situation\"]",
+          "mode": "text",
+          "value": "Kompetence se překrývají, rozdělení úkolů není jasné a rozhodnutí se stále vracejí vedoucímu."
+        },
+        {
+          "label": "Možný přínos 2",
+          "selector": "[data-copy=\"topic-2-benefit\"]",
+          "mode": "text",
+          "value": "Cílem mohou být jasnější dohody o odpovědnosti, větší samostatnost při práci a lepší koordinace. Aby bylo zřejmé, kdo co přebírá a kdy potřebuje podporu ostatních."
+        },
+        {
+          "label": "Téma 3",
+          "selector": "[data-copy=\"topic-3-title\"]",
+          "mode": "text",
+          "value": "Společný směr a rozhodování"
+        },
+        {
+          "label": "Situace 3",
+          "selector": "[data-copy=\"topic-3-situation\"]",
+          "mode": "text",
+          "value": "Každý sleduje jiné priority, porady jsou dlouhé a opakované diskuse nevedou k dalším krokům."
+        },
+        {
+          "label": "Možný přínos 3",
+          "selector": "[data-copy=\"topic-3-benefit\"]",
+          "mode": "text",
+          "value": "Můžete si vyjasnit společné cíle, priority i pravidla rozhodování a domluvit se, jak budou rozhodnutí navazovat na každodenní práci."
+        },
+        {
+          "label": "Téma 4",
+          "selector": "[data-copy=\"topic-4-title\"]",
+          "mode": "text",
+          "value": "Napětí, konflikty a odlišné pracovní styly"
+        },
+        {
+          "label": "Situace 4",
+          "selector": "[data-copy=\"topic-4-situation\"]",
+          "mode": "text",
+          "value": "Některé výhrady zůstávají nevyřčené. Rozdílné názory se nedaří zpracovat tak, aby se tým mohl posunout dál."
+        },
+        {
+          "label": "Možný přínos 4",
+          "selector": "[data-copy=\"topic-4-benefit\"]",
+          "mode": "text",
+          "value": "Prostor dostává otevřenější dialog, porozumění odlišnostem a hledání respektujících dohod. Nejde o odstranění všech konfliktů, ale také o schopnost s neshodami konstruktivně pracovat."
+        },
+        {
+          "label": "Téma 5",
+          "selector": "[data-copy=\"topic-5-title\"]",
+          "mode": "text",
+          "value": "Změny v týmu a organizaci"
+        },
+        {
+          "label": "Situace 5",
+          "selector": "[data-copy=\"topic-5-situation\"]",
+          "mode": "text",
+          "value": "Přicházejí noví lidé, mění se vedení, organizace roste nebo potřebujete přizpůsobit postupy novým prioritám."
+        },
+        {
+          "label": "Možný přínos 5",
+          "selector": "[data-copy=\"topic-5-benefit\"]",
+          "mode": "text",
+          "value": "Můžete sladit očekávání, lépe porozumět změně a hledat způsob spolupráce, který odpovídá nové situaci."
+        },
+        {
+          "label": "Téma 6",
+          "selector": "[data-copy=\"topic-6-title\"]",
+          "mode": "text",
+          "value": "Rozvoj dobře fungujícího týmu"
+        },
+        {
+          "label": "Situace 6",
+          "selector": "[data-copy=\"topic-6-situation\"]",
+          "mode": "text",
+          "value": "Nemáte zásadní problém. Chcete ale lépe využívat silné stránky lidí, podporovat vzájemnou důvěru a dále se rozvíjet."
+        },
+        {
+          "label": "Možný přínos 6",
+          "selector": "[data-copy=\"topic-6-benefit\"]",
+          "mode": "text",
+          "value": "Společná práce může prohloubit poznání týmu a otevřít nové možnosti, jak propojit různé schopnosti a zkušenosti."
+        }
+      ]
+    },
+    {
+      "label": "Pro koho je týmový koučink vhodný",
+      "items": [
+        {
+          "label": "Popisek sekce",
+          "selector": "[data-copy=\"audience-title-index\"]",
+          "mode": "text",
+          "value": "02 / Váš tým"
+        },
+        {
+          "label": "Nadpis sekce",
+          "selector": "[data-copy=\"audience-title\"]",
+          "mode": "text",
+          "value": "Pro koho je týmový koučink vhodný"
+        },
+        {
+          "label": "Pro koho je spolupráce vhodná",
+          "selector": "[data-copy=\"audience-copy\"]",
+          "mode": "text",
+          "value": "Týmový koučink je určen týmům, jejichž členové společně pracují na dosažení určitého cíle a chtějí zlepšovat nebo rozvíjet svůj způsob spolupráce. Může být užitečný pro nově vznikající i dlouhodobě fungující týmy, pro týmy v náročné situaci i pro ty, které se chtějí dále posouvat. Nezáleží přitom na velikosti organizace ani na oboru, ve kterém působí."
+        }
+      ]
+    },
+    {
+      "label": "Domluvit schůzku",
+      "items": [
+        {
+          "label": "Nadpis kontaktu",
+          "selector": "[data-copy=\"cta-title\"]",
+          "mode": "text",
+          "value": "Co potřebuje právě váš tým?"
+        },
+        {
+          "label": "Úvod k rozhovoru",
+          "selector": "[data-copy=\"cta-copy\"]",
+          "mode": "text",
+          "value": "Nemusíte mít hotové zadání. Při úvodním rozhovoru můžeme společně pojmenovat, čemu se chcete věnovat a zda je týmový koučink vhodnou cestou."
+        },
+        {
+          "label": "Kontaktní tlačítko",
+          "selector": "[data-copy=\"cta-link\"]",
+          "mode": "text",
+          "value": "Domluvit schůzku"
+        }
+      ]
+    }
+  ],
+  "images": [],
+  "links": [],
+  "tables": []
+}

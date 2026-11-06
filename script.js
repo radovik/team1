@@ -511,6 +511,11 @@ async function loadPageContent() {
 }
 
 async function loadEditorialNotes() {
+  // The November content draft keeps editorial tasks in CMS, not on visitor pages.
+  if (!document.querySelector('[data-note-id]')) {
+    document.body.dataset.notesState = 'not-applicable';
+    return;
+  }
   // Shared JSON is the sole editable authority; registry/fallback never overrides CMS values.
   try {
     const response = await fetch('/content/editorial-notes.json', { cache: 'no-cache' });

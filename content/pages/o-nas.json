@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Martina Jonášová a Veronika Vojtová | Silný tým",
-    "description": "Dvě perspektivy pro práci s týmem. Profily Martiny Jonášové a Veroniky Vojtové s prostorem pro doloženou praxi a fotografie."
+    "description": "Dvě profesionální koučky v tandemu. ACC ICF, výcvik týmového koučování a certifikace Belbin a HEXACO-PI-R."
   },
   "sections": [
     {
@@ -14,22 +14,34 @@
           "value": "O nás"
         },
         {
-          "label": "Hlavní titulek",
+          "label": "Hlavní nadpis",
           "selector": "[data-copy=\"page-title\"]",
           "mode": "text",
-          "value": "Martina a Veronika. Dvě perspektivy pro práci s vaším týmem."
+          "value": "Martina Jonášová a Veronika Vojtová."
         },
         {
           "label": "Úvodní text",
           "selector": "[data-copy=\"page-intro\"]",
           "mode": "text",
-          "value": "Společně hledáme vhodný rámec pro práci s týmem a jeho podmínkami. Vycházíme z domluveného cíle a respektu k různým pohledům."
+          "value": "Jsme dvě profesionální koučky, které propojují své pohledy při práci s týmem. Společně vytváříme prostor pro porozumění, učení a vlastní rozhodnutí týmu."
         }
       ]
     },
     {
-      "label": "Profesní profily",
+      "label": "Dvě koučky. Společná práce.",
       "items": [
+        {
+          "label": "Popisek sekce",
+          "selector": "[data-copy=\"profiles-title-index\"]",
+          "mode": "text",
+          "value": "01 / Martina a Veronika"
+        },
+        {
+          "label": "Nadpis sekce",
+          "selector": "[data-copy=\"profiles-title\"]",
+          "mode": "text",
+          "value": "Dvě koučky. Společná práce."
+        },
         {
           "label": "Jméno",
           "selector": "[data-copy=\"martina-name\"]",
@@ -46,23 +58,23 @@
           "label": "Krátké představení",
           "selector": "[data-copy=\"martina-intro\"]",
           "mode": "text",
-          "value": ""
+          "value": "Certifikovaná koučka ACC ICF. Společně s Veronikou vás provázím týmovým koučováním."
         },
         {
-          "label": "Ověřená profesní praxe",
+          "label": "Profesní zkušenosti",
           "selector": "[data-copy=\"martina-experience\"]",
           "mode": "text",
           "value": ""
         },
         {
-          "label": "Doložené vzdělání a kvalifikace",
+          "label": "Výcvik a certifikace",
           "selector": "[data-copy=\"martina-education\"]",
           "mode": "text",
-          "value": ""
+          "value": "Absolvovala jsem výcvik týmového koučování a mám certifikaci pro práci s metodami Belbin a HEXACO-PI-R."
         },
         {
-          "label": "Přínos pro práci s týmem",
-          "selector": "[data-copy=\"martina-contribution\"]",
+          "label": "Osobní představení",
+          "selector": "[data-copy=\"martina-personal\"]",
           "mode": "text",
           "value": ""
         },
@@ -82,77 +94,142 @@
           "label": "Krátké představení",
           "selector": "[data-copy=\"veronika-intro\"]",
           "mode": "text",
-          "value": ""
+          "value": "Certifikovaná koučka ACC ICF. Společně s Martinou vás provázím týmovým koučováním."
         },
         {
-          "label": "Ověřená profesní praxe",
+          "label": "Profesní zkušenosti",
           "selector": "[data-copy=\"veronika-experience\"]",
           "mode": "text",
-          "value": ""
+          "value": "Mám dlouholeté profesní zkušenosti z HR."
         },
         {
-          "label": "Doložené vzdělání a kvalifikace",
+          "label": "Výcvik a certifikace",
           "selector": "[data-copy=\"veronika-education\"]",
           "mode": "text",
-          "value": ""
+          "value": "Absolvovala jsem výcvik týmového koučování a mám certifikaci pro práci s metodami Belbin a HEXACO-PI-R."
         },
         {
-          "label": "Přínos pro práci s týmem",
-          "selector": "[data-copy=\"veronika-contribution\"]",
+          "label": "Osobní představení",
+          "selector": "[data-copy=\"veronika-personal\"]",
           "mode": "text",
           "value": ""
         }
       ]
     },
     {
-      "label": "Přínos a obsazení",
+      "label": "Proč pracujeme společně",
       "items": [
         {
-          "label": "Přínos – nadpis",
-          "selector": "[data-copy=\"benefit-title\"]",
+          "label": "Popisek sekce",
+          "selector": "[data-copy=\"together-title-index\"]",
           "mode": "text",
-          "value": "Více pohledů na společnou práci"
+          "value": "02 / Tandem"
         },
         {
-          "label": "Přínos – text",
-          "selector": "[data-copy=\"benefit-copy\"]",
+          "label": "Nadpis sekce",
+          "selector": "[data-copy=\"together-title\"]",
           "mode": "text",
-          "value": "Práce ve dvojici může umožnit sledovat současně rozhovor i další dění v týmu a nabídnout různé otázky při společném vyhodnocení. Přínos musí odpovídat konkrétní zakázce; více kouček není automaticky lepší volba."
+          "value": "Proč pracujeme společně"
         },
         {
-          "label": "Obsazení – nadpis",
-          "selector": "[data-copy=\"staff-title\"]",
+          "label": "Odstavec 1",
+          "selector": "[data-copy=\"together-copy-1\"]",
           "mode": "text",
-          "value": "Obsazení dohodneme podle cíle"
+          "value": "V tandemu můžeme věnovat pozornost tomu, co tým řeší, i tomu, jak spolu o tématech mluví. Doplňujeme se při vedení procesu a přinášíme dvě perspektivy, aniž bychom rozhodovaly za tým."
         },
         {
-          "label": "Obsazení – text",
-          "selector": "[data-copy=\"staff-copy\"]",
+          "label": "Odstavec 2",
+          "selector": "[data-copy=\"together-copy-2\"]",
           "mode": "text",
-          "value": "Preference konkrétní koučky může být součástí domluvy. Rozsah zapojení, vedení práce a odpovědnosti je třeba vyjasnit předem."
+          "value": "Smyslem naší práce je pomáhat vám lépe porozumět vlastní spolupráci a hledat kroky, za kterými můžete společně stát."
         }
       ]
     },
     {
-      "label": "Závěrečná výzva",
+      "label": "Co je pro nás při práci důležité",
       "items": [
         {
-          "label": "Nadpis",
+          "label": "Popisek sekce",
+          "selector": "[data-copy=\"values-title-index\"]",
+          "mode": "text",
+          "value": "03 / Náš přístup"
+        },
+        {
+          "label": "Nadpis sekce",
+          "selector": "[data-copy=\"values-title\"]",
+          "mode": "text",
+          "value": "Co je pro nás při práci důležité"
+        },
+        {
+          "label": "Hodnota 1",
+          "selector": "[data-copy=\"value-1-title\"]",
+          "mode": "text",
+          "value": "Respekt a bezpečné prostředí"
+        },
+        {
+          "label": "Vysvětlení hodnoty 1",
+          "selector": "[data-copy=\"value-1-copy\"]",
+          "mode": "text",
+          "value": "Respektujeme každého člena týmu. Pravidla spolupráce a důvěrnosti domlouváme předem; nevynucujeme osobní sdílení."
+        },
+        {
+          "label": "Hodnota 2",
+          "selector": "[data-copy=\"value-2-title\"]",
+          "mode": "text",
+          "value": "Otevřenost různým pohledům"
+        },
+        {
+          "label": "Vysvětlení hodnoty 2",
+          "selector": "[data-copy=\"value-2-copy\"]",
+          "mode": "text",
+          "value": "Dáváme prostor odlišným zkušenostem a názorům. Cílem není určit vítěze rozhovoru, ale lépe porozumět dění v týmu."
+        },
+        {
+          "label": "Hodnota 3",
+          "selector": "[data-copy=\"value-3-title\"]",
+          "mode": "text",
+          "value": "Odpovědnost za vlastní rozhodnutí"
+        },
+        {
+          "label": "Vysvětlení hodnoty 3",
+          "selector": "[data-copy=\"value-3-copy\"]",
+          "mode": "text",
+          "value": "Tým hledá vlastní řešení a rozhoduje o tom, co chce zkoušet ve své práci. My provázíme procesem."
+        },
+        {
+          "label": "Hodnota 4",
+          "selector": "[data-copy=\"value-4-title\"]",
+          "mode": "text",
+          "value": "Profesionální a etický přístup"
+        },
+        {
+          "label": "Vysvětlení hodnoty 4",
+          "selector": "[data-copy=\"value-4-copy\"]",
+          "mode": "text",
+          "value": "Pracujeme v dohodnutých hranicích a respektujeme důvěrnost. O využití diagnostiky a sdílení výsledků se domlouváme s účastníky i zadavatelem."
+        }
+      ]
+    },
+    {
+      "label": "Domluvit schůzku",
+      "items": [
+        {
+          "label": "Nadpis kontaktu",
           "selector": "[data-copy=\"cta-title\"]",
           "mode": "text",
-          "value": "Začněme úvodním rozhovorem."
+          "value": "Poznejme se při úvodním rozhovoru."
         },
         {
-          "label": "Text",
+          "label": "Úvod k rozhovoru",
           "selector": "[data-copy=\"cta-copy\"]",
           "mode": "text",
-          "value": "Nemusíte mít hotové zadání. Můžeme společně probrat, co byste ve spolupráci týmu chtěli posunout."
+          "value": "Můžeme společně probrat, co potřebuje váš tým a jakou podobu spolupráce zvolit."
         },
         {
-          "label": "Odkaz",
+          "label": "Kontaktní tlačítko",
           "selector": "[data-copy=\"cta-link\"]",
           "mode": "text",
-          "value": "Domluvit úvodní rozhovor"
+          "value": "Domluvit schůzku"
         }
       ]
     }
@@ -162,8 +239,7 @@
       "label": "Portrét: Martina Jonášová",
       "selector": "[data-photo=\"martina\"]",
       "src": "",
-      "alt": "Portrét Martiny Jonášové",
-      "container": true,
+      "alt": "Martina Jonášová",
       "width": 320,
       "height": 320
     },
@@ -171,24 +247,24 @@
       "label": "Portrét: Veronika Vojtová",
       "selector": "[data-photo=\"veronika\"]",
       "src": "",
-      "alt": "Portrét Veroniky Vojtové",
-      "container": true,
+      "alt": "Veronika Vojtová",
       "width": 320,
       "height": 320
     }
   ],
   "links": [
     {
-      "label": "Ověřený profesní odkaz: Martina Jonášová",
-      "selector": "#martina [data-profile-link]",
+      "label": "Profesní profil: Martina Jonášová",
+      "selector": "[data-professional-link=\"martina\"]",
       "href": "",
       "text": "Profesní profil"
     },
     {
-      "label": "Ověřený profesní odkaz: Veronika Vojtová",
-      "selector": "#veronika [data-profile-link]",
+      "label": "Profesní profil: Veronika Vojtová",
+      "selector": "[data-professional-link=\"veronika\"]",
       "href": "",
       "text": "Profesní profil"
     }
-  ]
+  ],
+  "tables": []
 }

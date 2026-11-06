@@ -1,8 +1,8 @@
-# Silný tým — working draft
+# Silný tým — content review draft
 
-Czech multi-page website using semantic HTML, one shared stylesheet, JSON and vanilla browser JavaScript. No package manager, local dependencies, bundler or build step. The approved warm neutral palette, original logo and existing Google Fonts link are retained.
+Czech semantic HTML, shared CSS, vanilla JavaScript and JSON. No framework, package manager, local dependencies or build step. The 6 November 2026 owner brief replaces the earlier content proposal, not its approved warm palette, typography, logo or component system.
 
-This is an editable draft, not a production-ready launch. Publishing it at the production URL does not resolve outstanding editorial or operational decisions. Visible editorial notes are intentional. All 12 public HTML files contain `noindex`; this is a crawler instruction, **not access control**. There is no tracked sitemap or robots file. Do not block crawlers from reading the HTML noindex instruction.
+This branch is an owner-review proposal, not a production release. All public HTML and redirect fallbacks retain `noindex`. Do not push main, promote a deployment or connect data collection without separate authorization.
 
 ## Local preview and checks
 
@@ -13,83 +13,66 @@ node --check content-todos.js
 git diff --check
 ```
 
-Open `http://localhost:8000`. Use an HTTP server, not a double-click on HTML. Python serves the pages and fetched JSON, but not Vercel OAuth functions. There are no install, build, test-runner or lint commands.
+Use `http://localhost:8000`, not a file URL. Python serves HTML/JSON but not Vercel redirects or OAuth. There is no install, build, test-runner or lint command.
 
-`/admin/` runs Sveltia CMS from a CDN, using the existing Decap-compatible configuration and GitHub OAuth functions. `/admin/decap.html` retains Decap as a fallback with the same configuration and content; do not edit the same entry in both interfaces at once. Both load their configuration locally, but GitHub OAuth login works only on the Vercel production origin. Do not save through the connected CMS merely to test this draft: its GitHub backend writes directly to `main` and may trigger production deployment. A local JSON test, YAML validation and an actual authenticated CMS save are different verification levels.
+## Current route map
 
-Sveltia is pinned to the reviewed pre-1.0 release `0.250.2` for a controlled migration. Review [release notes](https://github.com/sveltia/sveltia-cms/releases) regularly, including security fixes, before updating the CDN version. No npm package, Svelte application, build step, new OAuth app or new credentials are needed. See [CMS migration verification](docs/CMS_MIGRATION.md) for the checks and limitations of this change.
+Five primary navigation links appear in this exact order. Each entry below is in the CMS `pages` files collection.
 
-See [draft verification](docs/DRAFT_VERIFICATION.md) for the checks actually performed, local fixture coverage and explicit limits. An authenticated CMS save has not been tested in this implementation.
-
-## Content architecture
-
-- Public HTML keeps shared header/footer and meaningful Czech fallback content.
-- Each `main[data-content-file]` fetches its own JSON. A missing, invalid or unavailable file leaves usable HTML and navigation.
-- `sections[].items` retains the existing selector-based model, now using stable `data-copy` hooks. Selectors and modes remain hidden in the CMS; editors change text, not code.
-- The homepage restores the approved Stitch composition with the revised copy. Inline emphasis uses the existing limited formatter; shared editorial notes remain visible in a quieter neutral treatment.
-- Optional profile paragraphs appear only when filled. HTTPS professional links are optional and must be verified. This does not verify credentials automatically.
-- `images[]` has editable upload paths and alternative text. Images use fixed frame dimensions; failed media restores the monogram with an accessible description. Use `/img/uploads/...`.
-- `content/editorial-notes.json` is the sole editable source of note titles, instructions and statuses. Stable IDs map to contextual HTML mounts. The same note can appear on several routes without duplicate editable copies.
-- `content-todos.js` is only a technical ID/route index; it is no longer loaded by public pages and cannot overwrite CMS instructions. HTML contains a fallback copy for network failures.
-- Missing or invalid shared notes JSON leaves the HTML note fallback. `needs_input` and `ready_for_review` stay visible; only explicit `resolved` hides the note, not content or media.
-- Update HTML fallback and JSON together when changing structure or reviewed baseline copy. Later CMS saves change JSON only; there is no automatic HTML regeneration.
-- `admin/config.yml` keeps the existing GitHub backend and 12 fixed route entries, plus the shared notes entry in a separate collection. Editorial workflow remains off.
-- `api/` is unchanged. Both CMS entry points explicitly load `/admin/config.yml`. Production OAuth origin and callback remain `https://team1-beige.vercel.app` and `https://team1-beige.vercel.app/api/callback`. The GitHub backend, `base_url`, `auth_endpoint`, repository and branch are unchanged. Environment values stay in Vercel, never in source.
-
-| Public route | Content file | CMS entry |
+| Label | Route | Content JSON / CMS entry |
 | --- | --- | --- |
-| / | content/pages/home.json | pages / home |
-| /pro-koho/ | content/pages/pro-koho.json | pages / pro-koho |
-| /jak-pracujeme/ | content/pages/jak-pracujeme.json | pages / jak-pracujeme |
-| /programy/ | content/pages/programy.json | pages / programy |
-| /vysledky/ | content/pages/vysledky.json | pages / vysledky |
-| /pro-hr/ | content/pages/pro-hr.json | pages / pro-hr |
-| /o-nas/ | content/pages/o-nas.json | pages / o-nas |
-| /faq/ | content/pages/faq.json | pages / faq |
-| /team-health-scorecard/ | content/pages/team-health-scorecard.json | pages / team-health-scorecard |
-| /kontakt/ | content/pages/kontakt.json | pages / kontakt |
-| /soukromi/ | content/pages/soukromi.json | pages / soukromi |
-| /cookies/ | content/pages/cookies.json | pages / cookies |
+| DOMŮ | / | content/pages/home.json / home |
+| S čím pomáháme | /s-cim-pomahame/ | content/pages/s-cim-pomahame.json / s-cim-pomahame |
+| Jak pracujeme | /jak-pracujeme/ | content/pages/jak-pracujeme.json / jak-pracujeme |
+| O nás | /o-nas/ | content/pages/o-nas.json / o-nas |
+| Domluvit schůzku | /kontakt/ | content/pages/kontakt.json / kontakt |
 
-Shared notes: `editorial / editorial-notes` → `content/editorial-notes.json`.
+The existing `/soukromi/` and `/cookies/` utility pages remain outside primary navigation, with matching JSON/CMS entries. They describe this actual non-submitting draft, not complete legal information for a future enquiry service.
 
-## Browser-only behavior
+| Retired route | Destination |
+| --- | --- |
+| /pro-koho/ | /s-cim-pomahame/ |
+| /programy/ | /jak-pracujeme/ |
+| /vysledky/ | /s-cim-pomahame/ |
+| /pro-hr/ | /s-cim-pomahame/ |
+| /faq/ | /jak-pracujeme/ |
+| /team-health-scorecard/ | /s-cim-pomahame/ |
 
-The introductory conversation is separate from three collaboration formats. Draft durations and prices require owner confirmation. `/programy/#program-90` is preserved.
+Vercel adds HTTP 307 redirects through `vercel.json`; temporary redirects avoid permanent caching before approval. The six old HTML paths retain a meta-refresh and visible destination link for local/static hosting. Previous copy is recoverable from Git history; six obsolete page JSON files are removed from active CMS. No Reference or Blog page was added.
 
-Homepage selection only lists chosen conversation topics. Reflection retains the original 12 question IDs and three areas; it displays individual answers, nonnumeric choices, completion progress and reset, never aggregate scores or a diagnosis. Results require no email. Answers and form values are not sent, logged, stored in URLs, cookies or persistent browser storage. Page content and shared notes still require normal read-only GET requests.
+## Content and CMS
 
-The contact form is disabled without JavaScript and enables only after its non-submitting handler is registered. Name/email validation is local; topic, role, size and coach preference are optional. Success means field validation only, never delivery or booking. No endpoint, calendar, analytics or other integration was added. Existing Google Fonts requests and Vercel/admin service behavior still need an operational privacy review.
+- Shared headers/footers remain in HTML. Each `main[data-content-file]` fetches matching JSON. Missing/invalid JSON preserves meaningful HTML and navigation.
+- Approved home wording is retained. Other pages follow supplied topics. Qualifications and Veronika's general HR experience come from the owner brief, not independent credential verification. No client outcomes, statistics, fixed prices, programme lengths or invented biography were added.
+- Editors use Czech fields. Hidden selectors/modes use the existing safe text/limited-inline renderer. Fallback HTML and JSON were updated together; later CMS saves update JSON only, without automatic HTML regeneration.
+- Photographs are optional. Until authentic images are supplied, the existing brand treatment and neutral monograms remain, not invented portraits.
+- `content/editorial-notes.json` is the sole editable task source. All 29 previous IDs/statuses remain; retired-offer tasks are marked as historical context. Three review/operational notes were added.
+- Visitor HTML has no note mounts; the script skips loading notes when none exist. Notes are not globally CSS-hidden or automatically resolved.
+- Static JSON and CMS config remain technically public assets, not private storage. Never put secrets, private evidence or sensitive client information in them.
+- `content-todos.js` is an unused legacy technical index, not an editable authority.
 
-The HR overview is ordinary printable HTML; use the browser print command. Print styles retain contextual notes and suppress navigation, fixed CTAs and decorative motion.
+## Administration and Preview safety
+
+Sveltia is at `/admin/`; Decap remains at `/admin/decap.html`. Both load `/admin/config.yml`. The pinned runtime, GitHub backend, repository, production origin/callback and `api/` are unchanged. See [CMS migration](docs/CMS_MIGRATION.md) for earlier isolated checks.
+
+**The backend still writes to main. Preview is for visual review, not test publication.** Do not sign in/save through Preview to test this proposal. The callback accepts only the production origin. Do not relax the check, create credentials or change backend branch as an incidental workaround.
+
+The requested Preview uses `codex/content-refresh-preview`, not main. See [content review record](docs/CONTENT_REFRESH.md) for actual verification and remaining inputs.
 
 ## Návod pro Martinu a Veroniku
 
-1. Správa obsahu je na `https://team1-beige.vercel.app/admin/`. Po nasazení migrace zde bude Sveltia CMS: přihlaste se přes **GitHub** stejně jako dosud, bez nových klíčů. Původní Decap zůstává na `https://team1-beige.vercel.app/admin/decap.html`. Neupravujte stejnou stránku současně v obou administracích. Sveltia přebírá jazyk prohlížeče; češtinu lze zvolit také v nabídce účtu v nastavení jazyka. **Uložení v připojeném CMS zapisuje přímo do větve main a může spustit nasazení.** I při zveřejnění na produkční adrese jde stále o pracovní návrh s viditelnými poznámkami. Neprovádějte zkušební ukládání; ukládejte jen zamýšlené úpravy obsahu.
-2. V kolekci **Stránky** vyberte konkrétní stránku, rozbalte její sekci a změňte text. Technické umístění řeší web; nemusíte upravovat HTML ani JavaScript.
-   U zvýrazněných nadpisů značí `*text*` kurzivu a `**text**` tučné písmo. Hvězdičky lze upravit nebo odstranit; nevkládejte HTML. Malé popisky sekcí i text úvodní karty mají vlastní pole.
-3. Na stránce **O nás** doplňte odděleně představení, ověřenou profesní praxi, doložené vzdělání a přínos každé koučky. Prázdná profilová pole ani nevyplněný profesní odkaz se nezobrazují. Stejné krátké představení na úvodu má vlastní pole, proto zkontrolujte obě stránky.
-4. V části **Obrázky** nahrajte autentickou schválenou fotografii a doplňte alternativní text. Média se ukládají do `img/uploads/`. Společná fotografie a portréty na úvodu a stránce O nás mají vlastní pole; můžete použít stejný nahraný soubor.
-5. Otevřete kolekci **Poznámky k dokončení → Společné poznámky**. U každého úkolu upravte název, co dodat nebo ověřit, a stav. Jedna společná poznámka se může objevit u více souvisejících stránek.
-6. **K doplnění** znamená chybějící vstup. **Ke kontrole** znamená návrh čekající na potvrzení; poznámka zůstane viditelná. Až po výslovném ověření zvolte **Vyřešeno**: skryje se pouze poznámka, text a fotografie zůstávají. Vyplnění pole samo o sobě nic neověřuje.
-7. Poznámky jsou veřejnou součástí návrhu. Nevkládejte citlivé údaje klientů, soukromé doklady, hesla ani přístupové klíče. Schválený text a instrukci k doplnění držte v oddělených polích.
-8. Po povoleném uložení zkontrolujte veřejnou stránku i mobilní zobrazení. Místní úprava JSON ověřuje zobrazení, nikoli přihlášení a skutečné uložení přes GitHub. V nové administraci nebylo skutečné přihlášení a publikování zatím ověřeno; místní test není totéž. Formulář zatím nic neodesílá a dotazník není diagnostický test.
+1. Návrh nejprve prohlédněte na preview adrese. **V preview nic zkušebně neukládejte do CMS:** připojený backend stále zapisuje do main a může změnit produkci. Zveřejnění návrhu vyžaduje samostatné schválení.
+2. Po schváleném zapojení návrhu je správa na `https://team1-beige.vercel.app/admin/`. Přihlašování přes GitHub zůstává stejné; Decap je záloha na `/admin/decap.html`. Neupravujte jednu stránku současně v obou rozhraních. Češtinu lze zvolit v nastavení účtu.
+3. V kolekci **Stránky** vyberte stránku, rozbalte její sekci a změňte text. Technické selektory jsou skryté. `*text*` znamená kurzivu a `**text**` tučné písmo; nevkládejte HTML.
+4. V části **Obrázky** nahrajte schválenou autentickou fotografii a doplňte alternativní text. Média se ukládají do `img/uploads/`. Společná fotografie na úvodu a portréty na O nás mají vlastní pole. Prázdné pole ponechá značku nebo monogram.
+5. Osobní představení a profesní zkušenosti na **O nás** doplňujte pouze z ověřených údajů. Prázdné volitelné odstavce a nevyplněné profesní odkazy se nezobrazují.
+6. **Poznámky k dokončení → Společné poznámky** obsahují úkoly, které se už nevykreslují návštěvníkům. Staré úkoly k pevným programům jsou označené jako archiv, nikoli jako část nové nabídky.
+7. **K doplnění** označuje chybějící vstup, **Ke kontrole** návrh čekající na potvrzení. **Vyřešeno** zvolte až po skutečném ověření. Změna stavu neodstraňuje hotový obsah ani neaktivuje službu.
+8. Nevkládejte citlivé údaje, soukromé doklady ani hesla. Soubor s úkoly je stále technicky veřejně dostupný.
+9. Formulář má pouze jméno, e-mail, volitelnou organizaci a zprávu. Tlačítko kontroluje pole; **nic neodesílá ani nerezervuje**.
 
-## Inputs and later launch review
+## Remaining inputs
 
-Current source contains no independent evidence for biographies, years of experience, credentials or client outcomes. Do not publish legacy claims as verified facts. Notes preserve earlier qualification details for owner review, without claiming credentials in finished copy.
+Authentic photographs, Martina's verified background, fuller approved introductions, exact training details/professional links, verified contacts, supplier/controller information, diagnostic operating/sharing conditions and an approved delivery process remain open. Supplied qualification copy does not authorize an operational integration.
 
-Owners must confirm biographies/education/professional links, authentic photographs, prices, durations, session/time requirements, format dependencies, staffing, audience focus, testimonials with consent, sharing/contractual rules, supplier/controller, services, retention/access and contact procedure. Language scope, a future common calendar and custom domain remain decisions.
-
-Before a separately authorized launch:
-
-- Confirm content, qualifications, photographs and all commercial parameters.
-- Complete actual contact and appropriate privacy/contractual information.
-- Connect real delivery or booking only after separate approval; verify it end to end.
-- Reassess actual third-party services, cookies, logs and data transfers.
-- Complete or deliberately remove unfinished sections; do not bulk-hide notes to simulate completion.
-- Review production domain, canonical/social metadata, sitemap and removal of noindex only for ready pages.
-- Check understanding with HR and leadership representatives; this research has not been performed.
-- Obtain explicit permission before pushing main or deploying.
-
-No secrets or .env files belong in this repository. The nested untracked `team1/` copy and owner-supplied briefs are outside application edits.
+No email address, calendar, form service, analytics, AI or diagnostic data collection was connected. Removing noindex and publishing production require separate approval. The nested untracked `team1/` and historical owner documents are outside application edits.

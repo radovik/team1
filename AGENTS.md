@@ -1,5 +1,9 @@
 # Silný tým — Codex project instructions
 
+## Current content-review override — 6 November 2026
+
+The owner requested a new content draft and a Preview deployment only. For this draft, the owner-supplied November brief takes precedence over older requirements below for visible editorial notes, leadership-only positioning, three fixed collaboration formats and 12 full public pages. Keep five primary pages, two legal utility pages outside primary navigation, and redirects for retired routes. Editorial tasks remain editable in CMS but are not rendered on visitor pages; do not mark unresolved tasks resolved merely because they are no longer displayed. Keep the existing visual design, static architecture, noindex, CMS OAuth and non-submitting form. Do not push main or deploy production. See `docs/CONTENT_REFRESH.md` and README for the current route map and verification limits. Older requirements still apply wherever they do not conflict with this narrower override.
+
 ## Scope and current phase
 
 Place this file in the root of the target Silný tým repository. It applies to the entire tracked project. Work from the repository root. The nested, untracked `team1/` directory is not part of the tracked application; do not edit it or add it to a commit unless explicitly instructed.

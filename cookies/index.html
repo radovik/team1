@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
-    <meta name="description" content="Současné externí služby a otevřené vstupy k jejich posouzení. Pracovní informace o cookies a budoucích integracích.">
+    <meta name="description" content="Technické fungování tohoto webu. Web načítá písmo ze služby Google Fonts a je hostovaný na Vercelu. Administrace je oddělená od návštěvnických stránek a používá Sveltia CMS, případně Decap CMS, s přihlášením přes GitHub. Není přidaná analytika ani vložený kalendář.">
     <meta name="theme-color" content="#faf9f6">
     <title>
-      Cookies a externí služby — pracovní osnova | Silný tým
+      Cookies a externí služby | Silný tým
     </title>
-    <meta property="og:title" content="Cookies a externí služby — pracovní osnova | Silný tým">
-    <meta property="og:description" content="Současné externí služby a otevřené vstupy k jejich posouzení. Pracovní informace o cookies a budoucích integracích.">
+    <meta property="og:title" content="Cookies a externí služby | Silný tým">
+    <meta property="og:description" content="Technické fungování tohoto webu. Web načítá písmo ze služby Google Fonts a je hostovaný na Vercelu. Administrace je oddělená od návštěvnických stránek a používá Sveltia CMS, případně Decap CMS, s přihlášením přes GitHub. Není přidaná analytika ani vložený kalendář.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="cs_CZ">
     <meta property="og:image" content="https://team1-beige.vercel.app/assets/silny-team-logo-01.png">
@@ -28,7 +28,7 @@
     </a>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/" aria-label="Silný tým — úvod">
+        <a class="brand" href="/" aria-label="Silný tým — domů">
           <img src="/assets/silny-team-logo-01.svg" alt="" width="32" height="32">
           <span class="brand-copy">
             <strong>
@@ -48,153 +48,65 @@
           </span>
         </button>
         <nav class="site-nav" id="primary-navigation" aria-label="Hlavní navigace">
-          <a href="/pro-koho/" data-path="/pro-koho">
-            Pro koho
+          <a href="/" data-path="/">
+            DOMŮ
+          </a>
+          <a href="/s-cim-pomahame/" data-path="/s-cim-pomahame">
+            S čím pomáháme
           </a>
           <a href="/jak-pracujeme/" data-path="/jak-pracujeme">
             Jak pracujeme
           </a>
-          <a href="/programy/" data-path="/programy">
-            Spolupráce
-          </a>
           <a href="/o-nas/" data-path="/o-nas">
             O nás
           </a>
-          <a href="/pro-hr/" data-path="/pro-hr">
-            Pro HR
-          </a>
           <a class="nav-cta" href="/kontakt/" data-path="/kontakt">
-            Domluvit úvodní rozhovor
+            Domluvit schůzku
           </a>
         </nav>
       </div>
     </header>
     <main id="main-content" data-content-file="/content/pages/cookies.json">
-      <section class="page-hero">
+      <section class="page-hero" aria-labelledby="page-title">
         <div class="container page-hero-inner">
           <p data-copy="page-code" class="page-code">
-            Cookies · pracovní osnova
+            Cookies a externí služby
           </p>
           <div>
-            <h1 data-copy="page-title">
-              Cookies a externí služby.
+            <h1 data-copy="page-title" id="page-title">
+              Cookies a externí služby
             </h1>
             <p data-copy="page-intro" class="lede">
-              Ve veřejném kódu není analytika ani marketingové měření. Posouzení skutečného provozu hostingu a externích služeb však ještě vyžaduje doplnění.
+              Technické fungování tohoto webu.
             </p>
           </div>
         </div>
       </section>
-      <section class="section" >
+      <section class="section" aria-labelledby="information-title">
         <div class="container">
-          <div class="narrow prose">
-            <h2 data-copy="services-title">
-              Současné požadavky třetím stranám
+          <div class="section-heading">
+            <h2 data-copy="information-title" class="section-title" id="information-title">
+              Jak náhled funguje
             </h2>
-            <p data-copy="services-copy">
-              Veřejné stránky načítají písmo Plus Jakarta Sans z Google Fonts. Hosting je určen pro Vercel. Oddělená správa /admin načítá Decap z unpkg a používá GitHub OAuth. Statická prezentace proto neznamená absenci externích požadavků ani provozních logů.
+          </div>
+          <div class="prose">
+            <p data-copy="information-copy">
+              Web načítá písmo ze služby Google Fonts a je hostovaný na Vercelu. Administrace je oddělená od návštěvnických stránek a používá Sveltia CMS, případně Decap CMS, s přihlášením přes GitHub. Není přidaná analytika ani vložený kalendář.
             </p>
-            <h2 data-copy="future-title">
-              Před případným zapojením dalších služeb
-            </h2>
-            <p data-copy="future-copy">
-              Případný kalendář, doručování formuláře nebo jiné propojení musí být samostatně schváleno. Podle skutečného zpracování je třeba posoudit informace, cookies, přenosy a případnou potřebu souhlasu. Nyní žádnou novou službu ani souhlasový panel nepřidáváme.
+            <p data-copy="information-status">
+              Tento web je pracovní náhled. Kontaktní formulář není spojen se službou pro doručování zpráv ani s rezervací termínů.
             </p>
-            <aside class="notice-todo" data-note-id="PRIVACY_SERVICES" aria-label="Poznámka k dokončení">
-              <strong data-note-title>
-                Používané služby a přenosy — kontrola
-              </strong>
-              <span class="note-status" data-note-status>
-                K doplnění
-              </span>
-              <p data-note-instruction>
-                Prověřte hosting Vercel, Google Fonts a oddělenou správu obsahu Decap na unpkg s GitHub OAuth. Potvrďte skutečné logování, příjemce a přenosy dat; statický web neznamená absenci požadavků třetím stranám.
-              </p>
-            </aside>
-            <aside class="notice-todo" data-note-id="LEGAL_MODEL" aria-label="Poznámka k dokončení">
-              <strong data-note-title>
-                Dodavatel a správce údajů — právní vstupy
-              </strong>
-              <span class="note-status" data-note-status>
-                K doplnění
-              </span>
-              <p data-note-instruction>
-                Doplňte skutečného smluvního dodavatele, fakturační subjekt, správce údajů a kontakt. Potvrďte smluvní rámec, pravidla důvěrnosti, výjimky a sdílení výstupů s týmem i zadavatelem.
-              </p>
-            </aside>
-            <aside class="notice-todo" data-note-id="PRIVACY_PURPOSES" aria-label="Poznámka k dokončení">
-              <strong data-note-title>
-                Účely a způsob zpracování — právní vstupy
-              </strong>
-              <span class="note-status" data-note-status>
-                K doplnění
-              </span>
-              <p data-note-instruction>
-                Doplňte skutečné účely, způsoby a rozsah zpracování pro schválené služby; posuďte potřebné informace s odpovědnou osobou. Tato osnova není dokončené právní posouzení.
-              </p>
-            </aside>
-            <aside class="notice-todo" data-note-id="DATA_RETENTION" aria-label="Poznámka k dokončení">
-              <strong data-note-title>
-                Poznámky, přístup a uchování — právní vstupy
-              </strong>
-              <span class="note-status" data-note-status>
-                K doplnění
-              </span>
-              <p data-note-instruction>
-                Určete kde se ukládají poznámky, kdo má přístup včetně obou kouček, dobu uchování, způsob odstranění a pravidla individuálních rozhovorů i práce se zadavatelem.
-              </p>
-            </aside>
-            <aside class="notice-todo" data-note-id="PRIVACY_CONTACT" aria-label="Poznámka k dokončení">
-              <strong data-note-title>
-                Kontaktní postup — obsah
-              </strong>
-              <span class="note-status" data-note-status>
-                K doplnění
-              </span>
-              <p data-note-instruction>
-                Doplňte ověřený kontaktní údaj a postup pro dotazy k údajům. Nezveřejňujte vymyšlený e-mail ani neověřenou lhůtu odpovědi.
-              </p>
-            </aside>
-            <aside class="notice-todo" data-note-id="CALENDAR" aria-label="Poznámka k dokončení">
-              <strong data-note-title>
-                Společný kalendář — technický úkol
-              </strong>
-              <span class="note-status" data-note-status>
-                K doplnění
-              </span>
-              <p data-note-instruction>
-                Rozhodněte, zda má být schválen jeden společný kalendář pro úvodní rozhovor, nebo ruční domluva. Případné propojení, kontrola přenosů a ověření rezervace patří do pozdější fáze.
-              </p>
-            </aside>
-            <aside class="notice-todo" data-note-id="DOMAIN" aria-label="Poznámka k dokončení">
-              <strong data-note-title>
-                Budoucí vlastní doména — technický úkol
-              </strong>
-              <span class="note-status" data-note-status>
-                K doplnění
-              </span>
-              <p data-note-instruction>
-                Potvrďte případnou vlastní doménu při samostatné přípravě spuštění; změna musí zahrnout veřejné adresy, OAuth a metadata. V této fázi zůstává současná doména.
-              </p>
-            </aside>
-            <div data-optional-copy hidden>
-              <h3>
-                Informace o cookies
-              </h3>
-              <p data-copy="cookies-final">
-              </p>
-            </div>
           </div>
         </div>
       </section>
     </main>
     <a class="mobile-audit" href="/kontakt/">
-      Domluvit úvodní rozhovor
+      Domluvit schůzku
     </a>
     <footer class="site-footer">
       <div class="container footer-main">
         <div class="footer-brand">
-          <a class="brand" href="/" aria-label="Silný tým — úvod">
+          <a class="brand" href="/" aria-label="Silný tým — domů">
             <img src="/assets/silny-team-logo-01.svg" alt="" width="32" height="32">
             <span class="brand-copy">
               <strong>
@@ -206,28 +118,30 @@
             </span>
           </a>
           <p>
-            Týmový koučink pro vedení firem. Martina Jonášová · Veronika Vojtová.
-          </p>
-          <p>
-            Pracovní návrh s viditelnými poznámkami k dokončení.
+            Týmový koučink pro pracovní týmy.
+            <br>
+            Martina Jonášová · Veronika Vojtová.
           </p>
         </div>
         <div>
           <p class="footer-title">
-            Spolupráce
+            Silný tým
           </p>
-          <nav class="footer-links" aria-label="Spolupráce">
-            <a href="/pro-koho/">
-              Pro koho
+          <nav class="footer-links" aria-label="Navigace v zápatí">
+            <a href="/">
+              DOMŮ
+            </a>
+            <a href="/s-cim-pomahame/">
+              S čím pomáháme
             </a>
             <a href="/jak-pracujeme/">
               Jak pracujeme
             </a>
-            <a href="/programy/">
-              Spolupráce
+            <a href="/o-nas/">
+              O nás
             </a>
-            <a href="/team-health-scorecard/">
-              Reflexe spolupráce · pracovní nástroj
+            <a href="/kontakt/">
+              Domluvit schůzku
             </a>
           </nav>
         </div>
@@ -235,21 +149,12 @@
           <p class="footer-title">
             Další informace
           </p>
-          <nav class="footer-links" aria-label="Další informace">
-            <a href="/vysledky/">
-              Jak poznáme posun
+          <nav class="footer-links" aria-label="Právní informace">
+            <a href="/soukromi/">
+              Soukromí
             </a>
-            <a href="/o-nas/">
-              O nás
-            </a>
-            <a href="/pro-hr/">
-              Pro HR
-            </a>
-            <a href="/faq/">
-              Časté otázky
-            </a>
-            <a href="/kontakt/">
-              Kontakt
+            <a href="/cookies/">
+              Cookies
             </a>
           </nav>
         </div>
@@ -262,14 +167,9 @@
           </span>
           Silný tým
         </span>
-        <nav class="footer-legal" aria-label="Právní informace">
-          <a href="/soukromi/">
-            Soukromí
-          </a>
-          <a href="/cookies/">
-            Cookies
-          </a>
-        </nav>
+        <span>
+          Týmový koučink · Belbin · HEXACO-PI-R
+        </span>
       </div>
     </footer>
   </body>

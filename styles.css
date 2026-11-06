@@ -74,6 +74,10 @@ button, a, input, select, textarea, summary { -webkit-tap-highlight-color: trans
 .hero::before { position: absolute; top: -150px; right: -150px; width: 650px; height: 650px; border-radius: 50%; background: radial-gradient(circle, var(--brand-soft), transparent 70%); opacity: .32; content: ""; pointer-events: none; }
 .hero-grid { position: relative; display: grid; grid-template-columns: minmax(0,7fr) minmax(0,5fr); gap: 64px; align-items: center; padding-block: 48px 72px; }
 .hero-copy { min-width: 0; }
+/* Content-only draft: retain the existing tokens, typography and card system. */
+.hero-intro .hero-lede { margin: 20px 0 0; }
+.prose + .cards-2 { margin-top: 32px; }
+.profile-visual.coaches-visual { width: 100%; max-width: 440px; height: auto; aspect-ratio: 4 / 3; font-size: 40px; }
 .eyebrow, .section-kicker, .section-index, .page-code { color: var(--brand); font-size: 11px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
 .eyebrow { margin: 0 0 24px; }
 .hero .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border: 1px solid var(--border); border-radius: var(--radius-lg); background: var(--surface-soft); }
