@@ -11,19 +11,22 @@
           "label": "Název stránky",
           "selector": "[data-copy=\"page-code\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Jak pracujeme"
         },
         {
           "label": "Hlavní nadpis",
           "selector": "[data-copy=\"page-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Celý tým. Dva pohledy. Vlastní cesta."
         },
         {
           "label": "Úvodní text",
           "selector": "[data-copy=\"page-intro\"]",
           "mode": "text",
-          "value": "Týmový koučink, diagnostiku i jejich případné propojení volíme podle toho, co potřebujete. Nezačínáme pevným programem, ale společným vyjasněním cíle."
+          "prefix": "",
+          "value": "Týmový koučink, diagnostiku i jejich případné propojení volíme podle toho, co potřebujete. Nezačínáme pevným programem, ale společným vyjasněním cíle. TEST"
         }
       ]
     },
@@ -34,30 +37,35 @@
           "label": "Popisek sekce",
           "selector": "[data-copy=\"coaching-title-index\"]",
           "mode": "text",
+          "prefix": "",
           "value": "01 / Společná práce"
         },
         {
           "label": "Nadpis sekce",
           "selector": "[data-copy=\"coaching-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Co je týmový koučink"
         },
         {
           "label": "Odstavec 1",
           "selector": "[data-copy=\"coaching-copy-1\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Koučovaným partnerem je celý tým. Věnujeme se tomu, jak spolu lidé komunikují, rozhodují, přebírají odpovědnost a učí se ze společné práce. Nejde o individuální koučování několika lidí najednou."
         },
         {
           "label": "Odstavec 2",
           "selector": "[data-copy=\"coaching-copy-2\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Koučky nepřicházejí s hotovým řešením. Pomáhají týmu lépe vidět vlastní fungování a vytvářet řešení, za která převezme odpovědnost. Součástí je také to, co už týmu jde a jaké má podmínky v organizaci."
         },
         {
           "label": "Odstavec 3",
           "selector": "[data-copy=\"coaching-copy-3\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Školení přináší nové znalosti a dovednosti, teambuilding může podpořit vztahy a facilitace pomáhá vést konkrétní jednání. Týmový koučink se soustředí na způsob spolupráce týmu jako celku. Vhodný přístup vychází z vašich potřeb."
         }
       ]
@@ -69,60 +77,70 @@
           "label": "Popisek sekce",
           "selector": "[data-copy=\"process-title-index\"]",
           "mode": "text",
+          "prefix": "",
           "value": "02 / Postup"
         },
         {
           "label": "Nadpis sekce",
           "selector": "[data-copy=\"process-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Jak spolupráce probíhá"
         },
         {
           "label": "Krok 1",
           "selector": "[data-copy=\"step-1-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Úvodní rozhovor a vyjasnění potřeb"
         },
         {
           "label": "Popis kroku 1",
           "selector": "[data-copy=\"step-1-copy\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Poznáme situaci z pohledu zadavatele, tedy člověka, který spolupráci objednává. Probereme cíle a očekávání a společně zvážíme vhodnost týmového koučinku. Tento rozhovor není objektivní diagnózou celého týmu."
         },
         {
           "label": "Krok 2",
           "selector": "[data-copy=\"step-2-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Dohoda se zadavatelem a týmem"
         },
         {
           "label": "Popis kroku 2",
           "selector": "[data-copy=\"step-2-copy\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Vyjasníme cíle, očekávání, pravidla práce, důvěrnost a způsob vyhodnocování. Tým se aktivně podílí na dohodě; společně pojmenujeme také své role a podmínky spolupráce."
         },
         {
           "label": "Krok 3",
           "selector": "[data-copy=\"step-3-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Společná týmová setkání a změny v praxi"
         },
         {
           "label": "Popis kroku 3",
           "selector": "[data-copy=\"step-3-copy\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Tým se věnuje konkrétním tématům, hledá nová řešení a zkouší dohodnuté kroky ve své každodenní práci. Vycházíme ze skutečných situací i silných stránek týmu."
         },
         {
           "label": "Krok 4",
           "selector": "[data-copy=\"step-4-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Reflexe a vyhodnocení"
         },
         {
           "label": "Popis kroku 4",
           "selector": "[data-copy=\"step-4-copy\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Společně sledujeme, co se mění, co funguje a na čem je potřeba dále pracovat. Zkušenost z praxe pomáhá týmu rozhodnout, které dohody chce udržet a co upravit."
         }
       ]
@@ -134,24 +152,28 @@
           "label": "Popisek sekce",
           "selector": "[data-copy=\"tandem-title-index\"]",
           "mode": "text",
+          "prefix": "",
           "value": "03 / Dvě perspektivy"
         },
         {
           "label": "Nadpis sekce",
           "selector": "[data-copy=\"tandem-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Proč pracujeme v tandemu"
         },
         {
           "label": "Odstavec 1",
           "selector": "[data-copy=\"tandem-copy-1\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Spoluprací vás provázíme obě. Zatímco jedna z nás vede rozhovor, druhá může věnovat pozornost tomu, jak se lidé zapojují, jak reagují a které pohledy zatím nezazněly. V průběhu práce se doplňujeme."
         },
         {
           "label": "Odstavec 2",
           "selector": "[data-copy=\"tandem-copy-2\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Dva různé pohledy nám umožňují sledovat obsah rozhovoru i způsob komunikace. Tandem je charakteristickou součástí naší společné nabídky, ne tvrzením, že dvě koučky jsou v každé situaci lepší než jedna."
         }
       ]
@@ -163,72 +185,84 @@
           "label": "Popisek sekce",
           "selector": "[data-copy=\"diagnostics-title-index\"]",
           "mode": "text",
+          "prefix": "",
           "value": "04 / Porozumění"
         },
         {
           "label": "Nadpis sekce",
           "selector": "[data-copy=\"diagnostics-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Belbin a HEXACO: diagnostika jako možný začátek spolupráce"
         },
         {
           "label": "Odstavec 1",
           "selector": "[data-copy=\"diagnostics-intro-1\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Diagnostika může být samostatně hodnotným rozvojovým vstupem i začátkem následné týmové práce. Zejména Belbin může pomoci už na počátku pojmenovat silné stránky, pracovní preference a možné překážky ve spolupráci. Navazující koučování se pak může dříve soustředit na témata důležitá pro tým."
         },
         {
           "label": "Odstavec 2",
           "selector": "[data-copy=\"diagnostics-intro-2\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Diagnostika není povinná. O jejím využití rozhodujeme společně podle cíle, potřeb a dohodnutých podmínek."
         },
         {
           "label": "Nadpis Belbin",
           "selector": "[data-copy=\"belbin-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Belbin — týmové role a společná práce"
         },
         {
           "label": "Odstavec 1",
           "selector": "[data-copy=\"belbin-copy-1\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Belbin pomáhá porozumět tomu, jak lidé přispívají k fungování týmu, jaké způsoby spolupráce preferují a jak se mohou doplňovat. Pracuje s chováním v týmu, nikoli s pevnými osobnostními typy."
         },
         {
           "label": "Odstavec 2",
           "selector": "[data-copy=\"belbin-copy-2\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Můžeme se zaměřit na silné stránky členů, různé styly spolupráce a rozložení týmových rolí. Výsledky mohou být podkladem k lepšímu využití schopností lidí i k rozvoji nového nebo stávajícího týmu."
         },
         {
           "label": "Odstavec 3",
           "selector": "[data-copy=\"belbin-copy-3\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Týmové role nejsou neměnné nálepky. Jejich projevy souvisejí také s prostředím, situací a prací, kterou člověk právě dělá."
         },
         {
           "label": "Nadpis HEXACO",
           "selector": "[data-copy=\"hexaco-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "HEXACO-PI-R — hlubší sebepoznání a porozumění odlišnostem"
         },
         {
           "label": "Odstavec 1",
           "selector": "[data-copy=\"hexaco-copy-1\"]",
           "mode": "text",
+          "prefix": "",
           "value": "HEXACO-PI-R je osobnostní diagnostika, která nabízí strukturovaný pohled na osobnostní charakteristiky jednotlivce v šesti hlavních dimenzích."
         },
         {
           "label": "Odstavec 2",
           "selector": "[data-copy=\"hexaco-copy-2\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Může pomoci při sebepoznání a rozvoji i při porozumění tomu, jak se osobnostní odlišnosti mohou promítat do pracovních vztahů. Výsledky probíráme v souvislostech konkrétního člověka, ne jako definitivní soud o jeho schopnostech nebo hodnotě."
         },
         {
           "label": "Odstavec 3",
           "selector": "[data-copy=\"hexaco-copy-3\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Nejde o nástroj k určování toho, kdo lže, kdo je „toxický“ nebo komu lze bezvýhradně důvěřovat. Ani osobnostní rysy nepovažujeme za absolutně neměnné."
         }
       ]
@@ -240,60 +274,70 @@
           "label": "Popisek sekce",
           "selector": "[data-copy=\"choice-title-index\"]",
           "mode": "text",
+          "prefix": "",
           "value": "05 / Podle vašich potřeb"
         },
         {
           "label": "Nadpis sekce",
           "selector": "[data-copy=\"choice-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Jaký přístup zvolit?"
         },
         {
           "label": "Možnost 1",
           "selector": "[data-copy=\"choice-1-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Týmový koučink bez diagnostiky"
         },
         {
           "label": "Vysvětlení možnosti 1",
           "selector": "[data-copy=\"choice-1-copy\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Začneme přímo společnou prací nad situacemi a tématy, která tým potřebuje řešit."
         },
         {
           "label": "Možnost 2",
           "selector": "[data-copy=\"choice-2-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Belbin a případný navazující koučink"
         },
         {
           "label": "Vysvětlení možnosti 2",
           "selector": "[data-copy=\"choice-2-copy\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Využijeme pohled na týmové role a přínosy členů. Podle potřeby na něj naváže další práce s týmem."
         },
         {
           "label": "Možnost 3",
           "selector": "[data-copy=\"choice-3-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "HEXACO-PI-R a případný navazující rozvoj"
         },
         {
           "label": "Vysvětlení možnosti 3",
           "selector": "[data-copy=\"choice-3-copy\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Zaměříme se na individuální sebepoznání a porozumění osobnostním odlišnostem v pracovních vztazích."
         },
         {
           "label": "Možnost 4",
           "selector": "[data-copy=\"choice-4-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Kombinace metod a týmového koučinku"
         },
         {
           "label": "Vysvětlení možnosti 4",
           "selector": "[data-copy=\"choice-4-copy\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Metody můžeme vhodně propojit, pokud to dává smysl pro dohodnutý cíl. Nejsou to povinné stupně ani balíček pro každý tým."
         }
       ]
@@ -305,30 +349,35 @@
           "label": "Popisek sekce",
           "selector": "[data-copy=\"ethics-title-index\"]",
           "mode": "text",
+          "prefix": "",
           "value": "06 / Respekt a důvěrnost"
         },
         {
           "label": "Nadpis sekce",
           "selector": "[data-copy=\"ethics-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Diagnostika pro nás není nálepka, ale začátek rozhovoru."
         },
         {
           "label": "Odstavec 1",
           "selector": "[data-copy=\"ethics-copy-1\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Výsledky neslouží k rozdělování lidí na dobré a špatné. Přistupujeme k nim jako k podkladu pro sebepoznání, porozumění a další rozvoj."
         },
         {
           "label": "Odstavec 2",
           "selector": "[data-copy=\"ethics-copy-2\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Respektujeme důvěrnost individuálních výsledků a předem domlouváme pravidla jejich případného sdílení. Zadavatel spolupráce nemusí být totožný s účastníky; proto vyjasňujeme, kdo se s jakými výstupy může seznámit a za jakých podmínek."
         },
         {
           "label": "Odstavec 3",
           "selector": "[data-copy=\"ethics-copy-3\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Nežádáme osobní sdílení nad rámec dohodnuté práce. Tým i jednotlivci potřebují vědět, jak bude spolupráce probíhat a jaké jsou její hranice."
         }
       ]
@@ -340,18 +389,21 @@
           "label": "Nadpis kontaktu",
           "selector": "[data-copy=\"cta-title\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Pojďme vybrat vhodný začátek."
         },
         {
           "label": "Úvod k rozhovoru",
           "selector": "[data-copy=\"cta-copy\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Při úvodním rozhovoru probereme vaši situaci a možnosti spolupráce. Nemusíte předem vědět, kterou metodu zvolit."
         },
         {
           "label": "Kontaktní tlačítko",
           "selector": "[data-copy=\"cta-link\"]",
           "mode": "text",
+          "prefix": "",
           "value": "Domluvit schůzku"
         }
       ]
@@ -359,5 +411,6 @@
   ],
   "images": [],
   "links": [],
+  "faq": null,
   "tables": []
 }
